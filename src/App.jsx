@@ -13,12 +13,8 @@ function App() {
   return (
     <>
   
-      
-
      <Hero />
-      <DentalInsurance />
-
-     
+      <DentalInsurance />   
 
     </>
   )
