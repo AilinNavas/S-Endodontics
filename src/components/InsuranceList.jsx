@@ -1,7 +1,8 @@
 import React from 'react';
 
 const InsuranceItem = ({ src, alt }) => (
-  <div className=''><img src={src} alt={alt} /></div>
+
+  <div className='logos-insurances'><img src={src} alt={alt} /></div>
 );
 
 const InsuranceList = () => {
@@ -20,12 +21,12 @@ const InsuranceList = () => {
     { src: 'src/assets/insurances/12.png', alt: 'Metlife DHMO' },
     { src: 'src/assets/insurances/13.png', alt: 'United Healthcare PPO' },
     { src: 'src/assets/insurances/14.png', alt: 'PPOAlways' },
-    
+
 
   ];
 
   return (
-    <div className='sm:grid grid-cols-3 gap-3 place-items-center px-8 md:grid-cols-7 '>
+    <div className='sm:grid gap-2 place-items-center py-10 px-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7'>
       {insuranceItems.map((item, index) => (
         <InsuranceItem key={index} src={item.src} alt={item.alt} />
       ))}
@@ -34,3 +35,14 @@ const InsuranceList = () => {
 };
 
 export default InsuranceList;
+
+
+{/* <div>
+
+{
+  'Texto'.split('').map(word) => {
+    return word === ' '? <div className='word'>&nbsp;</div> : <div className='word'>{word}</div>
+  }
+}
+
+</div> */}
