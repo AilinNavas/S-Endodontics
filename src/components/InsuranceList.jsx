@@ -51,14 +51,3 @@ const InsuranceList = () => {
 };
 
 export default InsuranceList;
-
-
-{/* <div>
-
-{
-  'Texto'.split('').map(word) => {
-    return word === ' '? <div className='word'>&nbsp;</div> : <div className='word'>{word}</div>
-  }
-}
-
-</div> */}

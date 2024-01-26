@@ -1,4 +1,3 @@
-
 import React from "react";
 import InsuranceList from './InsuranceList';
 
@@ -24,8 +23,6 @@ const DentalInsurance = () => {
 
       </div>
     </div>
-
-
 
   );
 };

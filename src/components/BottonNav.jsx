@@ -1,7 +1,7 @@
 import React from 'react'
 import FindUs from '/src/assets/icons/location.svg'
 import Refer from '/src/assets/icons/refer.svg'
-import CallUs from '/src/assets/icons/call.svg'
+import CallUs from '/src/assets/icons/call2.svg'
 
 export const BottonNav = () => {
     const Menus = [
