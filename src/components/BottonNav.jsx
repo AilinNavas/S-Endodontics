@@ -11,14 +11,14 @@ export const BottonNav = () => {
         { title: 'Call Us', src: CallUs, href:"tel:+18173869007"}
     ]
     return (
-        <div className="fixed bottom-0 w-full bg-primary text-white p-4 flex justify-between md:pt-4 lg:hidden">
+        <div className="fixed z-30 bottom-0 w-full bg-primary text-white p-4 flex justify-between md:pt-4 lg:hidden">
 
             {Menus.map((menu, index) => (
 
                 <button key={index} className= { `flex items-center ${index === 1 && 'px-4 rounded-md active:bg-gray hover:scale-[1.1] hover:text-white md:text-2xl'}
                 ${index != 1 && 'active:text-gray md:mx-8 md:text-2xl'}` }>
                     <img src={menu.src} />
-                    <a href={menu.href}><span className="ml-2 font-medium">{menu.title}</span></a>
+                    <a href={menu.href} target="_blank" ><span className="ml-2 font-medium">{menu.title}</span></a>
                 </button>
             ))}
         </div>

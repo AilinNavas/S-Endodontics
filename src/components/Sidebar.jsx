@@ -25,7 +25,7 @@ export const Sidebar = () => {
 
 
     return (
-        <div className={`bg-primary ${open ? 'w-72' : 'w-20'} fixed duration-300 h-screen p-5 pt-8 hidden md:block`}>
+        <div className={`bg-primary ${open ? 'w-72' : 'w-20'} fixed z-30 duration-300 h-screen p-5 pt-8 hidden md:block`}>
             <img src={Control} className={`absolute cursor-pointer -right-3 top-9 w-7 border-2 border-primary rounded-full ${!open && 'rotate-180'}`}
                 onClick={handleLogoClick}
                 /> 
@@ -43,7 +43,9 @@ export const Sidebar = () => {
                     <li key={index}
                         className={`text-white text-lg m-auto flex items-center
                     gap-x-4 cursor-pointer p-2 hover:bg-secondary rounded-md
-                    ${menu.gap ? 'mt-9' : 'mt-2'} ${index === 0 && 'bg-secondary'}`} >
+                    ${menu.gap ? 'mt-9' : 'mt-2'} 
+                    ${index === 0 && 'bg-secondary'}
+                    `} >
                         <img src={menu.src} />
                         <span className={`${!open && 'hidden'} origin-left duration-200`}>{menu.title}</span>
                     </li>

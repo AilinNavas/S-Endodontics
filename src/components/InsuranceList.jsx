@@ -1,4 +1,8 @@
-import React from 'react';
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+
 import img1 from '/src/assets/insurances/1.png'
 import img2 from '/src/assets/insurances/2.png'
 import img3 from '/src/assets/insurances/3.png'
@@ -16,12 +20,45 @@ import img14 from '/src/assets/insurances/14.png'
 
 
 
-const InsuranceItem = ({ src, alt }) => (
-
-  <div className='logos-insurances'><img src={src} alt={alt} /></div>
-);
-
 const InsuranceList = () => {
+
+  const container = useRef();
+
+  useGSAP(() => {
+    gsap.set("#logos-insurances", { opacity:0,transformPerspective: 500
+      // , rotation: 120,
+      // y: 50
+     });
+    // gsap code here...
+    gsap.to("#logos-insurances", {
+      translateX: '-5px',
+      scale:1.5,
+      transformOrigin: "center 20%",
+      duration: 1.5,
+      stagger: 0.5,
+      yoyo: true,
+      boxShadow: "0px 0px 10px 10px rgb(223, 230, 230)",
+      borderRadius: "50% 50%",
+      border: "3px solid rgb(153, 255, 255)",
+      duration: 2,
+      rotationY: 360,
+      x: 10,
+      y: 0,
+      z: -300, 
+      transformOrigin: "50px 20px -100px",
+      autoAlpha: 1,
+      delay:5,
+     
+    }); // <-- automatically reverted
+  }, { scope: container })
+ 
+
+  const InsuranceItem = ({ src, alt }) => (
+
+    <div ><img id='logos-insurances' src={src} alt={alt} className='lg:w-36 lg:h-36 hover:scale-200' /></div>
+  );
+
+
   const insuranceItems = [
     { src: img1, alt: 'PPOAmeritas Insurance' },
     { src: img2, alt: 'Aetna' },
@@ -38,11 +75,10 @@ const InsuranceList = () => {
     { src: img13, alt: 'United Healthcare PPO' },
     { src: img14, alt: 'PPOAlways' },
 
-
   ];
 
   return (
-    <div className='sm:grid gap-2 place-items-center py-10 px-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7'>
+    <div ref={container} className='sm:grid gap-2 place-items-center py-10 px-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7'>
       {insuranceItems.map((item, index) => (
         <InsuranceItem key={index} src={item.src} alt={item.alt} />
       ))}

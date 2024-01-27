@@ -4,6 +4,9 @@ import DentalInsurance from './components/DentalInsurance'
 import Hero2 from './components/Hero2'
 import { BottonNav } from './components/BottonNav'
 import { Sidebar } from './components/Sidebar'
+import AboutUs from './components/AboutUs'
+
+
 
 
 
@@ -37,11 +40,13 @@ function App() {
         <Sidebar />
         <Hero2 />
       </div>
-
-
       <BottonNav />
-
       <DentalInsurance />
+      <AboutUs />
+
+
+ 
+
     </>
   )
 }

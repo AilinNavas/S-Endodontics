@@ -1,61 +1,38 @@
-import React, { useRef, useEffect } from 'react';
-import gsap from 'gsap';
-
-function ImageCarousel({ src, alt }) {
-  return (
-    <div className='h-full w-[400px] m-2 flex shrink-0 cursor-pointer'>
-      <div className='rounded-3xl overflow-hidden mb-4 relative h-[350px]'>
-        <img src={src} alt={alt} />
-      </div>
-    </div>
-  );
-}
+import React from 'react';
 
 function CardImage() {
   const originalImages = [
-    { src: 'src/assets/slider/1.png', alt: 'Testimonial' },
-    { src: 'src/assets/slider/2.png', alt: 'Testimonial' },
-    { src: 'src/assets/slider/3.png', alt: 'Testimonial' },
-    { src: 'src/assets/slider/4.png', alt: 'Testimonial' },
+    { src: '/src/assets/slider/1.png', alt: 'Testimonial' },
+    { src: '/src/assets/slider/2.png', alt: 'Testimonial' },
+    { src: '/src/assets/slider/3.png', alt: 'Testimonial' },
+    { src: '/src/assets/slider/4.png', alt: 'Testimonial' },
   ];
 
-  const imageTestimonial = [...originalImages, ...originalImages,...originalImages, ...originalImages];
-
-  const sliderRef = useRef(null);
-
-  useEffect(() => {
-    const slider = sliderRef.current;
-
-    if (slider) {
-     
-
-  
-      // Configuración de la animación infinita
-      gsap.to(slider, {
-        x: -slider.offsetWidth * originalImages.length, // Ajusta la duración de la animación al número original de imágenes
-        duration: originalImages.length * 20,
-        ease: 'power1.inOut',
-        repeat: -1,
-      });
-
-    }
-  }, [imageTestimonial]);
 
   return (
     <div className='h-screen overflow-hidden py-20'>
-      <div className='container my-5'>
-        <div className='overflow-hidden w-full'>
-          <div
-            ref={sliderRef}
-            className='flex whitespace-nowrap'
-            style={{ display: 'inline-flex' }}
-          >
-            {imageTestimonial.map((image, index) => (
-              <ImageCarousel key={index} {...image} />
-            ))}
-          </div>
+
+      {/* Aqui comienza el contenedor del carrousel  */}
+
+      <div className='wrappe w-450 h-50 relative m-auto bg-gray overflow-hidden'>
+     
+        <div className='boxes relative left-[-50px]'>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center   '>1</div>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center '>2</div>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center  '>3</div>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center  '>4</div>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center  '>5</div>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center  '>6</div>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center  '>7</div>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center '>8</div>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center '>9</div>
+          <div className='box w-50 h-50 absolute bg-red-500 text-white text-2xl leading-50 text-center '>10</div>
         </div>
+
+        <div class="absolute after:border-solid after:border-white after:w-448 after:h-48"></div>
       </div>
+
+
     </div>
   );
 }
@@ -63,7 +40,7 @@ function CardImage() {
 export default CardImage;
 
 
-// const imageTestimonial = [
+//  const imageTestimonial = [
 //   { src: 'src/assets/slider/1.png', alt: 'Testimonial' },
 //   { src: 'src/assets/slider/2.png', alt: 'Testimonial' },
 //   { src: 'src/assets/slider/3.png', alt: 'Testimonial' },
