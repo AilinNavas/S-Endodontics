@@ -33,8 +33,8 @@ const InsuranceList = () => {
     gsap.to("#logos-insurances", {
       translateX: '-5px',
       scale:1.5,
-      transformOrigin: "center 20%",
-      duration: 1.5,
+      // transformOrigin: "center 20%",
+      // duration: 1.5,
       stagger: 0.5,
       yoyo: true,
       boxShadow: "0px 0px 10px 10px rgb(223, 230, 230)",

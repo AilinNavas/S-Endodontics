@@ -43,7 +43,7 @@ const DentalInsurance = () => {
 
     <div ref={contenedor} className='flex flex-col items-start md:pt-20' >
       <div id='dental-insurance' className='h-screen m-auto overflow-hidden pt-8 px-10 md:pl-24 mt-6'>
-        <p id='info' className='text-primary px-6 bg-transparent text-xl m-auto md:text-2xl lg:text-5xl lg:px-10' dangerouslySetInnerHTML={{ __html: text1 }} />
+        <p id='info' className='text-primary px-6 bg-transparent text-xl m-auto md:text-3xl lg:text-5xl lg:px-10' dangerouslySetInnerHTML={{ __html: text1 }} />
 
         <InsuranceList />
         <p id='info' className='text-primary bg-transparent px-6 text-xl  md:text-2xl lg:text-5xl lg:px-10 md:py-10' dangerouslySetInnerHTML={{ __html: text2 }} />
