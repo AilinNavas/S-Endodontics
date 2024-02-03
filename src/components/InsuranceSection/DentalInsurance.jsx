@@ -4,9 +4,9 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 
-const text1 = "We <strong> accept most  dental insurance</strong> including out-of-network, so dont hesitate to schedule with us.Insurance often pays the same for out-of-network treatment as in-network.We are in network with the following <strong> insurance providers: </strong>"
+const text1 = "We are in-network with most traditional PPO dental insurance plans, and select DMO, HMO and discount plans. We also accept all insurance plans that provide out-of-network benefits.We are in network with the following insurance providers:"
 
-const text2 = "We will do everything possible to <strong> maximize your benefits </strong> and we can give you a breakdown of those benefits before we do treatment."
+const text2 = "If we are not in-network with your plan, the percentage that insurance pays for out-of-network treatment is oftentimes the same as for in-network, so don't hesitate to schedule with us, even if we are not in-network with your insurance. We will do everything possible to maximize your benefits."
 
 
 const DentalInsurance = () => {
@@ -19,7 +19,7 @@ const DentalInsurance = () => {
     });
     // gsap code here...
     gsap.to("#dental-insurance", {
-      backgroundColor: '#afcadb',
+      // backgroundColor: '#afcadb',
       duration: 1.5,
       delay: 5
     });

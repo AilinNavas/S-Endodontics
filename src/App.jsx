@@ -1,16 +1,10 @@
 
 import './App.css'
-import DentalInsurance from './components/DentalInsurance'
-import Hero2 from './components/Hero2'
-import { BottonNav } from './components/BottonNav'
-import { Sidebar } from './components/Sidebar'
-import AboutUs from './components/AboutUs'
-
-
-
-
-
-
+import { WrapperContainer } from './components/WelcomeSection/WrapperContainer'
+import DentalInsurance from './components/InsuranceSection/DentalInsurance'
+// import { BottonNav } from './components/WelcomeSection/BottonNav'
+import {AboutUs} from './components/AboutUsSection/AboutUs'
+import ActiveSlider from './components/Testimonials/ActiveSlider'
 
 function App() {
 
@@ -36,17 +30,12 @@ function App() {
 
   return (
     <>
-      <div className='flex flex-col'>
-        <Sidebar />
-        <Hero2 />
-      </div>
-      <BottonNav />
+     <WrapperContainer />
+      {/* <BottonNav /> */}
       <DentalInsurance />
       <AboutUs />
-
-
- 
-
+      <ActiveSlider />
+  
     </>
   )
 }

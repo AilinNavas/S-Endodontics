@@ -3,22 +3,3 @@
 body {
   font-family: 'Jost', sans-serif;
 }
-
-.App {
-  text-align: center;
-}
-
-
-.App-main {
-  padding: 200px 10% 400px 10%;
-  margin: 0 auto;
-  background: rgb(10,45,91);
-  background: linear-gradient(180deg, rgba(10,45,91,1) 0%, rgba(100,149,237,1) 46%, rgba(214,214,213,1) 99%);
-}
-
-.App-section {
-
-  background-color: transparent;
-  height: 100vh;
-  
-}

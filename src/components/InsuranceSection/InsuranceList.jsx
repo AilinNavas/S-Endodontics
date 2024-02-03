@@ -25,33 +25,38 @@ const InsuranceList = () => {
   const container = useRef();
 
   useGSAP(() => {
-    gsap.set("#logos-insurances", { opacity:0,transformPerspective: 500
-      // , rotation: 120,
-      // y: 50
-     });
+    gsap.set("#logos-insurances", {
+     transformPerspective: 500
+
+    });
     // gsap code here...
-    gsap.to("#logos-insurances", {
+    gsap.fromTo("#logos-insurances", {
+      opacity: 0,
+      scale: 0.5
+    }, {
       translateX: '-5px',
-      scale:1.5,
-      // transformOrigin: "center 20%",
-      // duration: 1.5,
-      stagger: 0.5,
-      yoyo: true,
+      scale: 1.5,
+      stagger: {
+        each: 0.5,
+        from: "start"
+      },
       boxShadow: "0px 0px 10px 10px rgb(223, 230, 230)",
       borderRadius: "50% 50%",
       border: "3px solid rgb(153, 255, 255)",
       duration: 2,
       rotationY: 360,
+      ease: "circ.out",
       x: 10,
       y: 0,
-      z: -300, 
+      z: -300,
       transformOrigin: "50px 20px -100px",
       autoAlpha: 1,
-      delay:5,
-     
+      delay: 5,
+      repeat: -1
+
     }); // <-- automatically reverted
   }, { scope: container })
- 
+
 
   const InsuranceItem = ({ src, alt }) => (
 
