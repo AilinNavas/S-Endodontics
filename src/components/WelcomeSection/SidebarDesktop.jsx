@@ -30,19 +30,19 @@ export const SidebarDesktop = () => {
             <div className='flex gap-x-4 mt-4 items-center'>
                 <img
                  src={logoSrc}
-                 className={`cursor-pointer duration-200 rounded-full border-white border-2 ${open && 'rotate-[360deg]'}`}
+                 className={`cursor-pointer duration-200 rounded-lg border-white border-2 ${open && 'rotate-[360deg]'}`}
               
                    />
                 <h2 className={`text-white origin-left font-medium text-xl duration-300 ${!open && 'scale-0'}`}>SOUTHSIDE ENDODONTICS</h2>
-            </div> *
+            </div> 
 
             <ul className='pt-6'>
                 {MenuSider.map((menu, index) => (
                     <li key={index}
                         className={`text-white text-lg m-auto flex items-center
-                    gap-x-4 cursor-pointer p-2 hover:bg-secondary rounded-md
+                    gap-x-4 cursor-pointer p-2 hover:text-secondary rounded-md
                     ${menu.gap ? 'mt-9' : 'mt-2'} 
-                    ${index === 0 && 'bg-secondary'}
+                     ${index === 0 && 'text-secondary'}
                     `} >
                         <img src={menu.src} />
                         <span className={`${!open && 'hidden'} origin-left duration-200`}>{menu.title}</span>

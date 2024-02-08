@@ -11,13 +11,11 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
-    "@react-hook/media-query": "^1.1.1",
     "framer-motion": "^10.18.0",
     "gsap": "^3.12.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
-    "swiper": "^11.0.5",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {

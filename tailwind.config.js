@@ -9,7 +9,7 @@ export default {
     extend: {
       screens: {
        
-        'sm': '320px',
+        'sm': '390px',
         // => @media (min-width: 640px) { ... }
   
         'md': '768px',
@@ -25,7 +25,7 @@ export default {
         "gray" : " #b6b9ba",
         "blue" : "#09274f",
         "celeste" : "#3498db",
-        "gradiente" : "conic-gradient(at center top, rgb(17, 24, 39), rgb(243, 244, 246), rgb(17, 24, 39))"
+        "gradiente" : "background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(150,196,255,1) 46%, rgba(255,255,255,1) 99%);"
         }, 
     },
   },

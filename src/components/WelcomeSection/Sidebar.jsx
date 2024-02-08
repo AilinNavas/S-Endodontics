@@ -43,13 +43,13 @@ const Sidebar = () => {
         <div className={logoContainerClasses}>
           <img
             src={logoSrc}
-            className={`border-2 border-white rounded-full ${controlClasses}`}
+            className={`border-2 border-white rounded-lg ${controlClasses}`}
             onClick={handleLogoClick}
           />
           <h2 className={`text-white font-medium text-xl duration-300 ${headerClasses}`}>SOUTHSIDE <br /> ENDODONTICS</h2>
         </div>
         <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
-          <button className={`text-white p-2 px-2 border rounded-md bg-green-400 ${buttonClasses}`}>Refer Now</button>
+          <button className={`text-white font-bold p-2 px-4 border rounded-md bg-green-400 ${buttonClasses}`}>Refer Now</button>
         </a>
         <a target='_blank' href="tel:+18173869007">
           <span className={`text-white flex items-center font-semibold ${callUsClasses}`}>

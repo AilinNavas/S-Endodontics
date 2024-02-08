@@ -1,10 +1,12 @@
 
 import './App.css'
+import Places from './components/Prueba/Places'
+// import Discover from './components/Prueba/Discover'
 import { WrapperContainer } from './components/WelcomeSection/WrapperContainer'
-import DentalInsurance from './components/InsuranceSection/DentalInsurance'
+//  import DentalInsurance from './components/InsuranceSection/DentalInsurance'
 // import { BottonNav } from './components/WelcomeSection/BottonNav'
-import {AboutUs} from './components/AboutUsSection/AboutUs'
-import ActiveSlider from './components/Testimonials/ActiveSlider'
+// import {AboutUs} from './components/AboutUsSection/AboutUs'
+ import ActiveSlider from './components/Testimonials/ActiveSlider'
 
 function App() {
 
@@ -31,10 +33,14 @@ function App() {
   return (
     <>
      <WrapperContainer />
+       {/* <DentalInsurance /> */}
+     {/* <Places />
+     <Discover /> */}
       {/* <BottonNav /> */}
-      <DentalInsurance />
-      <AboutUs />
-      <ActiveSlider />
+     
+       {/* <AboutUs /> */}
+       <Places />
+      <ActiveSlider />  
   
     </>
   )
