@@ -77,7 +77,6 @@ const ActiveSlider = () => {
             xPercent: 75,
             opacity: 0
         });
-        timeln.addLabel('card5');
 
         timeln.to("#card-4", {
             scale: 0.98,
@@ -88,6 +87,19 @@ const ActiveSlider = () => {
         timeln.to("#card-5", {
             xPercent: 0,
             opacity: 1
+        });
+        timeln.to("#card-5", {
+            scale: 0.98,
+            xPercent: -0.4,
+            opacity: 1
+        }, "-=0.3");
+          timeln.to("#card-6", {
+            xPercent: 0,
+            opacity: 1
+        });
+          timeln.from('#card-6', {
+            xPercent: 75,
+            opacity: 0
         });
 
     }, { scope: contenedor })
@@ -121,11 +133,17 @@ const ActiveSlider = () => {
                     initials={'A'}
                     bgColor={'bg-[#0f45a8]'} />
             </div>
-            <div id='card-5' className='absolute ml-10  left-0 top-[320px] -rotate-3 z-20 md:ml-20 md:left-[200px] lg:left-[450px] lg:top-[160px]'>
+            <div id='card-5' className='absolute ml-10  left-0 top-[320px] -rotate-3 z-20 md:ml-20 md:left-[200px] lg:left-[450px] lg:top-[100px]'>
                 <TestimonialCard name={'Renee Contreras'}
                     testimonial={'I went into my appointment with Dr.Horne with anxiety and fear. I have a high fear of the dentist, and let the office know. They provided top tier care and were very supportive and continued to check if I was doing on during my procedure. Thank you for putting my fear at ease. 5 stars for sure, I strongly recommend ⭐️'}
                     initials={'R'}
                     bgColor={'bg-[#420991]'} />
+            </div>
+            <div id='card-6' className=' sm:hidden lg:block lg:absolute lg:rotate-3 z-30 lg:ml-10 lg:left-[570px] lg:top-[110px]'>
+                <TestimonialCard name={'Polo Garrett'}
+                    testimonial={'I needed two root canals and I was horrified. Dr. Horn was awesome!! He explained what was going happen step by step. Afterwards I am happy to say, both root canals were completed, I felt NO PAIN, and the cost was affordable. Thank you Dr. Horn for being so courteous and polite and making me comfortable with the procedure. I definitely recommend him to all my families and friends.'}
+                    initials={'P'}
+                    bgColor={'bg-[#eda655]'} />
             </div>
 
         </div>

@@ -57,7 +57,7 @@ export const AccordionContainer = () => {
                 {
                     height: 0,
                     duration: 1,
-                    ease: "power1.inOut",
+                    ease: "sine.out",
                     onComplete: () => setOpenAccordion(null),
                 }
             );
@@ -71,7 +71,7 @@ export const AccordionContainer = () => {
                     {
                         height: 0,
                         duration: 1,
-                        ease: "power1.inOut",
+                        ease: "sine.out",
                     }
                 );
             }
@@ -82,7 +82,7 @@ export const AccordionContainer = () => {
                 {
                     height: "auto",
                     duration: 1,
-                    ease: "power1.inOut",
+                    ease: "sine.out",
                 }
             );
         }
@@ -103,12 +103,12 @@ export const AccordionContainer = () => {
                             className="accordion__header flex gap-8 items-center cursor-pointer px-8 py-4 hover:bg-slate-200 "
                             onClick={() => handleAccordionClick(index)}
                         >
-                            <p className={`accordion__name flex-1 text-xl md:text-2xl  ${openAccordion === index ? "text-secondary" : ""} `}>{faq.title}</p>
+                            <p className={`accordion__name flex-1 text-xl md:text-2xl lg:text-3xl  ${openAccordion === index ? "text-secondary font-semibold" : ""} `}>{faq.title}</p>
                             <img src= {` ${openAccordion === index ? arrowOpen : arrowClosed }`} className='w-8'  />
                         </div>
 
                         <div className={ `accordion__details px-8 overflow-hidden h-0 ${openAccordion === index ? "h-auto" : ""}`}>
-                            <p className='py-4'>{faq.content}</p>
+                            <p className='py-4 md:text-xl lg:text-2xl'>{faq.content}</p>
                         </div>
                     </div>
                 ))}
