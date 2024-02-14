@@ -15,7 +15,7 @@ function Hero2() {
      
       <div className='h-screen flex flex-col place-items- z-30'>
       <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
-        <button className='text-white font-bold p-2 px-4 border z-20 rounded-md bg-green-400 hover:bg-green-500 absolute top-10 right-10'>Refer Now</button>
+        <button className='text-white font-bold p-2 px-4 border z-20 rounded-md bg-green-400 hover:bg-green-500 absolute top-10 right-10 hidden lg:block'>Refer Now</button>
       </a>
         <div className='max-w-[800px]  my-32 w-full mx-auto text-center flex flex-col justify-center'>
           <p id='info' className='text-transform: capitalize text-2xl font-bold text-gray p-2 '>Experience endodontic care</p>
