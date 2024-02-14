@@ -89,14 +89,15 @@ export const AccordionContainer = () => {
     };
 
     return (
-        <div className="App h-[100vh] flex justify-center">
+        <div className="App h-[100vh] flex  justify-center">
+           
 
             <div className="accordion__container flex flex-col gap-1 mt-[25px] rounded-3xl">
 
                 {faqsData.map((faq, index) => (
                     <div
                         key={faq.key}
-                        className={`accordion__item flex flex-col w-[80vw] shadow-md border-t-2 border-transparent  ${openAccordion === index ? "border-t-2 border-secondary" : ""}`}
+                        className={`accordion__item flex flex-col w-[80vw] shadow-md ${openAccordion === index ? "border-t-4 border-secondary" : "border-t-4 border-transparent"}`}
                         ref={(el) => (accordionRefs.current[index] = el)}
                     >
                         <div
