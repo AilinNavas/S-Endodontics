@@ -37,9 +37,9 @@ const AboutUs = () => {
       
       ];
       const imagesOffice = [
-        "/src/assets/aboutUs/team3.png",
         "/src/assets/aboutUs/office.png",
         "/src/assets/aboutUs/office2.png",
+        "/src/assets/aboutUs/office3.png",
       ];
 
   return (
@@ -52,7 +52,7 @@ const AboutUs = () => {
       </div>
       <div className="flex flex-col lg:flex-row  justify-between items-center space-y-5 md:space-y-0">
       <ZoomImage images={imagesTeam} />
-      <AnimatedText title= {'Team '} description ={"Leslie Horn, our Office Manager, holds a BA in English and is deeply committed to ensuring a seamless and positive experience for our patients. As a former lifestyle blogger and educator, Leslie's attention to detail and genuine care shine through, making your visit to our office a pleasant one. His journey from molecular biology at Brigham Young Univers"} />
+      <AnimatedText title= {'Team'} description ={"Leslie Horn, our Office Manager, holds a BA in English and is deeply committed to ensuring a seamless and positive experience for our patients. As a former lifestyle blogger and educator, Leslie's attention to detail and genuine care shine through, making your visit to our office a pleasant one. His journey from molecular biology at Brigham Young Univers"} />
       
         
       </div>
