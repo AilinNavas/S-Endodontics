@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 
+
 import img1 from '/src/assets/insurances/1.png'
 import img2 from '/src/assets/insurances/2.png'
 import img3 from '/src/assets/insurances/3.png'
@@ -24,6 +25,7 @@ const InsuranceList = () => {
 
   const container = useRef();
 
+
   useGSAP(() => {
     gsap.set("#logos-insurances", {
      transformPerspective: 500
@@ -42,7 +44,7 @@ const InsuranceList = () => {
       },
       boxShadow: "0px 0px 10px 10px rgb(223, 230, 230)",
       borderRadius: "50% 50%",
-      border: "3px solid rgb(153, 255, 255)",
+      border: "3px solid rgb(255, 255, 255)",
       duration: 2,
       rotationY: 360,
       ease: "circ.out",
@@ -51,7 +53,7 @@ const InsuranceList = () => {
       z: -300,
       transformOrigin: "50px 20px -100px",
       autoAlpha: 1,
-      delay: 5,
+      delay: 3,
       repeat: -1
 
     }); // <-- automatically reverted
@@ -60,7 +62,7 @@ const InsuranceList = () => {
 
   const InsuranceItem = ({ src, alt }) => (
 
-    <div ><img id='logos-insurances' src={src} alt={alt} className='lg:w-36 lg:h-36 hover:scale-200' /></div>
+    <div><img id='logos-insurances' src={src} alt={alt} className=' w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32' /></div>
   );
 
 
@@ -83,7 +85,8 @@ const InsuranceList = () => {
   ];
 
   return (
-    <div ref={container} className='sm:grid gap-2 place-items-center py-10 px-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7'>
+
+    <div ref={container} className='h-[70vh] lg:h-[50vh] m-auto my-0 grid gap-3 grid-cols-3 md:grid-cols-4 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw]'>
       {insuranceItems.map((item, index) => (
         <InsuranceItem key={index} src={item.src} alt={item.alt} />
       ))}

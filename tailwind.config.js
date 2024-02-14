@@ -17,6 +17,8 @@ export default {
   
         'lg': '1024px',
         // => @media (min-width: 1280px) { ... }
+        'lx': '1900px',
+        // => @media (min-width: 1280px) { ... }
       },
       colors: {
         "primary": "#0a2d5b",

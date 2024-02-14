@@ -28,7 +28,7 @@ const ZoomImage = ({ src, scale = 4.5, duration = 1, ease = "power2.Out" }) => {
       ref={imageRef}
       src={src}
       alt=""
-      className="max-w-xs md:max-w-lg lg:max-w-xl object-cover p-2 border-4 drop-shadow-2xl"
+      className="max-w-xs md:max-w-lg lg:max-w-xl object-cover shadow-md rounded-xl drop-shadow-2xl"
     />
   );
 };

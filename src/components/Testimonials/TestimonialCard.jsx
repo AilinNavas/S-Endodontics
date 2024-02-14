@@ -8,13 +8,15 @@ export const TestimonialCard = ({ name, testimonial, initials, bgColor }) => {
                 <h4 className='text-black ml-1'>{name}</h4>
             </div>
             <p className='m-5  text-grey-500'>{testimonial}</p>
-            <p className='flex justify-end m-5'>
-                <img src="/src/assets/icons/stars.svg" alt="" />
-                <img src="/src/assets/icons/stars.svg" alt="" />
-                <img src="/src/assets/icons/stars.svg" alt="" />
-                <img src="/src/assets/icons/stars.svg" alt="" />
-                <img src="/src/assets/icons/stars.svg" alt="" />
-            </p>
+                <p className='flex justify-start items-end m-5'>
+                    <img src="/src/assets/icons/google.svg" className='mx-2' alt="" />
+                    <img src="/src/assets/icons/stars.svg" alt="" />
+                    <img src="/src/assets/icons/stars.svg" alt="" />
+                    <img src="/src/assets/icons/stars.svg" alt="" />
+                    <img src="/src/assets/icons/stars.svg" alt="" />
+                    <img src="/src/assets/icons/stars.svg" alt="" />
+                </p>
+
         </div>
     )
 }

@@ -32,7 +32,7 @@ const AnimatedText = ( {title, description }) => {
   return (
     <div ref={component} className="lg:w-1/2">
       <div ref={txtdiv} className="space-y-5 lg:mx-6">
-        <h1 ref={text} className="text-7xl text-primary font-semibold md:pt-6">
+        <h1 ref={text} className="text-7xl text-primary font-semibold py-6">
         {title}
         </h1>
         <p ref={text} className="text-3xl text-grey-300 ">
