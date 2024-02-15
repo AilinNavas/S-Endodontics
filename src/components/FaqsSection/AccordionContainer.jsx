@@ -89,7 +89,7 @@ export const AccordionContainer = () => {
 
     return (
 
-        <section className='h-auto bg-[#f9fcff] flex flex-col justify-items-center '> 
+        <section className='h-auto bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'> 
             <h3 className='text-5xl mt-[5vh] text-zen text-secondary text-center font-semibold md:text-6xl lg:text-7xl'>FAQS</h3>
             <p className='mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-gray-dark md:text-2xl lg:mx-[12vh]' > Discover the insights you need for optimal experience endodontic care, just as if you were chatting with us in person.</p>
         <div className="App flex justify-center ">
