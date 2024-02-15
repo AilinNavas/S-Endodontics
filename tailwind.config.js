@@ -21,14 +21,20 @@ export default {
         // => @media (min-width: 1280px) { ... }
       },
       colors: {
-        "primary": "#0a2d5b",
-        "secondary" : "#6495ed",
-        "tartiary" : "#808080",
-        "gray" : " #b6b9ba",
-        "blue" : "#09274f",
+        "primary": "#072a59",
+        "secondary" : "#126de7",
+        "tartiary" : "#16181a",
+        "gray" : " #90989f",
+        "gray-dark" : "#2e3135",
         "celeste" : "#3498db",
         "gradiente" : "background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(150,196,255,1) 46%, rgba(255,255,255,1) 99%);"
         }, 
+      fontFamily: {
+        "roboto": "Roboto Slab", 
+        "zen" : "Zen Maru Gothic",
+        "jost" :"Jost"
+
+      }
     },
   },
   plugins: [],

@@ -93,11 +93,11 @@ const ActiveSlider = () => {
             xPercent: -0.4,
             opacity: 1
         }, "-=0.3");
-          timeln.to("#card-6", {
+        timeln.to("#card-6", {
             xPercent: 0,
             opacity: 1
         });
-          timeln.from('#card-6', {
+        timeln.from('#card-6', {
             xPercent: 75,
             opacity: 0
         });

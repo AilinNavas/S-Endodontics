@@ -4,8 +4,6 @@ import arrowClosed from '/src/assets/icons/arrow-faq-closed.svg'
 import arrowOpen from '/src/assets/icons/arrow-faq-open.svg'
 
 
-
-
 const faqsData = [
     {
         key: "1",
@@ -61,7 +59,7 @@ export const AccordionContainer = () => {
                     onComplete: () => setOpenAccordion(null),
                 }
             );
-            // console.log(openAccordion);
+
         } else {
             if (openAccordion !== null) {
                 gsap.to(
@@ -88,34 +86,40 @@ export const AccordionContainer = () => {
         }
     };
 
-    return (
-        <div className="App h-[100vh] flex  justify-center">
-           
 
-            <div className="accordion__container flex flex-col gap-1 mt-[25px] rounded-3xl">
+    return (
+
+        <section className='h-auto bg-[#f9fcff] flex flex-col justify-items-center '> 
+            <h3 className='text-5xl mt-[5vh] text-zen text-secondary text-center font-semibold md:text-6xl lg:text-7xl'>FAQS</h3>
+            <p className='mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-gray-dark md:text-2xl lg:mx-[12vh]' > Discover the insights you need for optimal experience endodontic care, just as if you were chatting with us in person.</p>
+        <div className="App flex justify-center ">
+
+
+            <div className="accordion__container flex flex-col justify-items-center gap-1 mt-[5vh] rounded-3xl">
 
                 {faqsData.map((faq, index) => (
                     <div
                         key={faq.key}
-                        className={`accordion__item flex flex-col w-[80vw] shadow-md ${openAccordion === index ? "border-t-4 border-secondary" : "border-t-4 border-transparent"}`}
+                        className={`accordion__item bg-[#cadffb] flex flex-col w-[80vw] shadow-md ${openAccordion === index ? "border-t-4 border-secondary" : "border-t-4 border-transparent"}`}
                         ref={(el) => (accordionRefs.current[index] = el)}
                     >
                         <div
-                            className="accordion__header flex gap-8 items-center cursor-pointer px-8 py-4 hover:bg-slate-200 "
+                            className="accordion__header flex gap-8 items-center cursor-pointer px-8 py-4 hover:bg-[#9bc2f7] "
                             onClick={() => handleAccordionClick(index)}
                         >
-                            <p className={`accordion__name flex-1 text-xl md:text-2xl lg:text-3xl  ${openAccordion === index ? "text-secondary font-semibold" : ""} `}>{faq.title}</p>
-                            <img src= {` ${openAccordion === index ? arrowOpen : arrowClosed }`} className='w-8'  />
+                            <p className={`accordion__name flex-1 font-roboto text-xl md:text-2xl hover:font-medium ${openAccordion === index ? "text-secondary font-medium" : "text-[#454b51] font-normal"} `}>{faq.title}</p>
+                            <img src={` ${openAccordion === index ? arrowOpen : arrowClosed}`} className='w-8' />
                         </div>
 
-                        <div className={ `accordion__details px-8 overflow-hidden h-0 ${openAccordion === index ? "h-auto" : ""}`}>
-                            <p className='py-4 md:text-xl lg:text-2xl'>{faq.content}</p>
+                        <div className={`accordion__details px-8 overflow-hidden h-0 ${openAccordion === index ? "h-auto" : ""}`}>
+                            <p className='py-4 text-[#454b51] font-roboto font-normal text-xl md:text-2xl'>{faq.content}</p>
                         </div>
                     </div>
                 ))}
 
             </div>
         </div>
+        </section>
     )
 }
 

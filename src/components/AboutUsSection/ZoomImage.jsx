@@ -1,5 +1,6 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import prev from '/src/assets/icons/arrow-prev.svg'
 import next from '/src/assets/icons/arrow-next.svg'
@@ -15,8 +16,9 @@ const ZoomImage = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [controlsVisible, setControlsVisible] = useState(false);
   const imageRef = useRef();
+  const wrapper = useRef();
 
-  useEffect(() => {
+  useGSAP(() => {
     let ctx = gsap.context(() => {
       gsap.from(imageRef.current, {
         scale: 1 / scale,
@@ -35,7 +37,7 @@ const ZoomImage = ({
       });
     }, imageRef);
     return () => ctx.revert();
-  }, [currentIndex, scale, ease, duration]);
+  }, { dependencies: [currentIndex, scale, ease, duration], scope: wrapper } );
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -48,7 +50,7 @@ const ZoomImage = ({
   };
 
   return (
-    <div className="relative">
+    <div ref={wrapper} className="relative">
       <img
         ref={imageRef}
         src={images[currentIndex]}

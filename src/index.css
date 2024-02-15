@@ -4,5 +4,7 @@
 ::-webkit-scrollbar {
     display: none;
   }
-
+cursor {
+  display: none;
+}
 

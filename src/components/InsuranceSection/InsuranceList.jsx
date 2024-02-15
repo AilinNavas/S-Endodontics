@@ -42,7 +42,7 @@ const InsuranceList = () => {
         each: 0.5,
         from: "start"
       },
-      boxShadow: "0px 0px 10px 10px rgb(223, 230, 230)",
+      boxShadow: "0px 0px 3px 5px rgb(223, 230, 230)",
       borderRadius: "50% 50%",
       border: "3px solid rgb(255, 255, 255)",
       duration: 2,

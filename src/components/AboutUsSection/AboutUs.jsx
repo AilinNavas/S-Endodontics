@@ -1,5 +1,6 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef } from "react";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ZoomImage from "./ZoomImage";
 import AnimatedText from "./AnimatedText";
@@ -7,12 +8,12 @@ import AnimatedText from "./AnimatedText";
 gsap.registerPlugin(ScrollTrigger);
 const AboutUs = () => {
   const contenedor = useRef();
-  useLayoutEffect(() => {
+
+  useGSAP(() => {
     let ctx = gsap.context(() => {
       gsap.fromTo(contenedor.current,
         { backgroundColor: 'white' },
         {
-          //  backgroundColor: '#cfe3fc',
           duration: 5,
           ease: 'back',
           scrollTrigger: {
@@ -26,7 +27,10 @@ const AboutUs = () => {
         });
     }, contenedor);
     return () => ctx.revert();
-  });
+
+
+  },  { scope: contenedor });
+
   const imagesDr = [
     "/src/assets/aboutUs/DrHorn.jpeg",
     "/src/assets/aboutUs/DrHorn2.jpeg",
@@ -44,7 +48,7 @@ const AboutUs = () => {
 
   return (
     <section ref={contenedor}>
-      <div className="w-4/5 m-auto space-y-20 py-24">
+      <div className="w-4/5 m-auto space-y-20 py-24 -z-10">
         <div className="flex flex-col-reverse items-start lg:flex-row lg:items-start justify-between md:space-y-0">
           <AnimatedText title={'Dr. Neal Horn '} description={"Dr. Neal Horn and his dedicated team are committed to providing exceptional endodontic care in a warm and welcoming environment. Dr. Horn, a Texas native with a passion for oral health, brings a wealth of experience to our practice. His journey from molecular biology at Brigham Young University to a Master's in Endodontics reflects his dedication to excellence.Southside Endodontics is not just a dental practice; it's a place where your oral health journey is personalized."} />
           <ZoomImage images={imagesDr} />
