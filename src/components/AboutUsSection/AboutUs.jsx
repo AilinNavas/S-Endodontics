@@ -28,18 +28,18 @@ const AboutUs = () => {
     return () => ctx.revert();
   });
   const imagesDr = [
-    "/src/assets/aboutUs/DrHorn.png",
-    "/src/assets/aboutUs/DrHorn2.png",
+    "/src/assets/aboutUs/DrHorn.jpeg",
+    "/src/assets/aboutUs/DrHorn2.jpeg",
   ];
   const imagesTeam = [
-    "/src/assets/aboutUs/team.png",
-    "/src/assets/aboutUs/team2.png",
+    "/src/assets/aboutUs/team.jpeg",
+    "/src/assets/aboutUs/team2.jpeg",
 
   ];
   const imagesOffice = [
-    "/src/assets/aboutUs/office.png",
-    "/src/assets/aboutUs/office2.png",
-    "/src/assets/aboutUs/office3.png",
+    "/src/assets/aboutUs/office.jpeg",
+    "/src/assets/aboutUs/office2.jpeg",
+    "/src/assets/aboutUs/office3.jpeg",
   ];
 
   return (

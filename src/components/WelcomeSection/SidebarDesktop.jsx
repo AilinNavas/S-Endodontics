@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Logo from "/src/assets/resu-logo.png"
-import Neal from "/src/assets/resu-neal.png"
+import Logo from "/src/assets/resu-logo.jpeg"
+import Neal from "/src/assets/resu-neal.jpeg"
  import Control from "/src/assets/control.png"
 // import Control from "/src/assets/icons/new2.svg";
 

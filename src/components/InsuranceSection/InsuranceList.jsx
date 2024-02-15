@@ -4,20 +4,20 @@ import { useGSAP } from "@gsap/react";
 
 
 
-import img1 from '/src/assets/insurances/1.png'
-import img2 from '/src/assets/insurances/2.png'
-import img3 from '/src/assets/insurances/3.png'
-import img4 from '/src/assets/insurances/4.png'
-import img5 from '/src/assets/insurances/5.png'
-import img6 from '/src/assets/insurances/6.png'
-import img7 from '/src/assets/insurances/7.png'
-import img8 from '/src/assets/insurances/8.png'
-import img9 from '/src/assets/insurances/9.png'
-import img10 from '/src/assets/insurances/10.png'
-import img11 from '/src/assets/insurances/11.png'
-import img12 from '/src/assets/insurances/12.png'
-import img13 from '/src/assets/insurances/13.png'
-import img14 from '/src/assets/insurances/14.png'
+import img1 from '/src/assets/insurances/1.jpeg'
+import img2 from '/src/assets/insurances/2.jpeg'
+import img3 from '/src/assets/insurances/3.jpeg'
+import img4 from '/src/assets/insurances/4.jpeg'
+import img5 from '/src/assets/insurances/5.jpeg'
+import img6 from '/src/assets/insurances/6.jpeg'
+import img7 from '/src/assets/insurances/7.jpeg'
+import img8 from '/src/assets/insurances/8.jpeg'
+import img9 from '/src/assets/insurances/9.jpeg'
+import img10 from '/src/assets/insurances/10.jpeg'
+import img11 from '/src/assets/insurances/11.jpeg'
+import img12 from '/src/assets/insurances/12.jpeg'
+import img13 from '/src/assets/insurances/13.jpeg'
+import img14 from '/src/assets/insurances/14.jpeg'
 
 
 
