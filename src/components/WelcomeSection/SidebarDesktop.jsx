@@ -51,13 +51,6 @@ export const SidebarDesktop = () => {
                 ))}
             </ul>
             <div className={`w-56 h-48 mt-10 ${!open && 'hidden'}`}>
-            <iframe
-             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d214805.1928297959!2d-97.6314489!3d32.7303968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7168a9dd8587%3A0x9d18bf58cd382b03!2sSouthside%20Endodontics!5e0!3m2!1ses-419!2sar!4v1707945606215!5m2!1ses-419!2sar"
-            //   allowfullscreen="" 
-            //   loading="lazy" 
-            //   referrerpolicy="no-referrer-when-downgrade"
-              className='w-full'
-             ></iframe>
               <p id='direction' className='text-white text-xs text-left pt-2 ml-4  hover:text-secondary'><a target='_blank' href="https://maps.app.goo.gl/5FqaJem7M39qahwv8">1307 8th Avenue, Suite 303 <br />Fort Worth, TX 76104</a></p>
             </div>
 
