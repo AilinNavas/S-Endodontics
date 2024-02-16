@@ -10,7 +10,7 @@ const DentalInsurance = () => {
 
   return (
 
-    <div className='h-auto w-[80vw] m-auto flex flex-col justify-center items-start' >
+    <div className='h-auto w-4/5 m-auto flex flex-col justify-center items-start' >
       <TextInsurance text={text1} />
       <InsuranceList />
       <TextInsurance text={text2} />

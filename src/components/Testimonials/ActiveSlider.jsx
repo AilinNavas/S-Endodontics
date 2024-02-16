@@ -20,86 +20,95 @@ const ActiveSlider = () => {
                 pinSpacing: true,
                 start: "left-=120px left",
                 end: "+=2000",
-                scrub: 1
+                scrub: 0.9
             }
         });
         timeln.from('#card-1', {
-            xPercent: 75,
-            opacity: 0
+            yPercent: 75,
+            opacity: 0,
+            scale: 0
         });
 
         timeln.to('#card-1', {
-            xPercent: 0,
+            yPercent: 0,
             opacity: 1,
+            scale:1
         });
         timeln.from('#card-2', {
-            xPercent: 75,
-            opacity: 0
+            yPercent: 75,
+            opacity: 0,
+            scale: 0
         });
         timeln.to("#card-1", {
             scale: 0.95,
-            xPercent: -0.5,
-            opacity: 1
+            yPercent: -0.5,
+            opacity: 1,
+
         }, "-=0.3");
         timeln.to('#card-2', {
             xPercent: 0,
-            opacity: 1
+            opacity: 1,
+            scale: 1
         });
         timeln.from('#card-3', {
-            xPercent: 75,
-            opacity: 0
+            yPercent: 75,
+            opacity: 0,
+            scale: 0
         });
         timeln.to("#card-2", {
             scale: 0.98,
-            xPercent: -0.4,
+            yPercent: -0.4,
             opacity: 1
         }, "-=0.3");
         timeln.to("#card-3", {
-            xPercent: 0,
+            yPercent: 0,
             opacity: 1
         });
         timeln.from('#card-4', {
-            xPercent: 75,
-            opacity: 0
+            yPercent: 75,
+            opacity: 0,
+            scale: 0
         });
         timeln.to("#card-3", {
             scale: 0.98,
-            xPercent: -0.4,
+            yPercent: -0.4,
             opacity: 1
         }, "-=0.3");
 
         timeln.to("#card-4", {
-            xPercent: 0,
+            yPercent: 0,
             opacity: 1
         });
 
         timeln.from('#card-5', {
-            xPercent: 75,
-            opacity: 0
+            yPercent: 75,
+            opacity: 0,
+            scale: 0
         });
 
         timeln.to("#card-4", {
             scale: 0.98,
-            xPercent: -0.4,
+            yPercent: -0.4,
             opacity: 1
         }, "-=0.3");
 
         timeln.to("#card-5", {
-            xPercent: 0,
+            yPercent: 0,
             opacity: 1
         });
         timeln.to("#card-5", {
             scale: 0.98,
-            xPercent: -0.4,
+            yPercent: -0.4,
             opacity: 1
         }, "-=0.3");
         timeln.to("#card-6", {
-            xPercent: 0,
+            yPercent: 0,
             opacity: 1
         });
         timeln.from('#card-6', {
-            xPercent: 75,
-            opacity: 0
+            yPercent: 75,
+            opacity: 0,
+            scale: 0
         });
 
     }, { scope: contenedor })
