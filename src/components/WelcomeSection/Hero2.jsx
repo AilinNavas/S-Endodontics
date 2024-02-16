@@ -37,7 +37,7 @@ function Hero2() {
         <img src={logo} className="ball hidden lg:block w-10 h-10 fixed top-0 left-0 rounded-full z-40" />
         <img src={logo} className="ball hidden lg:block w-10 h-10 fixed top-0 left-0 rounded-full z-40" />
 
-        <div className='max-w-[800px] my-32 w-full mx-auto text-center flex flex-col justify-center'>
+        <div className='max-w-[800px] my-32 mx-auto text-center flex flex-col justify-center'>
           <p id='info' className='text-transform: capitalize text-2xl font-bold text-gray p-2 '>Experience endodontic care</p>
           <h1 id='title' className='text-6xl font-semibold font-jost p-4 text-primary lg:text-8xl'>ROOT CANAL TREATMENT</h1>
           <div className='md:text-4xl sm:text-3xl text-xl text-transform: capitalize font-medium text-secondary'>

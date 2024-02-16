@@ -6,7 +6,7 @@ import { SidebarDesktop } from './SidebarDesktop'
 
 export const WrapperContainer = () => {
   return (
-    <div className='flex flex-col h-[100vh]'>
+    <div className='flex flex-col h-[100vh] w-[100vw]'>
       <Sidebar />
       <SidebarDesktop />
       <InfoTop />
