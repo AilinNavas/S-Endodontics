@@ -21,12 +21,10 @@ export const SidebarDesktop = () => {
     const handleLogoClick = () => {
         setOpen(!open);
         setLogoSrc(open ? Neal : Logo);
-    };
-
-
+    }
     return (
         <div className={`bg-primary ${open ? 'w-72' : 'w-20'} sm:hidden fixed z-30 duration-300 h-screen p-5 pt-16 lg:block`}>
-            <img src={Control} className={`absolute cursor-pointer  -right-3 top-14 w-6 border-2 bg-primary border-primary rounded-full ${!open && 'rotate-180'}`}
+            <img src={Control} className={`absolute cursor-pointer -right-3 top-14 w-6 border-2 bg-primary border-primary rounded-full ${!open && 'rotate-180'}`}
                 onClick={handleLogoClick}
             />
             <div className='flex gap-x-4 mt-4 items-center'>
@@ -46,7 +44,7 @@ export const SidebarDesktop = () => {
                     ${menu.gap ? 'mt-9' : 'mt-2'} 
                      ${index === 0 && 'text-secondary'}
                     `} >
-                        <img src={menu.src} />
+                
                         <span className={`${!open && 'hidden'} origin-left duration-200`}>{menu.title}</span>
                     </li>
                 ))}
