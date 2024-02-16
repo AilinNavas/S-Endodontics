@@ -32,7 +32,7 @@ const Sidebar = () => {
   const callUsClasses = open ? 'absolute px-3 py-2 border rounded-md border rounded-md right-9 bottom-[150px] mr-0 text-[#e2e4e6]' : '';
 
   return (
-    <div className={`bg-primary ${open ? 'h-96' : 'h-16'} flex fixed bottom-0 z-30 duration-300 w-screen lg:hidden`}>
+    <div className={`bg-primary ${open ? 'h-96' : 'h-16'} flex fixed bottom-0 z-30 duration-300 w-[100vw] lg:hidden`}>
       <img
         src={Control}
         className={`absolute -top-2 left-1 bg-primary cursor-pointer rounded-full border-2 border-primary w-6 ${open && 'rotate-180'}`}

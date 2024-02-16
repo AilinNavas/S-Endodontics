@@ -62,7 +62,7 @@ const InsuranceList = () => {
 
   const InsuranceItem = ({ src, alt }) => (
 
-    <div><img id='logos-insurances' src={src} alt={alt} className=' w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32' /></div>
+    <div><img id='logos-insurances' src={src} alt={alt} className='w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32' /></div>
   );
 
 

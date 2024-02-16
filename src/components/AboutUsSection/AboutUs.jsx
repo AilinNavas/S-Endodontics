@@ -5,6 +5,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ZoomImage from "./ZoomImage";
 import AnimatedText from "./AnimatedText";
 
+import drHorn from '/src/assets/aboutUs/DrHorn.jpeg';
+import drHorn2 from '/src/assets/aboutUs/DrHorn2.jpeg';
+import team from '/src/assets/aboutUs/team.jpeg';
+import team2 from '/src/assets/aboutUs/team2.jpeg';
+import office from '/src/assets/aboutUs/office.jpeg';
+import office2 from '/src/assets/aboutUs/office2.jpeg';
+import office3 from '/src/assets/aboutUs/office3.jpeg';
+
 gsap.registerPlugin(ScrollTrigger);
 const AboutUs = () => {
   const contenedor = useRef();
@@ -29,21 +37,21 @@ const AboutUs = () => {
     return () => ctx.revert();
 
 
-  },  { scope: contenedor });
+  }, { scope: contenedor });
 
   const imagesDr = [
-    "/src/assets/aboutUs/DrHorn.jpeg",
-    "/src/assets/aboutUs/DrHorn2.jpeg",
+    { src: drHorn, alt: 'Dr. Horn'},
+    { src: drHorn2, alt: 'Dr. Horn y Leslie Horn'}
   ];
   const imagesTeam = [
-    "/src/assets/aboutUs/team.jpeg",
-    "/src/assets/aboutUs/team2.jpeg",
+    { src: team, alt: 'Southside endodontics team'},
+    { src: team2, alt: 'Dental assistants'}
 
   ];
   const imagesOffice = [
-    "/src/assets/aboutUs/office.jpeg",
-    "/src/assets/aboutUs/office2.jpeg",
-    "/src/assets/aboutUs/office3.jpeg",
+    { src: office, alt: 'Leslie Horn, office manager'},
+    { src: office2, alt: 'Office'},
+    { src: office3, alt: 'Dental office'}
   ];
 
   return (

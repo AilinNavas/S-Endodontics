@@ -53,8 +53,8 @@ const ZoomImage = ({
     <div ref={wrapper} className="relative">
       <img
         ref={imageRef}
-        src={images[currentIndex]}
-        alt=""
+        src={images[currentIndex].src}
+        alt={images[currentIndex].alt}
         className="max-w-xs md:max-w-[620px] lg:max-w-xl object-cover shadow-md rounded-xl drop-shadow-2xl"
       />
       <div className={`absolute top-1/2 transform -translate-y-1/2 left-0 ${controlsVisible ? 'block' : 'hidden'}`}>

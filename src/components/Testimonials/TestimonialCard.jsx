@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import star from '/src/assets/icons/stars.svg';
+import google from '/src/assets/icons/google.svg'
 
 export const TestimonialCard = ({ name, testimonial, initials, bgColor }) => {
     return (
@@ -9,12 +11,12 @@ export const TestimonialCard = ({ name, testimonial, initials, bgColor }) => {
             </div>
             <p className='m-5 text-gray-dark'>{testimonial}</p>
                 <p className='flex justify-start items-end m-5'>
-                    <img src="/src/assets/icons/google.svg" className='mx-2' alt="" />
-                    <img src="/src/assets/icons/stars.svg" alt="" />
-                    <img src="/src/assets/icons/stars.svg" alt="" />
-                    <img src="/src/assets/icons/stars.svg" alt="" />
-                    <img src="/src/assets/icons/stars.svg" alt="" />
-                    <img src="/src/assets/icons/stars.svg" alt="" />
+                    <img src={google} className='mx-2' alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
                 </p>
 
         </div>
