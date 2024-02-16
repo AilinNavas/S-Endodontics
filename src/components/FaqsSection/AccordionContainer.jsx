@@ -107,7 +107,7 @@ export const AccordionContainer = () => {
                             className="accordion__header flex gap-8 items-center cursor-pointer px-8 py-4 hover:bg-[#9bc2f7] "
                             onClick={() => handleAccordionClick(index)}
                         >
-                            <p className={`accordion__name flex-1 font-roboto text-xl md:text-2xl hover:font-medium ${openAccordion === index ? "text-secondary font-medium" : "text-[#454b51] font-normal"} `}>{faq.title}</p>
+                            <p className={`accordion__name flex-1 font-roboto text-xl md:text-2xl ${openAccordion === index ? "text-secondary font-medium" : "text-[#454b51] font-normal"} `}>{faq.title}</p>
                             <img src={` ${openAccordion === index ? arrowOpen : arrowClosed}`} className='w-8' />
                         </div>
 
