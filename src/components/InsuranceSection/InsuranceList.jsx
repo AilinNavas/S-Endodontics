@@ -86,7 +86,7 @@ const InsuranceList = () => {
 
   return (
 
-    <div ref={container} className=' m-auto my-0 grid gap-3 grid-cols-3 md:grid-cols-4 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw]'>
+    <div ref={container} className='my-0 grid gap-3 grid-cols-3 md:grid-cols-4 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw]'>
       {insuranceItems.map((item, index) => (
         <InsuranceItem key={index} src={item.src} alt={item.alt} />
       ))}

@@ -108,7 +108,7 @@ export const AccordionContainer = () => {
                             onClick={() => handleAccordionClick(index)}
                         >
                             <p className={`accordion__name flex-1 font-roboto text-xl md:text-2xl ${openAccordion === index ? "text-secondary font-medium" : "text-[#454b51] font-normal"} `}>{faq.title}</p>
-                            <img src={` ${openAccordion === index ? arrowOpen : arrowClosed}`} className='w-8' />
+                            <img src={` ${openAccordion === index ? arrowOpen : arrowClosed}`} className='w-5' />
                         </div>
 
                         <div className={`accordion__details px-8 overflow-hidden h-0 ${openAccordion === index ? "h-auto" : ""}`}>
