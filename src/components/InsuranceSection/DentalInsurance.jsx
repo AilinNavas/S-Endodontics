@@ -43,7 +43,6 @@ const DentalInsurance = () => {
         trigger: container.current,
         pin: true,
         pinSpacing: true,
-        // start: "left-=120px left",
         start: "top-=20px top",
         end: "+=2000",
         scrub: 0.9
