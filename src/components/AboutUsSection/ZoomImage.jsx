@@ -16,7 +16,7 @@ const ZoomImage = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [controlsVisible, setControlsVisible] = useState(false);
   const imageRef = useRef();
-  const wrapper = useRef();
+  const wrapper2 = useRef();
 
   useGSAP(() => {
     let ctx = gsap.context(() => {
@@ -37,7 +37,7 @@ const ZoomImage = ({
       });
     }, imageRef);
     return () => ctx.revert();
-  }, { dependencies: [currentIndex, scale, ease, duration], scope: wrapper } );
+  }, { dependencies: [currentIndex, scale, ease, duration], scope: wrapper2 } );
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -50,7 +50,7 @@ const ZoomImage = ({
   };
 
   return (
-    <div ref={wrapper} className="relative">
+    <div ref={wrapper2} className="relative">
       <img
         ref={imageRef}
         src={images[currentIndex].src}

@@ -29,7 +29,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const DentalInsurance = () => {
 
-  const container = useRef();
+  const container3 = useRef();
 
   useGSAP(() => {
 
@@ -40,7 +40,7 @@ const DentalInsurance = () => {
 
     let timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: container.current,
+        trigger: container3.current,
         pin: true,
         pinSpacing: true,
         start: "top-=20px top",
@@ -95,7 +95,7 @@ const DentalInsurance = () => {
     )
 
 
-  }, { scope: container }) //final de animaciónes
+  }, { scope: container3 }) //final de animaciónes
 
   const InsuranceItem = ({ src, alt }) => (
 
@@ -125,7 +125,7 @@ const DentalInsurance = () => {
   return (
 
 
-    <div ref={container} className='h-auto w-4/5 mx-auto flex flex-col justify-center items-start' >
+    <div ref={container3} className='h-auto w-4/5 mx-auto flex flex-col justify-center items-start' >
 
       <div className='h-auto m-auto overflow-hidden mt-6 xl:py-4'>
         <p className='our-text1 text-gray-dark font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl'>

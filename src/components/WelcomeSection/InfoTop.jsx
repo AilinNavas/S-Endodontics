@@ -8,7 +8,7 @@ import { useGSAP } from '@gsap/react';
 
 
 export const InfoTop = () => {
-    const container = useRef();
+    const container2 = useRef();
     const paragraph1Ref = useRef(null);
     const paragraph2Ref = useRef(null);
 
@@ -28,10 +28,10 @@ export const InfoTop = () => {
             }
         );
     },
-        { scope: container });
+        { scope: container2 });
 
     return (
-        <div ref={container} className="fixed z-40 bg-white top-0 left-0 w-[100vw] h-10 py-2">
+        <div ref={container2} className="fixed z-40 bg-white top-0 left-0 w-[100vw] h-10 py-2">
             <div className="text-center text-lg relative w-[100vw] h-[100%]">
                 <p ref={paragraph1Ref} className="top-0 absolute inset-x-0 text-[#0000ff] text-[18px] flex items-center justify-center text-center">
                     <img src={google} alt="google" className='w-4 h-4' />

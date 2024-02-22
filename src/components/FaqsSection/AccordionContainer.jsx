@@ -1,50 +1,19 @@
 import React, { useRef, useState } from 'react'
 import { gsap } from "gsap";
-import arrowClosed from '/src/assets/icons/arrow-faq-closed.svg'
-import arrowOpen from '/src/assets/icons/arrow-faq-open.svg'
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import SplitType from 'split-type';
+import arrowClosed from '/src/assets/icons/arrow-faq-closed.svg';
+import arrowOpen from '/src/assets/icons/arrow-faq-open.svg';
+import faqsData from './faqsData';
 
-
-const faqsData = [
-    {
-        key: "1",
-        avatarSrc: "src/assets/faqs/item1.jpg",
-        title: "How long does a root canal last?",
-        iconSrc: "src/assets/resu-neal.png",
-        content: "A root canal is a dental procedure designed to address issues within the tooth's pulp, and its longevity depends on various factors. In most cases, a well-executed root canal can last a lifetime with proper oral care, including regular brushing, flossing, and routine dental check-ups."
-    },
-    {
-        key: "2",
-        avatarSrc: "src/assets/faqs/item2.jpg",
-        title: "Is a root canal a painful procedure?",
-        iconSrc: "src/assets/resu-neal.png",
-        content: "A root canal is a dental procedure designed to address issues within the tooth's pulp, and its longevity depends on various factors. In most cases, a well-executed root canal can last a lifetime with proper oral care, including regular brushing, flossing, and routine dental check-ups."
-    },
-    {
-        key: "3",
-        avatarSrc: "src/assets/faqs/item3.jpg",
-        title: "Ho long does a root canal procedure typically take?",
-        iconSrc: "src/assets/resu-neal.png",
-        content: "A root canal is a dental procedure designed to address issues within the tooth's pulp, and its longevity depends on various factors. In most cases, a well-executed root canal can last a lifetime with proper oral care, including regular brushing, flossing, and routine dental check-ups."
-    },
-    {
-        key: "4",
-        avatarSrc: "src/assets/faqs/item4.jpg",
-        title: "Do you accept dental insurance?",
-        iconSrc: "src/assets/resu-neal.png",
-        content: "A root canal is a dental procedure designed to address issues within the tooth's pulp, and its longevity depends on various factors. In most cases, a well-executed root canal can last a lifetime with proper oral care, including regular brushing, flossing, and routine dental check-ups."
-    },
-    {
-        key: "5",
-        avatarSrc: "src/assets/faqs/item5.jpg",
-        title: "Do I need a referral from my dentist?",
-        iconSrc: "src/assets/resu-neal.png",
-        content: "A root canal is a dental procedure designed to address issues within the tooth's pulp, and its longevity depends on various factors. In most cases, a well-executed root canal can last a lifetime with proper oral care, including regular brushing, flossing, and routine dental check-ups."
-    },
-
-];
+const title = 'FAQs';
+const introduction = 'Discover the insights you need for optimal experience endodontic care, just as if you were chatting with us in person.';
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export const AccordionContainer = () => {
-
+   
     const [openAccordion, setOpenAccordion] = useState(null);
     const accordionRefs = useRef([]);
 
@@ -86,21 +55,70 @@ export const AccordionContainer = () => {
         }
     };
 
+    const wrapper = useRef();
+  
+
+    useGSAP(() => {
+  
+      const ourTitle = new SplitType('h3.title', { types: 'chars' })
+      const title1 = ourTitle.chars
+     const ourIntroduction = new SplitType('p.introduction', { types: 'chars' })
+      const introduction2 = ourIntroduction.chars
+
+      let timeln = gsap.timeline({
+        scrollTrigger: {
+          trigger: wrapper.current,
+          pin: true,
+          pinSpacing: true,
+          start: "top top",
+          end: "+=5000",
+          scrub: 0.9,
+    
+        }
+      });
+      timeln.fromTo(
+        title1,
+        {y: 100, opacity: 0, color: '#6ca6f3',scale: 0.5
+        },
+        { y: 0,opacity: 1, stagger: 0.05,
+            duration: 2,
+            scale: 1,
+            color: '#0b4088',
+            ease: 'power4.out'
+        });
+        timeln.fromTo(introduction2, 
+            {y: 100, opacity: 0
+            },
+            { y: 0,opacity: 1.5,  stagger: 0.05,
+                duration: 2,
+                ease: 'power4.out',
+            });
+            timeln.fromTo('#accordion', 
+                {y: 100, opacity: 0, scale: 0.6, backgroundColor: "#abb1b7", z:300
+                },
+                { y: 0,opacity: 1.0, scale:1.0, transformOrigin: "center center", stagger: 0.5,
+                    duration: 2,
+                    backgroundColor: '#cadffb',
+                     ease: 'power4.out',
+                    // ease:  "back.inOut(1.7)",
+                });
+  
+    }, { scope: wrapper }) //final de animaciónes
+    
 
     return (
 
-        <section className='h-auto bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'> 
-            <h3 className='text-5xl mt-[5vh] text-[#0b4088] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>FAQs</h3>
-            <p className='mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-gray-dark md:text-2xl lg:mx-[15vh]' > Discover the insights you need for optimal experience endodontic care, just as if you were chatting with us in person.</p>
-        <div className="App flex justify-center ">
-
+        <section ref={wrapper} className='h-screen bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'> 
+            <h3 className='title text-5xl mt-[5vh] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>{title}</h3>
+            <p className='introduction mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-gray-dark md:text-2xl lg:mx-[15vh]'>{introduction}</p>
+            <div className="App flex justify-center ">
 
             <div className="accordion__container flex flex-col justify-items-center gap-1 mt-[5vh] rounded-3xl">
 
                 {faqsData.map((faq, index) => (
-                    <div
+                    <div id='accordion'
                         key={faq.key}
-                        className={`accordion__item bg-[#cadffb] flex flex-col w-[80vw] shadow-md ${openAccordion === index ? "border-t-4 border-secondary" : "border-t-4 border-transparent"}`}
+                        className={`accordion__item flex flex-col w-[80vw] shadow-md ${openAccordion === index ? "border-t-4 border-secondary" : "border-t-4 border-transparent"}`}
                         ref={(el) => (accordionRefs.current[index] = el)}
                     >
                         <div
