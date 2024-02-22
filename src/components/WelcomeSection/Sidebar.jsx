@@ -48,9 +48,12 @@ const Sidebar = () => {
           />
           <h2 className={`text-white font-semibold font-zen text-xl duration-300 ${headerClasses}`}>SOUTHSIDE <br /> ENDODONTICS</h2>
         </div>
+        <div className='w-1/3 text-right md:text-center'>
         <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
-          <button className={`text-white font-semibold font-roboto text-center p-2 px-4 border rounded-md bg-green-400 ${buttonClasses}`}>Refer Now</button>
+          <button className={`font-normal font-roboto text-center p-2 px-4 text-white rounded bg-gradient-to-r from-[#6ca6f3] to-[#9bc2f7] ${buttonClasses}`}>Refer Now</button>
         </a>
+        </div>
+        
         <a target='_blank' href="tel:+18173869007">
           <span className={`text-white flex pl-3 items-center font-semibold font-roboto ${callUsClasses}`}>
             <img className='mr-1' src={CallUs} /> 

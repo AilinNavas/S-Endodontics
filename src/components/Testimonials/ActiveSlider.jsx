@@ -18,7 +18,8 @@ const ActiveSlider = () => {
                 trigger: contenedor.current,
                 pin: true,
                 pinSpacing: true,
-                start: "left-=120px left",
+                // start: "left-=120px left",
+                start: "top-=40px top",
                 end: "+=2000",
                 scrub: 0.9
             }

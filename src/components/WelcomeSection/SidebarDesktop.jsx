@@ -23,7 +23,7 @@ export const SidebarDesktop = () => {
         setLogoSrc(open ? Neal : Logo);
     }
     return (
-        <div className={`bg-primary ${open ? 'w-72' : 'w-20'} sm:hidden fixed z-30 duration-300 h-screen p-5 pt-16 lg:block`}>
+        <div className={`bg-primary ${open ? 'w-72' : 'w-20'} sm:hidden fixed z-50 duration-300 h-screen p-5 pt-16 lg:block`}>
             <img src={Control} className={`absolute cursor-pointer -right-3 top-14 w-6 border-2 bg-primary border-primary rounded-full ${!open && 'rotate-180'}`}
                 onClick={handleLogoClick}
             />

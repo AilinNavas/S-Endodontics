@@ -11,7 +11,7 @@ function Hero2() {
 
       <div className='h-[80vh] w-[100vw] flex flex-col place-items-center'>
         <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
-          <button className='text-white font-bold p-2 px-4 border z-20 rounded-md bg-green-400 hover:bg-green-500 absolute top-10 right-10 hidden lg:block'>Refer Now</button>
+          <button className='font-normal font-roboto text-center p-3 px-6 text-white rounded bg-gradient-to-r from-[#6ca6f3] to-[#9bc2f7] absolute top-10 right-10 hidden lg:block'>Refer Now</button>
         </a>
 
         <div className='max-w-[90vw] my-32 text-center flex flex-col justify-center lg:max-w-[800px]'>
