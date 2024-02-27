@@ -11,7 +11,10 @@ function Hero2() {
 
       <div className='h-[80vh] w-[100vw] flex flex-col place-items-center'>
         <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
-          <button className='font-normal font-roboto text-center p-3 px-6 text-white rounded bg-gradient-to-r from-[#6ca6f3] to-[#9bc2f7] absolute top-10 right-10 hidden lg:block'>Refer Now</button>
+          <button className='font-normal font-roboto text-center p-3 px-6 text-white bg-gradient-to-r from-[#6ca6f3] to-[#9bc2f7] absolute top-10 right-10 hidden lg:block cursor-pointer mx-0  transition-all bg-[#126de7] py-2 rounded-lg
+        border-[#0e57b8]
+        border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+        active:border-b-[2px] active:brightness-90 active:translate-y-[2px]'>Refer Now</button>
         </a>
 
         <div className='max-w-[90vw] my-32 text-center flex flex-col justify-center lg:max-w-[800px]'>

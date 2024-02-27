@@ -45,16 +45,13 @@ const DentalInsurance = () => {
         pinSpacing: true,
         start: "top-=20px top",
         end: "+=2000",
-        scrub: 0.9
+        scrub: 0.6
       }
     });
   
-    timeline.fromTo(
+    timeline.to(
       chars1,
-      {y: 50,opacity: 0
-      },
-      { y: 0,opacity: 1,stagger: 0.05,duration: 2,ease: 'power4.out',
-      });
+      { duration: 0.1,color:'#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 })
     gsap.set("#logos-insurances", {
       transformPerspective: 500
     });
@@ -80,18 +77,8 @@ const DentalInsurance = () => {
     });
     timeline.fromTo(
       chars2,
-      {
-        y: 50,
-        opacity: 0
-      },
-      {
-        y: 0,
-        opacity: 1,
-        stagger: 0.05,
-        duration: 2,
-        ease: 'power4.out',
-
-      }
+      { opacity: 0},
+      { opacity: 1, duration: 0.1, color:'#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
     )
 
 
@@ -128,7 +115,7 @@ const DentalInsurance = () => {
     <div ref={container3} className='h-auto w-4/5 mx-auto flex flex-col justify-center items-start' >
 
       <div className='h-auto m-auto overflow-hidden mt-6 xl:py-4'>
-        <p className='our-text1 text-gray-dark font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl'>
+        <p className='our-text1 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl'>
           {text1}
         </p>
       </div>
@@ -141,7 +128,7 @@ const DentalInsurance = () => {
       </div>
 
       <div id='text-2' className='h-auto m-auto overflow-hidden mt-6 xl:py-4'>
-        <p className='our-text2 text-gray-dark font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl'>
+        <p className='our-text2 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl'>
           {text2}
         </p>
       </div>

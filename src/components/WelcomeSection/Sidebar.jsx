@@ -4,6 +4,7 @@ import Logo from "/src/assets/resu-logo.jpeg";
 import Neal from "/src/assets/resu-neal.jpeg";
 import CallUs from '/src/assets/icons/call.svg';
 import Control from "/src/assets/icons/new2.svg";
+import '../../index.css'
 
 const MenuSiderItems = [
   { title: 'Dental Insurance', gap: false },
@@ -43,21 +44,28 @@ const Sidebar = () => {
         <div className={logoContainerClasses}>
           <img
             src={logoSrc}
-            className={`border-2 border-[#abb1b7] rounded-lg ${controlClasses}`}
+            className={`border-2 border-[#e2e4e6] rounded-lg ${controlClasses}`}
             onClick={handleLogoClick}
           />
           <h2 className={`text-white font-semibold font-zen text-xl duration-300 ${headerClasses}`}>SOUTHSIDE <br /> ENDODONTICS</h2>
         </div>
         <div className='w-1/3 text-right md:text-center'>
-        <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
-          <button className={`font-normal font-roboto text-center p-2 px-4 text-white rounded bg-gradient-to-r from-[#6ca6f3] to-[#9bc2f7] ${buttonClasses}`}>Refer Now</button>
-        </a>
+          <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
+
+            <button className={`cursor-pointer mx-0 font-normal font-roboto text-center transition-all bg-[#126de7] text-white px-6 py-2 rounded-lg
+        border-[#0e57b8]
+        border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+        active:border-b-[2px] active:brightness-90 active:translate-y-[2px] ${buttonClasses}`}>
+              Refer Now
+            </button>
+
+          </a>
         </div>
-        
+
         <a target='_blank' href="tel:+18173869007">
           <span className={`text-white flex pl-3 items-center font-semibold font-roboto ${callUsClasses}`}>
-            <img className='mr-1' src={CallUs} /> 
-            Call Us 
+            <img className='mr-1' src={CallUs} />
+            Call Us
           </span>
         </a>
       </div>

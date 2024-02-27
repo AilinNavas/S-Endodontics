@@ -44,7 +44,7 @@ export const InfoTop = () => {
                     114 Google reviews
                 </p>
 
-                <p ref={paragraph2Ref} className="top-0 text-center inset-x-0 absolute text-gray text-[16px] pb-2 flex items-center justify-center">
+                <p ref={paragraph2Ref} className="top-0 text-center inset-x-0 absolute text-gray-dark text-[16px] pb-2 flex items-center justify-center">
                     <img src={FindUs} alt="" className="w-4 h-4" />
                     <span className="cursor-pointer">
                         <a target='_blank' href="https:maps.app.goo.gl/5FqaJem7M39qahwv8">1307 8th Avenue, Suite 303 Fort Worth, TX 76104</a>

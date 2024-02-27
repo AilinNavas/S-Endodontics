@@ -1,2 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Zen+Maru+Gothic&display=swap');
+/* 
+html, body */
+/* {
+	
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	
+	background-color: #fff;
+	background: linear-gradient(0deg, rgba(95, 123, 227, 0.1) , rgba(33, 33, 210, 0) ),
+				linear-gradient(120deg, rgba(26, 22, 141, 0.2) , rgba(7, 219, 243, 0) );
+
+	
+	overflow: hidden;
+} */
+/* #container
+{
+	position: relative;
+	width: 80vmin;
+	height: 80vmin;
+	max-height: 600px;
+	max-width: 600px;
+	overflow: hidden;
+
+}
+
+#cursor-image
+{
+	pointer-events: none;
+}
+
+.border
+{
+	fill-opacity: 0;
+	stroke-opacity: 0.7;
+}
+.border:hover {
+	stroke-opacity: 1;
+}
+
+next
+{
+	fill: white;
+	font-size: 28px;
+	stroke: black;
+	stroke-width: 1;
+	stroke-opacity: 0.75;
+}
+
+
+
+.button
+{
+	z-index: 101;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translatex(50%) translatey(-50%);
+	width: 60px;
+	height: 60px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.2s ease-in-out;
+	
+} */
 
