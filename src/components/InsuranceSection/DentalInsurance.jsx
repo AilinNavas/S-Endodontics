@@ -33,10 +33,10 @@ const DentalInsurance = () => {
 
   useGSAP(() => {
 
-    const ourText1 = new SplitType('p.our-text1', { types: 'chars' })
-    const chars1 = ourText1.chars
-    const ourText2 = new SplitType('p.our-text2', { types: 'chars' })
-    const chars2 = ourText2.chars
+    const ourText1 = new SplitType('p.our-text1', { types: 'words' })
+    const chars1 = ourText1.words
+    const ourText2 = new SplitType('p.our-text2', { types: 'words' })
+    const chars2 = ourText2.words
 
     let timeline = gsap.timeline({
       scrollTrigger: {
@@ -45,13 +45,16 @@ const DentalInsurance = () => {
         pinSpacing: true,
         start: "top-=20px top",
         end: "+=2000",
-        scrub: 0.6
+        scrub: 1
       }
     });
   
-    timeline.to(
+    timeline.fromTo(
       chars1,
-      { duration: 0.1,color:'#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 })
+      { opacity: 0},
+      { opacity: 1, duration: 0.1, color:'#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
+    )
+
     gsap.set("#logos-insurances", {
       transformPerspective: 500
     });

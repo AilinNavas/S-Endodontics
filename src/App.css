@@ -1,77 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Zen+Maru+Gothic&display=swap');
-/* 
-html, body */
-/* {
-	
-	width: 100%;
-	height: 100%;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-	
-	background-color: #fff;
-	background: linear-gradient(0deg, rgba(95, 123, 227, 0.1) , rgba(33, 33, 210, 0) ),
-				linear-gradient(120deg, rgba(26, 22, 141, 0.2) , rgba(7, 219, 243, 0) );
 
-	
-	overflow: hidden;
-} */
-/* #container
-{
-	position: relative;
-	width: 80vmin;
-	height: 80vmin;
-	max-height: 600px;
-	max-width: 600px;
-	overflow: hidden;
-
-}
-
-#cursor-image
-{
-	pointer-events: none;
-}
-
-.border
-{
-	fill-opacity: 0;
-	stroke-opacity: 0.7;
-}
-.border:hover {
-	stroke-opacity: 1;
-}
-
-next
-{
-	fill: white;
-	font-size: 28px;
-	stroke: black;
-	stroke-width: 1;
-	stroke-opacity: 0.75;
-}
-
-
-
-.button
-{
-	z-index: 101;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translatex(50%) translatey(-50%);
-	width: 60px;
-	height: 60px;
-	border: none;
-	border-radius: 50%;
+.custom-btn {
+	width: 120px;
+	height: 40px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 10px;
+	background: transparent;
 	cursor: pointer;
-	outline: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: transform 0.2s ease-in-out;
-	
-} */
+	transition: all 0.3s ease;
 
+	display: inline-block;
+	box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	  7px 7px 20px 0px rgba(0,0,0,.1),
+	  4px 4px 5px 0px rgba(0,0,0,.1);
+	outline: none;
+   }
+   
+   .btn-1 {
+	background: '0e57b8';
+	background: linear-gradient(0deg, rgb(174, 173, 173) 0%, rgb(121, 121, 126) 100%);
+	border: none;
+   }
+   
+   

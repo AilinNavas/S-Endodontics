@@ -20,7 +20,7 @@ const ActiveSlider = () => {
                 pinSpacing: true,
                 // start: "left-=120px left",
                 start: "top-=40px top",
-                end: "+=2000",
+                end: "+=2200",
                 scrub: 0.9
             }
         });

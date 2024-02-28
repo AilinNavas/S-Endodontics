@@ -60,8 +60,8 @@ export const AccordionContainer = () => {
 
     useGSAP(() => {
 
-        const ourTitle = new SplitType('h3.title', { types: 'chars' })
-        const title1 = ourTitle.chars
+        const ourTitle = new SplitType('h3.title', { types: 'words' })
+        const title1 = ourTitle.words
         const ourIntroduction = new SplitType('p.introduction', { types: 'words' })
         const introduction2 = ourIntroduction.words
        
@@ -89,7 +89,11 @@ export const AccordionContainer = () => {
                  color: '#0b4088',
                  ease: 'power4.out'
              });
-        timeln.to(introduction2, { duration: 0.1, fontWeight: 'bold', scale: 0.9, stagger: 0.1 })
+             timeln.fromTo(
+                introduction2,
+                { opacity: 0},
+                { opacity: 1, duration: 0.1, color:'#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
+              )
         
         // timeln.fromTo(introduction2,
         //     {

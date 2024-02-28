@@ -36,7 +36,7 @@ const Sidebar = () => {
     <div className={`bg-primary ${open ? 'h-96' : 'h-16'} flex fixed bottom-0 z-40 duration-300 w-[100vw] lg:hidden`}>
       <img
         src={Control}
-        className={`absolute -top-2 left-1 bg-primary cursor-pointer rounded-full border-2 border-primary w-6 ${open && 'rotate-180'}`}
+        className={`absolute -top-2 left-1 bg-primary cursor-pointer rounded-full border-2 border-primary w-5 ${open && 'rotate-180'}`}
         onClick={handleLogoClick}
       />
 
@@ -52,12 +52,13 @@ const Sidebar = () => {
         <div className='w-1/3 text-right md:text-center'>
           <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
 
-            <button className={`cursor-pointer mx-0 font-normal font-roboto text-center transition-all bg-[#126de7] text-white px-6 py-2 rounded-lg
+          <button className={`custom-btn btn-1 font-semibold font-roboto ${buttonClasses}`}>Refer Now</button>
+            {/* <button className={`cursor-pointer mx-0 font-normal font-roboto text-center transition-all bg-[#126de7] text-white px-6 py-2 rounded-lg
         border-[#0e57b8]
         border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
         active:border-b-[2px] active:brightness-90 active:translate-y-[2px] ${buttonClasses}`}>
               Refer Now
-            </button>
+            </button> */}
 
           </a>
         </div>
