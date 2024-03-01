@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import './App.css'
-
-import Loader from "./components/loader/Loader";
+// import Loader from "./components/loader/Loader";
 import { WrapperContainer } from './components/WelcomeSection/WrapperContainer'
 import DentalInsurance from './components/InsuranceSection/DentalInsurance'
 import AboutUs from './components/AboutUsSection/AboutUs'
@@ -10,32 +9,42 @@ import { AccordionContainer } from './components/FaqsSection/AccordionContainer'
 
 function App() {
  
- //loader state
- const [isLoading, setIsLoading] = useState(true);
+  return(
+    <>
+      <WrapperContainer />
+      <DentalInsurance />
+      <ActiveSlider />
+      <AboutUs />
+      <AccordionContainer />
 
- //Let create async method to fetch fake data
- useEffect(() => {
-   const fakeDataFetch = () => {
-     setTimeout(() => {
-       setIsLoading(false);
-     }, 6000);
-   };
+    </>
+  )
+//  //loader state
+//  const [isLoading, setIsLoading] = useState(true);
 
-   fakeDataFetch();
- }, []);
+//  //Let create async method to fetch fake data
+//  useEffect(() => {
+//    const fakeDataFetch = () => {
+//      setTimeout(() => {
+//        setIsLoading(false);
+//      }, 6000);
+//    };
 
- return isLoading ? (
-   <Loader />
- ) : (
-   <>
-     <WrapperContainer />
-     <DentalInsurance />
-     <ActiveSlider />
-     <AboutUs />
-     <AccordionContainer />
+//    fakeDataFetch();
+//  }, []);
 
-   </>
- )
+//  return isLoading ? (
+//    <Loader />
+//  ) : (
+//    <>
+//      <WrapperContainer />
+//      <DentalInsurance />
+//      <ActiveSlider />
+//      <AboutUs />
+//      <AccordionContainer />
+
+//    </>
+//  )
 
 
 }

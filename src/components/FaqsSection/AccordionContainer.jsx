@@ -8,7 +8,7 @@ import arrowClosed from '/src/assets/icons/arrow-faq-closed.svg';
 import arrowOpen from '/src/assets/icons/arrow-faq-open.svg';
 import faqsData from './faqsData';
 
-const title = 'FAQs';
+const title = 'Frequently asked questions';
 const introduction = 'Discover the insights you need for optimal experience endodontic care, just as if you were chatting with us in person.';
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -80,13 +80,12 @@ export const AccordionContainer = () => {
          timeln.fromTo(
              title1,
              {
-                 y: 100, opacity: 0, color: '#6ca6f3', scale: 0.5
+                 opacity: 0.1,
              },
              {
-                 y: 0, opacity: 1, stagger: 0.05,
+                opacity: 1, 
+                stagger: 0.05,
                  duration: 2,
-                 scale: 1,
-                 color: '#0b4088',
                  ease: 'power4.out'
              });
              timeln.fromTo(
@@ -122,7 +121,7 @@ export const AccordionContainer = () => {
     return (
 
         <section ref={wrapper} className='h-screen bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'>
-            <h3 className='title text-5xl mt-[5vh] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>{title}</h3>
+            <h3 className='title text-[#0b4088] text-5xl mt-[5vh] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>{title}</h3>
             <p className='introduction mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-tartiarytartary md:text-2xl lg:mx-[15vh]'>{introduction}</p>
             <div className="App flex justify-center ">
 

@@ -10,7 +10,8 @@ export const WrapperContainer = () => {
       <Sidebar />
       <SidebarDesktop />
       <InfoTop />
-      <Hero2 />
+      < Hero2 /> 
+      
     </div>
   )
 }
