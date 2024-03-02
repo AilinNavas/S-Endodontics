@@ -44,7 +44,7 @@ const DentalInsurance = () => {
         pin: true,
         pinSpacing: true,
         start: "top-=20px top",
-        end: "+=2000",
+        end: "+=2500",
         scrub: 1
       }
     });
@@ -118,7 +118,7 @@ const DentalInsurance = () => {
     <div ref={container3} className='h-auto w-4/5 mx-auto flex flex-col justify-center items-start' >
 
       <div className='h-auto m-auto overflow-hidden mt-6 xl:py-4'>
-        <p className='our-text1 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl'>
+        <p className='our-text1 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl lg:text-3xl'>
           {text1}
         </p>
       </div>
@@ -131,7 +131,7 @@ const DentalInsurance = () => {
       </div>
 
       <div id='text-2' className='h-auto m-auto overflow-hidden mt-6 xl:py-4'>
-        <p className='our-text2 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl'>
+        <p className='our-text2 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl lg:text-3xl'>
           {text2}
         </p>
       </div>

@@ -1,26 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Zen+Maru+Gothic&display=swap');
 
-.custom-btn {
-	width: 120px;
-	height: 40px;
-	color: #fff;
-	border-radius: 5px;
-	padding: 10px 10px;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.3s ease;
 
-	display: inline-block;
-	box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-	  7px 7px 20px 0px rgba(0,0,0,.1),
-	  4px 4px 5px 0px rgba(0,0,0,.1);
-	outline: none;
-   }
-   
-   .btn-1 {
-	background: '0e57b8';
-	background: linear-gradient(0deg, rgb(174, 173, 173) 0%, rgb(121, 121, 126) 100%);
-	border: none;
-   }
+  
    
    
