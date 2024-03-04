@@ -1,6 +1,8 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect';
 import AnimatedButton from './AnimatedButton';
+import { AnimateHero } from './AnimateHero';
+
 
 
 
@@ -12,14 +14,18 @@ function Hero2() {
 
       <div className='max-w-[90vw] my-32 text-center flex flex-col justify-center lg:max-w-[800px]'>
         <p id='info' className='text-transform: capitalize text-2xl font-roboto font-bold text-gray p-2 '>Experience endodontic care</p>
-        <h1 id='title' className='text-9xl font-black font-zen p-4 text-primary lg:text-8xl'>ROOT CANAL TREATMENT</h1>
-        <div className='md:text-4xl sm:text-3xl text-xl font-roboto text-transform: capitalize font-medium text-secondary'>
+
+        <AnimateHero />
+
+
+
+        <div className='md:text-4xl sm:text-2xl text-xl font-roboto text-transform: capitalize font-medium text-secondary'>
           <Typewriter
             options={{
               loop: true
             }}
             onInit={(typewriter) => {
-              typewriter.typeString('Advanced Treatment Methods')
+              typewriter.typeString('Advanced Methods')
                 .callFunction(() => {
                   console.log('String typed out!');
                 })
@@ -39,8 +45,8 @@ function Hero2() {
                 .start();
             }} />
         </div>
-        <div className='flex mt-[10vh] space-x-8 items-center text-center mx-auto'>
-          <AnimatedButton text="Refer Now" color="green-500" backgroundColor="green-500" />
+        <div className=' hidden lg:flex lg:mt-[10vh] lg:space-x-8 lg:items-center lg:text-center lg:mx-auto'>
+          <AnimatedButton text="Refer Now" color="primary" backgroundColor="primary" />
           <AnimatedButton text="Schedule Appointment" color="secondary" backgroundColor="secondary" />
         </div>
 

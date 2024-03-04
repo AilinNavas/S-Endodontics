@@ -7,6 +7,7 @@ export default {
   ],
   theme: {
     extend: {
+     
       screens: {
        
         'sm': '390px',
@@ -35,8 +36,11 @@ export default {
         "jost" :"Jost"
 
       }
+      
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 }
 

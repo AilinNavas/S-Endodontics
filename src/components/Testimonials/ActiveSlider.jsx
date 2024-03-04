@@ -157,9 +157,9 @@ const ActiveSlider = () => {
                     initials={'P'}
                     bgColor={'bg-[#eda655]'} />
             </div>
-            <div className='absolute bottom-[15vh] text-center'>
+             {/* <div className='absolute bottom-[15vh] text-center'>
             <AnimatedButton  text="Read More" color="gray" backgroundColor="gray" />
-            </div>
+            </div>  */}
           
 
         </div>
