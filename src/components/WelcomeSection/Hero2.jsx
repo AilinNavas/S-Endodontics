@@ -19,7 +19,7 @@ function Hero2() {
 
 
 
-        <div className='md:text-4xl sm:text-2xl text-xl font-roboto text-transform: capitalize font-medium text-secondary'>
+        <p className='md:text-4xl sm:text-2xl text-xl font-roboto text-transform: capitalize font-medium text-secondary'>
           <Typewriter
             options={{
               loop: true
@@ -44,7 +44,7 @@ function Hero2() {
                 })
                 .start();
             }} />
-        </div>
+        </p>
         <div className=' hidden lg:flex lg:mt-[10vh] lg:space-x-8 lg:items-center lg:text-center lg:mx-auto'>
           <AnimatedButton text="Refer Now" color="primary" backgroundColor="primary" />
           <AnimatedButton text="Schedule Appointment" color="secondary" backgroundColor="secondary" />
