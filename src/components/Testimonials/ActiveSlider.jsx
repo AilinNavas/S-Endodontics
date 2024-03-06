@@ -121,25 +121,25 @@ const ActiveSlider = () => {
 
 
         <div ref={contenedor} id='cards' className='h-[100vh] w-[80vw] m-auto relative flex justify-start items-center'>
-            <div id='card-1' className='absolute left-0 top-0 -rotate-2 z-1 md:ml-20 md:left-[40px] lg:-left-[5vw] lg:top-[10vh]'>
+            <div id='card-1' className='absolute left-0 top-0 -rotate-2 z-1 md:ml-20 md:left-[40px] lg:left-[0vw] lg:top-[10vh]'>
                 <TestimonialCard name={'Megan C'}
                     testimonial={'I honestly can’t say enough about my experience. The office and staff are so efficient and organized. My treatment was explained to me clearly and expectations set. But probably the best thing about this office is how kind and understanding they are and the best playlists of music while you’re there!'}
                     initials={'M'}
                     bgColor={'bg-[#2697ed]'} />
             </div>
-            <div id='card-2' className='absolute left-0 top-[80px] rotate-1 z-5 md:ml-20 md:left-[80px] lg:left-[5vw] lg:top-[10vh]'>
+            <div id='card-2' className='absolute left-0 top-[80px] rotate-1 z-5 md:ml-20 md:left-[80px] lg:left-[10vw] lg:top-[10vh]'>
                 <TestimonialCard name={'Brad Taylor'}
                     testimonial={'Dr Horn and team are tremendous professionals.I visited them with a persistent infection in an eye tooth, and over the course of the treatment it was completely cured.'}
                     initials={'B'}
                     bgColor={'bg-[#e34e24]'} />
             </div>
-            <div id='card-3' className='absolute left-0 top-[160px] -rotate-2 z-10 md:ml-20 md:left-[120px] lg:left-[15vw] lg:top-[80px]'>
+            <div id='card-3' className='absolute left-0 top-[160px] -rotate-2 z-10 md:ml-20 md:left-[120px] lg:left-[20vw] lg:top-[80px]'>
                 <TestimonialCard name={'Tara Peck'}
                     testimonial={'Dr Horn and team are tremendous professionals.  I visited them with a persistent infection in an eye tooth, and over the course of the treatment it was completely cured.'}
                     initials={'T'}
                     bgColor={'bg-[#2a6b44]'} />
             </div>
-            <div id='card-4' className='absolute left-0 top-[240px] rotate-2 z-20 md:ml-20 md:left-[160px] lg:left-[25vw] lg:top-[120px]'>
+            <div id='card-4' className='absolute left-0 top-[240px] rotate-2 z-20 md:ml-20 md:left-[160px] lg:left-[30vw] lg:top-[120px]'>
                 <TestimonialCard name={'Adam Wood'}
                     testimonial={'The office is so clean, the staff were so wonderful, and the doctor was so kind. If I ever need another one I will be going here. GREAT! experience.'}
                     initials={'A'}

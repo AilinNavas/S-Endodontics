@@ -58,7 +58,7 @@ const AboutUs = () => {
     <section ref={contenedor}>
       <div className="w-4/5 m-auto space-y-20 py-24 -z-10">
         <div className="flex flex-col-reverse items-start lg:flex-row lg:items-start justify-between md:space-y-0">
-          <AnimatedText title={'Dr. Neal Horn '} description={"Dr. Neal Horn and his dedicated team are committed to providing exceptional endodontic care in a warm and welcoming environment. Dr. Horn, a Texas native with a passion for oral health, brings a wealth of experience to our practice. His journey from molecular biology at Brigham Young University to a Master's in Endodontics reflects his dedication to excellence.Southside Endodontics is not just a dental practice; it's a place where your oral health journey is personalized."} />
+          <AnimatedText title={'Neal Horn, DDS, MS'} description={"Dr. Neal Horn and his dedicated team are committed to providing exceptional endodontic care in a warm and welcoming environment. Dr. Horn, a Texas native with a passion for oral health, brings a wealth of experience to our practice. His journey from molecular biology at Brigham Young University to a Master's in Endodontics reflects his dedication to excellence.Southside Endodontics is not just a dental practice; it's a place where your oral health journey is personalized."} />
           <ZoomImage images={imagesDr} />
         </div>
         <div className="flex flex-col lg:flex-row  justify-between items-center space-y-5 md:space-y-0">

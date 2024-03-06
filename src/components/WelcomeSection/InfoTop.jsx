@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import FindUs from '/src/assets/icons/location.svg';
 import star from '/src/assets/icons/stars.svg';
@@ -13,25 +12,30 @@ export const InfoTop = () => {
     const paragraph2Ref = useRef(null);
 
     useGSAP(() => {
-        gsap.fromTo("#star",
-            { autoAlpha: 0, scale: 0.6, color: '#c49302' },
-            { autoAlpha: 1, scale: 1, stagger: { each: 0.5, from: "start" }, color: '#fbbc04' }
-        );
+
         const tl = gsap.timeline({ repeat: -1 });
 
-        tl.to(paragraph1Ref.current,
-            { opacity: 0, duration: 5, ease: "power1.in" }
-        ).fromTo(paragraph2Ref.current,
-            { opacity: 0 },
-            {
-                opacity: 1, duration: 5, ease: "power1.inOut",
-            }
-        );
+
+        tl.fromTo(paragraph1Ref.current,
+            { opacity: 0, duration: 5, ease: "power1.in" },
+            { opacity: 1, duration: 5, ease: "power1.in" },
+        ).fromTo("#star",
+            { autoAlpha: 0, scale: 0.6, color: '#c49302' },
+            { autoAlpha: 1, scale: 1, stagger: { each: 0.5, from: "start" }, color: '#fbbc04' }
+        )
+        .to(paragraph1Ref.current,
+                { opacity: 0, duration: 5, ease: "power1.in" })
+
+        .fromTo(paragraph2Ref.current,
+                { opacity: 0, duration: 5, ease: "power1.in" },
+                { opacity: 1, duration: 5, ease: "power1.in" })
+        .to(paragraph2Ref.current,
+                { opacity: 0, duration: 5, ease: "power1.in" });
     },
         { scope: container2 });
 
     return (
-        <div ref={container2} className="fixed z-40 bg-white top-0 left-0 w-[100vw] h-10 py-2 lg:h-12">
+        <div ref={container2} className="fixed z-40 bg-transparent top-0 left-0 w-[100vw] h-10 py-2 lg:h-12">
             <div className="text-center text-lg relative w-[100vw] h-[100%]">
                 <p ref={paragraph1Ref} className="top-0 absolute inset-x-0 text-[#0000ff] text-[18px] lg:text-[27px] flex items-center justify-center text-center">
                     <img src={google} alt="google" className='w-4 h-4 lg:w-6 lg:h-6' />

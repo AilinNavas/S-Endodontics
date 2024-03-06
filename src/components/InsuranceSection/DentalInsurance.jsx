@@ -3,7 +3,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin"
-import SplitType from 'split-type'
+import SplitType from 'split-type';
+import '../../App.css'
 
 import img1 from '/src/assets/insurances/1.jpeg'
 import img2 from '/src/assets/insurances/2.jpeg'
@@ -48,19 +49,20 @@ const DentalInsurance = () => {
         scrub: 1
       }
     });
-  
+
     timeline.fromTo(
       chars1,
-      { opacity: 0},
-      { opacity: 1, duration: 0.1, color:'#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
+      { opacity: 0 },
+      { opacity: 1, duration: 0.1, color: '#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
     )
 
     gsap.set("#logos-insurances", {
       transformPerspective: 500
     });
     timeline.fromTo("#logos-insurances", {
-      opacity: 0,scale: 0.5
-    }, { translateX: '-5px',scale: 1.5,
+      opacity: 0, scale: 0.5
+    }, {
+      translateX: '0px', scale: 1.5,
       stagger: {
         each: 0.5,
         from: "start"
@@ -80,8 +82,8 @@ const DentalInsurance = () => {
     });
     timeline.fromTo(
       chars2,
-      { opacity: 0},
-      { opacity: 1, duration: 0.1, color:'#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
+      { opacity: 0 },
+      { opacity: 1, duration: 0.1, color: '#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
     )
 
 
@@ -114,29 +116,37 @@ const DentalInsurance = () => {
 
   return (
 
+    <section ref={container3} >
 
-    <div ref={container3} className='h-auto w-4/5 mx-auto flex flex-col justify-center items-start' >
-
-      <div className='h-auto m-auto overflow-hidden mt-6 xl:py-4'>
-        <p className='our-text1 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl lg:text-3xl'>
-          {text1}
-        </p>
+      <div class="custom-shape-divider-bottom-1709753426">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
       </div>
 
+      <div className='h-auto w-4/5 mx-auto flex flex-col justify-center items-start' >
 
-      <div className='mx-auto my-0 grid gap-3 grid-cols-3 md:grid-cols-4 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw]'>
-        {insuranceItems.map((item, index) => (
-          <InsuranceItem key={index} src={item.src} alt={item.alt} />
-        ))}
+        <div className='h-auto m-auto overflow-hidden mt-6 xl:py-4'>
+          <p className='our-text1 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl lg:text-3xl'>
+            {text1}
+          </p>
+        </div>
+
+
+        <div className='mx-auto my-0 grid gap-3 grid-cols-3 md:grid-cols-4 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw]'>
+          {insuranceItems.map((item, index) => (
+            <InsuranceItem key={index} src={item.src} alt={item.alt} />
+          ))}
+        </div>
+
+        <div id='text-2' className='h-auto m-auto overflow-hidden mt-6 xl:py-4'>
+          <p className='our-text2 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl lg:text-3xl'>
+            {text2}
+          </p>
+        </div>
+
       </div>
-
-      <div id='text-2' className='h-auto m-auto overflow-hidden mt-6 xl:py-4'>
-        <p className='our-text2 text-gray font-roboto font-normal pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl lg:text-3xl'>
-          {text2}
-        </p>
-      </div>
-
-    </div>
+    </section>
 
   );
 };

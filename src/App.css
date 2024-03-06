@@ -1,5 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Zen+Maru+Gothic&display=swap');
 
-  
-   
-   
+#bg_color {
+background: radial-gradient(circle, rgba(233,233,233,1) 0%, rgba(148,187,233,1) 100%); 
+opacity: 50%;
+filter: blur(50%);
+background-size: 400% 400%;
+ animation: bg 5s ease infinite; 
+}
+
+
+@keyframes bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.custom-shape-divider-bottom-1709753426 {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1709753426 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1709753426 .shape-fill {
+    fill: #FFFFFF;
+}
+.custom-shape-divider-bottom-1709754171 {
+    position: absolute;
+    top:-80px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1709754171 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 92px;
+}
+
+.custom-shape-divider-bottom-1709754171 .shape-fill {
+    fill: #F9FCFF;
+}

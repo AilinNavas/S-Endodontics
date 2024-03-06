@@ -8,7 +8,7 @@ import arrowClosed from '/src/assets/icons/arrow-faq-closed.svg';
 import arrowOpen from '/src/assets/icons/arrow-faq-open.svg';
 import faqsData from './faqsData';
 
-const title = 'Frequently asked questions';
+const title = 'Frequently Asked Questions';
 const introduction = 'Discover the insights you need for optimal experience endodontic care, just as if you were chatting with us in person.';
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -64,7 +64,7 @@ export const AccordionContainer = () => {
         const title1 = ourTitle.words
         const ourIntroduction = new SplitType('p.introduction', { types: 'words' })
         const introduction2 = ourIntroduction.words
-       
+
 
         let timeln = gsap.timeline({
             scrollTrigger: {
@@ -77,23 +77,23 @@ export const AccordionContainer = () => {
 
             }
         });
-         timeln.fromTo(
-             title1,
-             {
-                 opacity: 0.1,
-             },
-             {
-                opacity: 1, 
+        timeln.fromTo(
+            title1,
+            {
+                opacity: 0.1,
+            },
+            {
+                opacity: 1,
                 stagger: 0.05,
-                 duration: 2,
-                 ease: 'power4.out'
-             });
-             timeln.fromTo(
-                introduction2,
-                { opacity: 0},
-                { opacity: 1, duration: 0.1, color:'#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
-              )
-        
+                duration: 2,
+                ease: 'power4.out'
+            });
+        timeln.fromTo(
+            introduction2,
+            { opacity: 0 },
+            { opacity: 1, duration: 0.1, color: '#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
+        )
+
         // timeln.fromTo(introduction2,
         //     {
         //         y: 100, opacity: 0
@@ -121,8 +121,14 @@ export const AccordionContainer = () => {
     return (
 
         <section ref={wrapper} className='h-screen bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'>
+            <div class="custom-shape-divider-bottom-1709754171">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+
             <h3 className='title text-[#0b4088] text-5xl mt-[5vh] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>{title}</h3>
-            <p className='introduction mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-tartiarytartary md:text-2xl lg:mx-[15vh]'>{introduction}</p>
+            <p className='introduction mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-tartiarytartary md:text-2xl lg:mx-[15vh] lg:text-3xl'>{introduction}</p>
             <div className="App flex justify-center ">
 
                 <div className="accordion__container flex flex-col justify-items-center gap-1 mt-[5vh] rounded-3xl">
@@ -149,6 +155,7 @@ export const AccordionContainer = () => {
 
                 </div>
             </div>
+
         </section>
     )
 }
