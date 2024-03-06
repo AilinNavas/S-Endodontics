@@ -39,7 +39,7 @@ function Hero2() {
       <div className='max-w-[90vw] my-32 text-center flex flex-col justify-center lg:max-w-[800px]'>
         <p id='info' className='text-transform: capitalize text-2xl font-roboto font-bold text-gray p-2 '>Experience endodontic care</p>
 
-        <h1 id='title' className='text-9xl font-black font-zen p-4 text-primary lg:text-8xl'>ENDODONTICS FORT WORTH</h1>
+        <h1 id='title' className='text-4xl font-black font-zen p-4 text-primary lg:text-8xl'>ENDODONTICS FORT WORTH</h1>
 
         <TypewriterText />
 

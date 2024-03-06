@@ -24,7 +24,6 @@ background-size: 400% 400%;
     position: absolute;
     top: -100px;
     left: 0;
-    width: 100%;
     overflow: hidden;
     line-height: 0;
 }
