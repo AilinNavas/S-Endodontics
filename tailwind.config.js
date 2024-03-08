@@ -28,7 +28,7 @@ export default {
         "gray" : " #90989f",
         "gray-dark" : "#2e3135",
         "celeste" : "#3498db",
-        "gradiente" : "background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(150,196,255,1) 46%, rgba(255,255,255,1) 99%);"
+        "gradiente" : "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(150,196,255,1) 46%, rgba(255,255,255,1) 99%);"
         }, 
       fontFamily: {
         "roboto": "Roboto Slab", 

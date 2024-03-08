@@ -121,11 +121,11 @@ export const AccordionContainer = () => {
     return (
 
         <section ref={wrapper} className='h-screen bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'>
-            <div class="custom-shape-divider-bottom-1709754171">
+            {/* <div className="custom-shape-divider-bottom-1709754171">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
                 </svg>
-            </div>
+            </div> */}
 
             <h3 className='title text-[#0b4088] text-5xl mt-[5vh] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>{title}</h3>
             <p className='introduction mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-tartiarytartary md:text-2xl lg:mx-[15vh] lg:text-3xl'>{introduction}</p>

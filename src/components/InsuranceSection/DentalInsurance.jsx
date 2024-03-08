@@ -1,8 +1,6 @@
-import React, { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin"
+import React, { useRef } from 'react';
+import { gsap, ScrollTrigger } from "gsap/all";
+import { useGSAP } from '@gsap/react';
 import SplitType from 'split-type';
 import '../../App.css'
 
@@ -26,9 +24,10 @@ import img14 from '/src/assets/insurances/14.jpeg'
 const text1 = "We welcome a wide range of dental insurance plans, whether in-network or out-of-network."
 const text2 = "Frequently, out-of-network treatments receive similar coverage percentages as in-network ones.Our commitment is to optimize your benefits, and we'll provide a detailed breakdown before proceeding with any treatment."
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 const DentalInsurance = () => {
+
 
   const container3 = useRef();
 
@@ -46,22 +45,18 @@ const DentalInsurance = () => {
         pinSpacing: true,
         start: "top-=20px top",
         end: "+=2500",
-        scrub: 1
+        scrub: 1,
       }
     });
-
     timeline.fromTo(
       chars1,
       { opacity: 0 },
       { opacity: 1, duration: 0.1, color: '#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
     )
-
-    gsap.set("#logos-insurances", {
-      transformPerspective: 500
+    timeline.set("#logos-insurances", {
+      transformPerspective: 500,   opacity: 0, scale: 0.5
     });
-    timeline.fromTo("#logos-insurances", {
-      opacity: 0, scale: 0.5
-    }, {
+    timeline.to("#logos-insurances", {
       translateX: '0px', scale: 1.5,
       stagger: {
         each: 0.5,
@@ -85,6 +80,7 @@ const DentalInsurance = () => {
       { opacity: 0 },
       { opacity: 1, duration: 0.1, color: '#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
     )
+
 
 
   }, { scope: container3 }) //final de animaciónes
@@ -117,12 +113,6 @@ const DentalInsurance = () => {
   return (
 
     <section ref={container3} >
-
-      <div className="hidden lg:block custom-shape-divider-bottom-1709753426 w-[100vw]">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
-        </svg>
-      </div>
 
       <div className='h-auto w-4/5 mx-auto flex flex-col justify-center items-start' >
 
