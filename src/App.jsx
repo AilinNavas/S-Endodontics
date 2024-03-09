@@ -6,7 +6,7 @@ import { AccordionContainer } from './components/faqsSection/AccordionContainer'
 import Footer from './components/footerSection/Footer'
 import { gsap } from 'gsap/all'
 import AnimationContext from './context/animation-context';
-
+import AboutUs from './components/aboutUsSection/AboutUs'
 import DentalInsurance from './components/insuranceSection/DentalInsurance';
 import { Pricing } from './components/pricing/Pricing';
 
@@ -29,8 +29,9 @@ function App() {
 
         <WrapperContainer />
         <DentalInsurance />
-        <ActiveSlider />
         <Pricing />
+        <ActiveSlider />
+        <AboutUs/>
         <AccordionContainer />
         <Footer />
 
