@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
-import Logo from "/src/assets/resu-logo.jpeg";
-import Neal from "/src/assets/resu-neal.jpeg";
-import CallUs from '/src/assets/icons/call.svg';
-import Control from "/src/assets/icons/new2.svg";
+import logo from "/src/assets/resu-logo.jpeg";
+import neal from "/src/assets/resu-neal.jpeg";
+import callUs from '/src/assets/icons/call.svg';
+import control from "/src/assets/icons/new2.svg";
 import '../../index.css'
 
 const MenuSiderItems = [
@@ -14,13 +14,13 @@ const MenuSiderItems = [
   { title: 'Blog', gap: false },
 ];
 
-const Sidebar = () => {
+export const Sidebar = () => {
   const [open, setOpen] = useState(false);
-  const [logoSrc, setLogoSrc] = useState(Neal);
+  const [logoSrc, setLogoSrc] = useState(neal);
 
   const handleLogoClick = () => {
     setOpen(!open);
-    setLogoSrc(open ? Neal : Logo);
+    setLogoSrc(open ? neal : logo);
   };
 
   const logoContainerClasses = open
@@ -35,7 +35,7 @@ const Sidebar = () => {
   return (
     <div className={`bg-primary ${open ? 'h-96' : 'h-16'} flex fixed bottom-0 z-40 duration-300 w-[100vw] lg:hidden`}>
       <img
-        src={Control}
+        src={control}
         className={`absolute -top-2 left-1 bg-primary cursor-pointer rounded-full border-2 border-primary w-5 ${open && 'rotate-180'}`}
         onClick={handleLogoClick}
       />
@@ -52,9 +52,9 @@ const Sidebar = () => {
         <div className='w-1/3 text-right md:text-center'>
           <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
 
-            
+
             <button className={`bg-[#3c89f0] text-white font-roboto font-semibold py-2 px-4 rounded-xl  ${buttonClasses}`}>
-           Refer Now
+              Refer Now
             </button>
 
 
@@ -63,7 +63,7 @@ const Sidebar = () => {
 
         <a target='_blank' href="tel:+18173869007">
           <span className={`text-white flex pl-3 items-center font-semibold font-roboto ${callUsClasses}`}>
-            <img className='mr-1' src={CallUs} />
+            <img className='mr-1' src={callUs} />
             Call Us
           </span>
         </a>
@@ -80,7 +80,7 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar
+
 
 
 

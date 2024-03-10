@@ -1,12 +1,10 @@
 import React from "react";
 import { TypewriterText } from "./TypewriterText";
-import AnimatedButton from "./AnimatedButton";
+import { AnimatedButton } from "./AnimatedButton";
 import horn from "/src/assets/horn.svg";
 
 
-
-function Hero2() {
-
+export const Hero2 = () => {
 
   return (
     <div
@@ -51,4 +49,3 @@ function Hero2() {
   );
 }
 
-export default Hero2;

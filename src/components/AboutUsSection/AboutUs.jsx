@@ -14,7 +14,7 @@ import office2 from "/src/assets/aboutUs/office2.jpeg";
 import office3 from "/src/assets/aboutUs/office3.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
-const AboutUs = () => {
+export const AboutUs = () => {
   const contenedor = useRef();
 
   useGSAP(
@@ -90,4 +90,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+

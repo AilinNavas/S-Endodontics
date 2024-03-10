@@ -7,7 +7,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin"
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-const ActiveSlider = () => {
+export const ActiveSlider = () => {
 
     const contenedor = useRef();
 
@@ -169,4 +169,3 @@ const ActiveSlider = () => {
     )
 }
 
-export default ActiveSlider

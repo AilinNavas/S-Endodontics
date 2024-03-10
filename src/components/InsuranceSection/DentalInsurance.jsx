@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
-import "../../App.css";
 
 import img1 from "/src/assets/insurances/1.jpeg";
 import img2 from "/src/assets/insurances/2.jpeg";
@@ -26,7 +25,7 @@ const text2 =
 
 gsap.registerPlugin(ScrollTrigger);
 
-const DentalInsurance = () => {
+export const DentalInsurance = () => {
   const container3 = useRef();
 
   useGSAP(
@@ -149,4 +148,3 @@ const DentalInsurance = () => {
   );
 };
 
-export default DentalInsurance;
