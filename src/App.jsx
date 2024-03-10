@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
-// import { WrapperContainer } from './components/welcomeSection/WrapperContainer'
+import { WrapperContainer } from './components/welcomeSection/WrapperContainer'
 import { ActiveSlider } from './components/testimonialsSection/ActiveSlider'
-// import { AccordionContainer } from './components/faqsSection/AccordionContainer'
+import { AccordionContainer } from './components/faqsSection/AccordionContainer'
 import { Footer } from './components/footerSection/Footer'
 import { AboutUs } from './components/aboutUsSection/AboutUs'
 import { DentalInsurance } from './components/insuranceSection/DentalInsurance';
@@ -12,12 +12,12 @@ function App() {
 
   return (
     <>
-      {/* <WrapperContainer /> */}
+      <WrapperContainer />
       <DentalInsurance />
       <Pricing />
       <ActiveSlider />
       <AboutUs />
-      {/* <AccordionContainer /> */}
+      <AccordionContainer />
       <Footer />
     </>
 
