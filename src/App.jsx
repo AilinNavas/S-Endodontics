@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { WrapperContainer } from './components/welcomeSection/WrapperContainer'
+// import { WrapperContainer } from './components/welcomeSection/WrapperContainer'
 import { ActiveSlider } from './components/testimonialsSection/ActiveSlider'
 import { AccordionContainer } from './components/faqsSection/AccordionContainer'
 import { Footer } from './components/footerSection/Footer'
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <WrapperContainer />
+      {/* <WrapperContainer /> */}
       <DentalInsurance />
       <Pricing />
       <ActiveSlider />
