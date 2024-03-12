@@ -1,6 +1,6 @@
 import React from 'react';
 import star from '/src/assets/icons/stars.svg';
-import google from '/src/assets/icons/google.svg'
+import google from '/src/assets/icons/google.svg';
 
 export const TestimonialCard = ({ name, testimonial, initials, bgColor }) => {
     return (

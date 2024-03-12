@@ -33,7 +33,7 @@ export const ActiveSlider = () => {
         timeln.to('#card-1', {
             yPercent: 0,
             opacity: 1,
-            scale:1
+            scale: 1
         });
         timeln.from('#card-2', {
             yPercent: 75,
