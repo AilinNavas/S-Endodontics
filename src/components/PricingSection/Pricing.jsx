@@ -1,5 +1,5 @@
- import React from 'react'
-// import gift from '/src/assets/pricing.gif'
+import React from 'react'
+import gift from '/src/assets/pricing.gif'
 import { CardPricing } from './CardPricing'
 export const Pricing = () => {
     return (
@@ -10,7 +10,7 @@ export const Pricing = () => {
                 <CardPricing title={'Those with dental insurance'} description={'We will estimate the portion your insurance is going to pay. Since this varies for each individual, usually 25 - 75% of the cost of the procedure is required at the time of service.If your insurance pays more than the estimated amount, a refund check from this office will be mailed within 1 month from the date payment is received in this office.'} />
 
             </div>
-             <img className='w-48 h-48 mx-auto' src={gift} alt="" /> 
+            <img className='w-48 h-48 mx-auto' src={gift} alt="" />
 
         </section >
     )
