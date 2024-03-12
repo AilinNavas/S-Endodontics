@@ -118,11 +118,10 @@ export const ActiveSlider = () => {
 
     return (
 
-
         <div ref={contenedor} id='cards' className='h-[100vh] w-[80vw] m-auto relative flex justify-start items-center'>
             <div id='card-1' className='absolute left-0 top-0 -rotate-2 z-1 md:ml-20 md:left-[40px] lg:-left-[5vw] lg:top-[10vh]'>
                 <TestimonialCard name={'Megan C'}
-                    testimonial={'I honestly can’t say enough about my experience. The office and staff are so efficient and organized. My treatment was explained to me clearly and expectations set. But probably the best thing about this office is how kind and understanding they are and the best playlists of music while you’re there!'}
+                    testimonial={"I honestly can’t say enough about my experience. The office and staff are so efficient and organized. My treatment was explained to me clearly and expectations set. But probably the best thing about this office is how kind and understanding they are and the best playlists of music while you’re there!"}
                     initials={'M'}
                     bgColor={'bg-[#2697ed]'} />
             </div>
@@ -156,10 +155,6 @@ export const ActiveSlider = () => {
                     initials={'P'}
                     bgColor={'bg-[#eda655]'} />
             </div>
-             {/* <div className='absolute bottom-[15vh] text-center'>
-            <AnimatedButton  text="Read More" color="gray" backgroundColor="gray" />
-            </div>  */}
-          
 
         </div>
 
