@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { TestimonialCard } from './TestimonialCard';
+import { TestimonialCard } from './TestimonialCard.jsx';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
