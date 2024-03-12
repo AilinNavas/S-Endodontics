@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import { WrapperContainer } from './components/WelcomeSection/WrapperContainer';
 import { DentalInsurance } from './components/InsuranceSection/DentalInsurance';
-// import { Pricing } from './components/PricingSection/Pricing';
+import { Pricing } from './components/PricingSection/Pricing';
 // import { ActiveSlider } from './components/TestimonialsSection/ActiveSlider';
 // import { AboutUs } from './components/AboutUsSection/AboutUs';
 // import { AccordionContainer } from './components/FaqsSection/AccordionContainer';
@@ -17,8 +17,8 @@ function App() {
     <>
       <WrapperContainer />
       <DentalInsurance />
-      {/* <Pricing />
-      <ActiveSlider />
+      <Pricing />
+      {/* <ActiveSlider />
       <AboutUs />
       <AccordionContainer /> */}
       {/* <Footer /> */}
