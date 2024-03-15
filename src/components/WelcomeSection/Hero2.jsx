@@ -28,7 +28,7 @@ export const Hero2 = () => {
           ENDODONTICS FORT WORTH
         </h1>
 
-        <div className="lg:max-w-[100vw] mt-[-10vh] lg:text-center lg:mt-[-18vh]">
+        <div className="max-w-[100vw] mt-[-8vh] lg:text-center lg:mt-[-18vh]">
           <img src={torito} alt="" className="w-[100%]" />
         </div>
         <TypewriterText />
