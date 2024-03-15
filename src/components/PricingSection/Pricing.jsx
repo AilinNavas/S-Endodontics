@@ -22,7 +22,7 @@ export const Pricing = () => {
         pinSpacing: true,
         start: "top-=40px top",
         end: "+=2200",
-        scrub: 0.9,
+        scrub: 0.3,
 
       }
     });
