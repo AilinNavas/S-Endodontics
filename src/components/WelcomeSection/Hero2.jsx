@@ -9,7 +9,7 @@ export const Hero2 = () => {
 
   return (
     <div
-      className=" w-[100vw] h-[100vh] flex flex-col place-items-center"
+      className="w-[100vw] h-[100vh] flex flex-col place-items-center"
     >
       <div id="bg_color" className="h-full w-full absolute -z-10"></div>
 
@@ -28,7 +28,7 @@ export const Hero2 = () => {
           ENDODONTICS FORT WORTH
         </h1>
 
-        <div className="max-w-[100vw] mt-[-8vh] lg:text-center lg:mt-[-18vh]">
+        <div className="max-w-[90vw] mt-[-8vh] lg:text-center lg:mt-[-18vh]">
           <img src={torito} alt="" className="w-[100%]" />
         </div>
         <TypewriterText />
