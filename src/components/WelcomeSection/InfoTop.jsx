@@ -45,7 +45,7 @@ export const InfoTop = () => {
                     <img id='star' src={star} alt="star" className='w-4 h-4 lg:w-6 lg:h-6' />
                     <img id='star' src={star} alt="star" className='w-4 h-4 lg:w-6 lg:h-6' />
                     <img id='star' src={star} alt="star" className='w-4 h-4 lg:w-6 lg:h-6 mr-1' />
-                    114 Google reviews
+                    118 Google reviews
                 </p>
 
                 <p ref={paragraph2Ref} className="top-0 text-center inset-x-0 absolute text-gray-dark text-[16px] lg:text-[23px] pb-2 flex items-center justify-center">

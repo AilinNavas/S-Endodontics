@@ -29,7 +29,7 @@ export const Pricing = () => {
 
     // Animación de las tarjetas con filtro blur
     tln.fromTo('#tarjetas',
-      { filter: 'blur(10px)', opacity: 0.5, scale: 0.5 },
+      { filter: 'blur(7px)', opacity: 0.8, scale: 0.8 },
       { filter: 'blur(0px)', opacity: 1, scale: 1, stagger: 0.5, duration: 2, ease: "power3.out" }
     );
 
