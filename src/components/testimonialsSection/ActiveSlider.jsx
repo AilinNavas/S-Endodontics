@@ -125,7 +125,7 @@ export const ActiveSlider = () => {
                     initials={'M'}
                     bgColor={'bg-[#2697ed]'} />
             </div>
-            <div id='card-2' className='absolute left-0 top-[80px] rotate-1 z-5 md:ml-20 md:left-[80px] lg:left-[10vw] lg:top-[10vh]'>
+            <div id='card-2' className='absolute left-0 top-[80px] rotate-1 z-5 md:ml-20 md:left-[80px] lg:left-[5vw] lg:top-[10vh]'>
                 <TestimonialCard name={'Brad Taylor'}
                     testimonial={'Dr Horn and team are tremendous professionals.I visited them with a persistent infection in an eye tooth, and over the course of the treatment it was completely cured.'}
                     initials={'B'}
@@ -149,7 +149,7 @@ export const ActiveSlider = () => {
                     initials={'R'}
                     bgColor={'bg-[#420991]'} />
             </div>
-            <div id='card-6' className='sm:hidden lg:block lg:absolute lg:rotate-3 z-30 lg:ml-10 lg:left-[55vw] lg:top-[110px]'>
+            <div id='card-6' className='sm:hidden lg:block lg:absolute lg:rotate-3 z-30 lg:ml-10 lg:left-[53vw] lg:top-[110px]'>
                 <TestimonialCard name={'Polo Garrett'}
                     testimonial={'I needed two root canals and I was horrified. Dr. Horn was awesome!! He explained what was going happen step by step. Afterwards I am happy to say, both root canals were completed, I felt NO PAIN, and the cost was affordable. Thank you Dr. Horn for being so courteous and polite and making me comfortable with the procedure. I definitely recommend him to all my families and friends.'}
                     initials={'P'}

@@ -112,7 +112,7 @@ export const AccordionContainer = () => {
 
         <section ref={wrapper} className='h-auto bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'>
 
-            <h3 className='title text-[#0b4088] text-5xl mt-[5vh] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>{title}</h3>
+            <h3 className='title text-[#0b4088] text-4xl mt-[5vh] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>{title}</h3>
             <p className='introduction mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-tartiarytartary md:text-2xl lg:mx-[15vh] lg:text-3xl'>{introduction}</p>
             <div className="App flex justify-center ">
 

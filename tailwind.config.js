@@ -27,7 +27,7 @@ export default {
         "tartiary" : "#16181a",
         "gray" : " #90989f",
         "gray-dark" : "#2e3135",
-        "celeste" : "#3498db",
+        "celeste" : "#3c89f0",
         "gradiente" : "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(150,196,255,1) 46%, rgba(255,255,255,1) 99%);"
         }, 
       fontFamily: {
@@ -35,12 +35,11 @@ export default {
         "zen" : "Zen Maru Gothic",
         "jost" :"Jost"
 
-      }
+      },
       
     },
   },
   plugins: [
-    
   ],
 }
 

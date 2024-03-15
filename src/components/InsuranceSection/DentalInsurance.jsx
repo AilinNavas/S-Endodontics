@@ -70,7 +70,6 @@ export const DentalInsurance = () => {
         },
         boxShadow: "0px 0px 3px 5px rgb(223, 230, 230)",
         borderRadius: "50% 50%",
-        border: "2px solid rgb(155, 193, 247)",
         duration: 2,
         rotationY: 360,
         ease: "circ.out",
@@ -126,20 +125,20 @@ export const DentalInsurance = () => {
   return (
     <section ref={container3}>
       <div className="h-auto w-4/5 mx-auto flex flex-col justify-center items-start">
-        <div className="h-auto m-auto overflow-hidden mt-6 xl:py-4">
-          <p className="our-text1 font-roboto pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl lg:text-3xl">
+        <div className="h-auto overflow-hidden mt-6 xl:py-4">
+          <p className="our-text1 font-roboto text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
             {text1}
           </p>
         </div>
 
-        <div className="mx-auto my-0 grid gap-3 grid-cols-3 md:grid-cols-4 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw]">
+        <div className="my-0 mx-auto grid gap-3 grid-cols-3 md:grid-cols-4 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw]">
           {insuranceItems.map((item, index) => (
             <InsuranceItem key={index} src={item.src} alt={item.alt} />
           ))}
         </div>
 
-        <div id="text-2" className="h-auto m-auto overflow-hidden mt-6 xl:py-4">
-          <p className="our-text2 font-roboto  pt-2 pb-4 lg:px-6 bg-transparent text-xl m-auto md:text-2xl lg:text-3xl">
+        <div id="text-2" className="h-auto overflow-hidden mt-6 xl:py-4">
+          <p className="our-text2 font-roboto text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
             {text2}
           </p>
         </div>
