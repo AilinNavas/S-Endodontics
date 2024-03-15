@@ -37,7 +37,7 @@ export const Pricing = () => {
 
 
   return (
-    <section ref={contenedorRef} className="w-[100vh] h-auto">
+    <section ref={contenedorRef} className="w-[100vw] h-auto">
       <div className="w-[80vw] ml-[10vw] flex flex-col lg:my-0 lg:item lg:flex-row lg:justify-center ">
         <div
           id="tarjetas"
