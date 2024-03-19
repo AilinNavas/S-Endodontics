@@ -3,6 +3,7 @@ import { TypewriterText } from "./TypewriterText";
 import { AnimatedButton } from "./AnimatedButton";
 import torito from "/src/assets/torito2.svg";
 import appointment from "/src/assets/icons/appointment.svg"
+// import { Maps } from "./Maps";
 
 
 export const Hero2 = () => {
@@ -33,21 +34,25 @@ export const Hero2 = () => {
         </div>
         <TypewriterText />
 
-        <div className="hidden lg:flex lg:space-x-4  lg:items-center lg:text-center lg:mx-auto">
-          <AnimatedButton
+        <div className="hidden lg:flex lg:max-w-[80vw] lg:items-center lg:space-x-4 lg:justify-center">
+
+           <AnimatedButton
             text="Refer Now"
-            textColor='white'
-            color="primary"
             backgroundColor="primary"
+            link={'https://securesite1246.tdo4endo.com/RefDocsLogin.aspx'}
           />
           <AnimatedButton
             text="Schedule Appointment"
-            color="secondary"
-            textColor= "celeste"
-            backgroundColor="secondary"
-            icon={appointment}
-          />
+            backgroundColor="[#3c89f0]"
+            icon={appointment} 
+            link={"https://www.southsideendodontics.com/contact"}
+           /> 
         </div>
+
+        {/* <div className="w-80 h-80">
+        <Maps />
+        </div> */}
+
       </div>
     </div>
   );

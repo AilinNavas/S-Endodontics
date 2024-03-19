@@ -56,7 +56,7 @@ export const AboutUs = () => {
   ];
 
   return (
-    <section ref={contenedor}>
+    <section ref={contenedor} id="aboutUs">
       <div className="w-4/5 m-auto space-y-20 py-24">
         <div className="flex flex-col-reverse items-start justify-between md:space-y-0 lg:flex-row lg:items-start">
           <AnimatedText

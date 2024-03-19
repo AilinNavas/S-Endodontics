@@ -7,11 +7,11 @@ import control from "/src/assets/icons/new2.svg";
 import '../../index.css'
 
 const MenuSiderItems = [
-  { title: 'Dental Insurance', gap: false },
-  { title: 'Pricing', gap: false },
-  { title: 'About Us', gap: false },
-  { title: 'Testimonials', gap: false },
-  { title: 'Blog', gap: false },
+  { title: 'Dental Insurance', id: 'dentalInsurance' },
+  { title: 'Pricing', id: 'pricing' },
+  { title: 'About Us', id: 'aboutUs' },
+  { title: 'Testimonials', id: 'testimonials' },
+  { title: 'FAQs', id: 'faqs' },
 ];
 
 export const Sidebar = () => {
@@ -71,9 +71,11 @@ export const Sidebar = () => {
 
       <ul className='pt-12 absolute left-4 top-16 flex flex-col text-left items-start ml-0 mr-2'>
         {MenuSiderItems.map((menu, index) => (
+          <a href={`#${menu.id}`}>
           <li key={index} className={`text-white font-roboto font-normal text-lg flex gap-y-2 cursor-pointer p-2 rounded-md`}>
             <span className={`${!open && 'hidden'} duration-200`}>{menu.title}</span>
           </li>
+          </a>
         ))}
       </ul>
     </div>

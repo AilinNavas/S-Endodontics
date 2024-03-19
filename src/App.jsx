@@ -6,7 +6,7 @@ import { Pricing } from './components/PricingSection/Pricing';
 import { ActiveSlider } from './components/testimonialsSection/ActiveSlider';
 import { AboutUs } from './components/AboutUsSection/AboutUs';
 import { AccordionContainer } from './components/FaqsSection/AccordionContainer';
-// import { Footer } from './components/FooterSection/Footer';
+import { Footer } from './components/FooterSection/Footer';
 
 
 
@@ -21,7 +21,7 @@ function App() {
       <ActiveSlider />
       <AboutUs />
       <AccordionContainer />
-      {/* <Footer /> */}
+      <Footer />
 
     </>
 

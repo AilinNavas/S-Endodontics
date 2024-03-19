@@ -17,11 +17,11 @@ export const SidebarDesktop = () => {
     const [logoSrc, setLogoSrc] = useState(neal);
 
     const MenuSider = [
-        { title: "Dental Insurance", icon: insurance },
-        { title: "Pricing", icon: pricing },
-        { title: "About Us", icon: us },
-        { title: "Testimonials", icon: testimonials },
-        { title: "Frequently asked questions", icon: faqs },
+        { title: "Dental Insurance", icon: insurance, id: 'dentalInsurance' },
+        { title: "Pricing", icon: pricing, id: 'pricing' },
+        { title: "Testimonials", icon: testimonials, id: 'testimonials' },
+        { title: "About Us", icon: us, id: 'aboutUs' },
+        { title: "Frequently asked questions", icon: faqs, id: 'faqs' },
     ];
     const handleLogoClick = () => {
         setLogoSrc(open ? neal : logo);
@@ -74,22 +74,26 @@ export const SidebarDesktop = () => {
 
             <ul className="pt-6">
                 {MenuSider.map((menu, index) => (
-                    <li
-                        key={index}
-                        className={`text-white font-roboto font-normal text-lg m-auto flex items-center
+                    <a href={`#${menu.id}`}>
+                        <li
+                            key={index}
+                            className={`text-white font-roboto font-normal text-lg m-auto flex items-center
                      gap-x-4 cursor-pointer p-2 hover:text-[#aab4c4] hover:scale-110
                       ${index === 0 && "text-secondary"}
                      `}
-                    >
-                        <img
-                            src={menu.icon}
-                            alt={menu.title}
-                            className={` origin-center scale-125 hover:scale-150`}
-                        />
-                        <span className={`${!open && "hidden"} origin-left duration-200`}>
-                            {menu.title}
-                        </span>
-                    </li>
+                        >
+
+                            <img
+                                src={menu.icon}
+                                alt={menu.title}
+                                className={` origin-center scale-125 hover:scale-150`}
+                            />
+                            <span className={`${!open && "hidden"} origin-left duration-200`}>
+                                {menu.title}
+                            </span>
+
+                        </li>
+                    </a>
                 ))}
             </ul>
             <div className={`w-56 h-48 mt-10 ${!open && "hidden"}`}>
@@ -98,7 +102,7 @@ export const SidebarDesktop = () => {
                 </a>
                 <p
                     id="direction"
-                    className="text-white font-roboto font-normal text-xs text-left pt-2 ml-4  hover:text-secondary"
+                    className="text-white font-roboto font-normal text-xs text-left pt-2 ml-4  hover:text-[#aab4c4] hover:scale-110"
                 >
                     <a target="_blank" href="https:maps.app.goo.gl/5FqaJem7M39qahwv8">
                         1307 8th Avenue, Suite 303 <br />

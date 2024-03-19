@@ -79,3 +79,4 @@ const ZoomImage = ({
 };
 
 export default ZoomImage;
+
