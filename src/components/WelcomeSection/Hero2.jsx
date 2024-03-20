@@ -1,20 +1,37 @@
-import React from "react";
+import React, {useRef} from "react";
 import { TypewriterText } from "./TypewriterText";
 import { AnimatedButton } from "./AnimatedButton";
 import torito from "/src/assets/torito2.svg";
 import appointment from "/src/assets/icons/appointment.svg"
-// import { Maps } from "./Maps";
+import { Scroll } from "./Scroll";
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 
 
 export const Hero2 = () => {
+  const heroContainer = useRef();
+  const colors = ['#072A59', '#0B3F84', '#031226'];
+
+  useGSAP(() => {
+    // gsap code here...
+    gsap.to("#title", {
+      duration: 2, // Duración de la animación en segundos
+      color: () => colors[Math.floor(Math.random() * colors.length)], // Selección de un color aleatorio de la lista
+      repeat: -1, // Repetir infinitamente
+      yoyo: true, // Alternar entre el color actual y el nuevo color
+      ease: "back.inOut(1.7)" // Sin efecto de suavizado
+    });
+    gsap.to("#arrow", { y: '+=5', opacity: 0.7, yoyo: true, color: () => colors[Math.floor(Math.random() * colors.length)], repeat: -1, duration: 1, ease: "power1.inOut" }); // <-- automatically reverted
+
+  }, { scope: heroContainer });
 
   return (
-    <div
+    <div ref={heroContainer}
       className="w-[100vw] h-[100vh] flex flex-col place-items-center"
     >
       <div id="bg_color" className="h-full w-full absolute -z-10"></div>
 
-      <div className="max-w-[90vw] my-20 text-center flex flex-col justify-center lg:max-w-[800px] lg:my-20">
+      <div className="max-w-[90vw] my-20 text-center flex flex-col justify-center lg:max-w-[800px] lg:my-10">
         <p
           id="info"
           className="text-transform: capitalize text-2xl font-roboto font-bold text-gray p-2 md:text-3xl "
@@ -48,10 +65,10 @@ export const Hero2 = () => {
             link={"https://www.southsideendodontics.com/contact"}
            /> 
         </div>
-
-        {/* <div className="w-80 h-80">
-        <Maps />
-        </div> */}
+        <div className="bottom-20 right-1/2 absolute">
+        <Scroll id={'dentalInsurance'} />
+        </div>
+   
 
       </div>
     </div>

@@ -8,6 +8,8 @@ import arrowClosed from '/src/assets/icons/arrow-faq-closed.svg';
 import arrowOpen from '/src/assets/icons/arrow-faq-open.svg';
 import faqsData from './faqsData';
 
+import { Scroll } from '../WelcomeSection/Scroll';
+
 const title = 'Frequently Asked Questions';
 const introduction = 'Discover the insights you need for optimal experience endodontic care, just as if you were chatting with us in person.';
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -16,7 +18,9 @@ export const AccordionContainer = () => {
 
     const [openAccordion, setOpenAccordion] = useState(null);
     const accordionRefs = useRef([]);
-
+    const scrollRef = useRef(null); 
+ 
+    
     const handleAccordionClick = (index) => {
         if (index === openAccordion) {
             gsap.to(
@@ -73,7 +77,7 @@ export const AccordionContainer = () => {
                 pinSpacing: true,
                 start: "top top",
                 end: "+=5000",
-                scrub: 0.9,
+                scrub: 1,
 
             }
         });
@@ -92,7 +96,7 @@ export const AccordionContainer = () => {
             introduction2,
             { opacity: 0 },
             { opacity: 1, duration: 0.1, color: '#2e3135', fontWeight: 'medium', scale: 0.9, stagger: 0.1 }
-        )
+        );
         timeln.fromTo('#accordion',
             {
                 y: 100, opacity: 0, scale: 0.6, backgroundColor: "#abb1b7", z: 300
@@ -102,18 +106,26 @@ export const AccordionContainer = () => {
                 duration: 2,
                 backgroundColor: '#cadffb',
                 ease: 'power4.out',
-                // ease:  "back.inOut(1.7)",
+
             });
+        timeln.to(scrollRef.current, {
+            scale: 0} );
+
+        // timeln.fromTo('#scrollButton',
+        //     { opacity: 0, scale: 0.5 },
+        //     { opacity: 1, scale: 1 })
+
+
 
     }, { scope: wrapper }) //final de animaciónes
 
 
     return (
 
-        <section ref={wrapper} id="faqs" className='h-auto bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'>
+        <section ref={wrapper} id="faqs" className='h-[100vh] bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'>
 
             <h3 className='title text-[#0b4088] text-4xl mt-[5vh] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>{title}</h3>
-            <p className='introduction mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-tartiary md:text-2xl lg:mx-[15vh] lg:text-3xl'>{introduction}</p>
+            <p className='introduction mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-tartiary md:text-2xl lg:mx-[15vh] lg:text-3xl lg:px-6'>{introduction}</p>
             <div className="App flex justify-center ">
 
                 <div className="accordion__container flex flex-col justify-items-center gap-1 mt-[5vh] rounded-3xl">
@@ -140,6 +152,8 @@ export const AccordionContainer = () => {
 
                 </div>
             </div>
+            <Scroll ref={scrollRef}  />
+            
 
         </section>
     )

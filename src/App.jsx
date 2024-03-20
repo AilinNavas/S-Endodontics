@@ -1,27 +1,32 @@
 import React from 'react'
 import './App.css'
+import { SidebarDesktop } from './components/WelcomeSection/SidebarDesktop';
+import { Sidebar } from './components/WelcomeSection/Sidebar';
 import { WrapperContainer } from './components/WelcomeSection/WrapperContainer';
 import { DentalInsurance } from './components/InsuranceSection/DentalInsurance';
 import { Pricing } from './components/PricingSection/Pricing';
 import { ActiveSlider } from './components/testimonialsSection/ActiveSlider';
 import { AboutUs } from './components/AboutUsSection/AboutUs';
 import { AccordionContainer } from './components/FaqsSection/AccordionContainer';
-// import { Footer } from './components/FooterSection/Footer';
+import { Footer } from './components/FooterSection/Footer';
 
 
 
 
 function App() {
+ 
 
   return (
     <>
+      <SidebarDesktop/>
+      <Sidebar />
       <WrapperContainer />
       <DentalInsurance />
       <Pricing />
       <ActiveSlider />
       <AboutUs />
       <AccordionContainer />
-      {/* <Footer /> */}
+      <Footer />
 
     </>
 

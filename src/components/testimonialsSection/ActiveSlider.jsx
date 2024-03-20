@@ -9,7 +9,8 @@ import keyla from '/src/assets/testimonials/KeylaZabala.jpeg';
 import maria from '/src/assets/testimonials/MariaDuran.jpeg';
 import tammy from '/src/assets/testimonials/TammyWylie.jpeg';
 import brad from '/src/assets/testimonials/BradTaylor.png';
-import polo from '/src/assets/testimonials/Polo.jpg';
+import polo from '/src/assets/testimonials/Polo.png';
+import { Scroll } from '../WelcomeSection/Scroll.jsx';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -30,28 +31,28 @@ export const ActiveSlider = () => {
                 scrub: 0.9
             }
         });
-        timeln.from('#card-1', {
-            yPercent: 75,
-            opacity: 0,
-            scale: 0
-        });
+        // timeln.from('#card-1', {
+        //     yPercent: 75,
+        //     opacity: 0,
+        //     scale: 0
+        // });
 
-        timeln.to('#card-1', {
-            yPercent: 0,
-            opacity: 1,
-            scale: 1
-        });
+        // timeln.to('#card-1', {
+        //     yPercent: 0,
+        //     opacity: 1,
+        //     scale: 1
+        // });
         timeln.from('#card-2', {
             yPercent: 75,
             opacity: 0,
             scale: 0
         });
-        timeln.to("#card-1", {
-            scale: 0.95,
-            yPercent: -0.5,
-            opacity: 1,
+        // timeln.to("#card-1", {
+        //     scale: 0.95,
+        //     yPercent: -0.5,
+        //     opacity: 1,
 
-        }, "-=0.3");
+        // }, "-=0.3");
         timeln.to('#card-2', {
             xPercent: 0,
             opacity: 1,
@@ -167,7 +168,6 @@ export const ActiveSlider = () => {
                     bgColor={'bg-[#eda655]'}
                     img={polo} />
             </div>
-
         </div>
 
 

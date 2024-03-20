@@ -13,15 +13,7 @@ export const CardPricing = ({ title, description, icon }) => {
   };
 
   const conicGradientStyle = {
-    // background: isHovered
-    //   ? "conic-gradient(#78CE88 20deg, transparent 120deg)"
-    //   : "conic-gradient(#78CE88 0deg, transparent 0deg)",
-    // width: "900px",
-    // height: "900px",
-    // top: "-25%",
-    // left: "-25%",
-    // position: "absolute",
-    // animation: isHovered ? "fullSpin 3s linear infinite" : "none",
+
     background: isHovered
       ? "conic-gradient(#78CE88 20deg, transparent 120deg)"
       : "conic-gradient(#78CE88 0deg, transparent 0deg)", // Ajustar los ángulos según sea necesario

@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { ScrollToPlugin } from "gsap/ScrollToPlugin"
 import { CardPricing } from './CardPricing'
+import { Scroll } from '../WelcomeSection/Scroll';
 
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -22,7 +23,7 @@ export const Pricing = () => {
         pinSpacing: true,
         start: "top-=40px top",
         end: "+=2200",
-        scrub: 0.3,
+        scrub: 1,
 
       }
     });
@@ -37,11 +38,11 @@ export const Pricing = () => {
 
 
   return (
-    <section ref={contenedorRef} className="w-[100vw] h-auto" id="pricing">
-      <div className="w-[80vw] ml-[10vw] flex flex-col lg:my-0 lg:item lg:flex-row lg:justify-center ">
+    <section ref={contenedorRef} className="w-[100vw]" id="pricing">
+      <div className="w-[80vw] ml-[10vw]  flex flex-col lg:my-0 lg:item lg:flex-row lg:items-start lg:justify-center lg:h-[80vh] ">
         <div
           id="tarjetas"
-          className="flex flex-col content-start items-center space-y-2 md:space-y-12 lg:flex-row lg:space-x-12 lg:items-center lg:space-y-0 lg:min-h-[100vh]"
+          className="flex flex-col content-start items-center space-y-2 md:space-y-12 lg:flex-row lg:space-x-12 lg:items-center lg:space-y-0"
         >
           <CardPricing
 
@@ -61,7 +62,10 @@ export const Pricing = () => {
           />
 
         </div>
+       
       </div>
+      
+      <Scroll id={'testimonials'} />
 
     </section>
 

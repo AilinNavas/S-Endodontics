@@ -30,7 +30,7 @@ export const AboutUs = () => {
               trigger: contenedor.current,
               start: "top top",
               end: "30% bottom",
-              scrub: true,
+              scrub: 1,
               endTrigger: contenedor.current,
             },
           },

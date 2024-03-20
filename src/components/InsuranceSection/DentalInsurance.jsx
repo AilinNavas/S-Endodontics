@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
+import {Scroll} from '../WelcomeSection/Scroll'
 
 import img1 from "/src/assets/insurances/1.jpeg";
 import img2 from "/src/assets/insurances/2.jpeg";
@@ -25,73 +26,75 @@ const text2 =
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const DentalInsurance = () => {
+export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
   const container3 = useRef();
 
   useGSAP(
     () => {
-      const ourText1 = new SplitType("p.our-text1", { types: "words" });
-      const chars1 = ourText1.words;
-      const ourText2 = new SplitType("p.our-text2", { types: "words" });
-      const chars2 = ourText2.words;
+     
+        const ourText1 = new SplitType("p.our-text1", { types: "words" });
+        const chars1 = ourText1.words;
+        const ourText2 = new SplitType("p.our-text2", { types: "words" });
+        const chars2 = ourText2.words;
 
-      let timeline = gsap.timeline({
-        scrollTrigger: {
-          trigger: container3.current,
-          pin: true,
-          pinSpacing: true,
-          start: "top-=20px top",
-          end: "+=2500",
-          scrub: 1,
-        },
-      });
-      timeline.fromTo(
-        chars1,
-        { opacity: 0 },
-        {
-          opacity: 1,
-          duration: 0.1,
-          color: "#2e3135",
-          fontWeight: "medium",
-          stagger: 0.1,
-        },
-      );
-      timeline.set("#logos-insurances", {
-        transformPerspective: 500,
-        opacity: 0,
-        scale: 0.5,
-      });
-      timeline.to("#logos-insurances", {
-        translateX: "0px",
-        scale: 1.5,
-        stagger: {
-          each: 0.5,
-          from: "start",
-        },
-        boxShadow: "0px 0px 3px 5px rgb(223, 230, 230)",
-        borderRadius: "50% 50%",
-        duration: 2,
-        rotationY: 360,
-        ease: "circ.out",
-        x: 10,
-        y: 0,
-        z: -300,
-        transformOrigin: "50px 20px -100px",
-        autoAlpha: 1,
-      });
-      timeline.fromTo(
-        chars2,
-        { opacity: 0 },
-        {
-          opacity: 1,
-          duration: 0.1,
-          color: "#2e3135",
-          fontWeight: "medium",
-          stagger: 0.1,
-        },
-      );
+        let timeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: container3.current,
+            pin: true,
+            pinSpacing: true,
+            start: "top-=20px top",
+            end: "+=2500",
+            scrub: 1,
+          },
+        });
+        timeline.fromTo(
+          chars1,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            duration: 0.1,
+            color: "#2e3135",
+            fontWeight: "medium",
+            stagger: 0.1,
+          },
+        );
+        timeline.set("#logos-insurances", {
+          transformPerspective: 500,
+          opacity: 0,
+          scale: 0.5,
+        });
+        timeline.to("#logos-insurances", {
+          translateX: "0px",
+          scale: 1.5,
+          stagger: {
+            each: 0.5,
+            from: "start",
+          },
+          boxShadow: "0px 0px 3px 5px rgb(223, 230, 230)",
+          borderRadius: "50% 50%",
+          duration: 2,
+          rotationY: 360,
+          ease: "circ.out",
+          x: 10,
+          y: 0,
+          z: -300,
+          transformOrigin: "50px 20px -100px",
+          autoAlpha: 1,
+        });
+        timeline.fromTo(
+          chars2,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            duration: 0.1,
+            color: "#2e3135",
+            fontWeight: "medium",
+            stagger: 0.1,
+          },
+        );
     },
-    { scope: container3 },
+    { scope: container3 }
+    ,
   ); //final de animaciónes
 
   const InsuranceItem = ({ src, alt }) => (
@@ -142,7 +145,9 @@ export const DentalInsurance = () => {
             {text2}
           </p>
         </div>
+      
       </div>
+      <Scroll id='pricing' />
     </section>
   );
 };
