@@ -12,6 +12,7 @@ import team2 from "/src/assets/aboutUs/team2.jpeg";
 import office from "/src/assets/aboutUs/office.jpeg";
 import office2 from "/src/assets/aboutUs/office2.jpeg";
 import office3 from "/src/assets/aboutUs/office3.jpeg";
+import { Carrousel } from "./Carrousel";
 
 gsap.registerPlugin(ScrollTrigger);
 export const AboutUs = () => {
@@ -56,23 +57,24 @@ export const AboutUs = () => {
   ];
 
   return (
-    <section ref={contenedor} id="aboutUs">
+    <section ref={contenedor} id="aboutUs" className="my-[10vh]">
       <div className="w-4/5 m-auto space-y-20 py-24">
         <div className="flex flex-col-reverse items-start justify-between md:space-y-0 lg:flex-row lg:items-start">
           <AnimatedText
             title={"Neal Horn, DDS, MS"}
             description={
-              "Dr. Neal Horn and his dedicated team are committed to providing exceptional endodontic care in a warm and welcoming environment. Dr. Horn, a Texas native with a passion for oral health, brings a wealth of experience to our practice."
+              "Meet Dr. Neal Horn, a Louisiana native and seasoned endodontist. With a background in molecular biology from Brigham Young University, he's fluent in Spanish from his missionary work in Argentina. With over 14 years of experience, Dr. Horn brings expertise and a passion for community care to Southside Endodontics in Fort Worth, Texas."
             }
           />
           <ZoomImage images={imagesDr} />
+
         </div>
         <div className="flex flex-col justify-between items-start space-y-5 md:space-y-0 lg:flex-row ">
           <ZoomImage images={imagesTeam} />
           <AnimatedText
             title={"Team"}
             description={
-              "Leslie Horn, our Office Manager, holds a BA in English and is deeply committed to ensuring a seamless and positive experience for our patients. Bur whitr whatches and lokken his you name is werendodrun sou sorry.Because and releand butterfly."
+              "Meet our dynamic duo of Registered Dental Assistants! Stephanie Tacquard, originally from California, has brought warmth and comfort to our practice since 2016. Kayla Freelon, a vibrant Colorado native, joined us in 2015. Together, they ensure every patient at Southside Endodontics receives exceptional care and a warm welcome."
             }
           />
         </div>
@@ -80,7 +82,7 @@ export const AboutUs = () => {
           <AnimatedText
             title={"Office"}
             description={
-              "Southside Endodontics is not just a dental practice; it's a place where your oral health journey is personalized,holds a BA in English and is deeply committed to ensuring a seamless and positive experience for our patients."
+              "Leslie Horn earned a BA in English from Brigham Young University, with an emphasis on Editing for Publication. A former lifestyle blogger and educator, Leslie owns a freelance editing and proofreading service. She volunteers her time with her church and community, but her real passion is her family. She is the proud mother of Audrey, 22; Parker, 20; and Miles, 17. She loves serving patients at Southside Endodontics and looks forward to meeting you!"
             }
           />
           <ZoomImage images={imagesOffice} />

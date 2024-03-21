@@ -39,7 +39,7 @@ export const Pricing = () => {
 
   return (
     <section ref={contenedorRef} className="w-[100vw]" id="pricing">
-      <div className="w-[80vw] ml-[10vw]  flex flex-col lg:my-0 lg:item lg:flex-row lg:items-start lg:justify-center lg:h-[80vh] ">
+      <div className="w-[80vw] ml-[10vw]  flex flex-col lg:my-0 lg:item lg:flex-row lg:items-start lg:justify-center md:h-[80vh]">
         <div
           id="tarjetas"
           className="flex flex-col content-start items-center space-y-2 md:space-y-12 lg:flex-row lg:space-x-12 lg:items-center lg:space-y-0"

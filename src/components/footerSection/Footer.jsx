@@ -1,6 +1,6 @@
 import React from "react";
 import logoFooter from '/src/assets/logo-trasnparente.jpg'
-import scroll from '/src/assets/icons/scroll.svg'
+
 
 
 export const Footer = () => {
@@ -23,10 +23,7 @@ export const Footer = () => {
                 <div className="w-[30vw] flex justify-end">
                     <img src={logoFooter} className="hidden lg:block lg:w-96 lg:h-36" alt="" />
                     </div>
-                <a href="#"><div id='scrollButton' className='w-8 h-8 border-2 border-[#454b51] rounded-full mt-[25vh]'>
-                    <img src={scroll} className='rotate-180 w-8' alt="" />
-                </div>
-                </a>
+               
                
             </div>
             <div className="h-10 bg-[#f9fcff] text-center font-zen  ">

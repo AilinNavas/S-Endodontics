@@ -26,7 +26,7 @@ export const CardPricing = ({ title, description, icon }) => {
 
   return (
     <div
-      className="box relative w-[300px] h-[350px] bg-white overflow-hidden shadow-xl md:w-[60vw] md:h-[40vh] lg:w-[35vw] lg:h-[60vh]"
+      className="box relative w-[300px] h-[350px] bg-white overflow-hidden shadow-xl md:w-[60vw] md:h-[35vh] lg:w-[35vw] lg:h-[60vh]"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -40,7 +40,7 @@ export const CardPricing = ({ title, description, icon }) => {
           </h3>
           <img src={icon} alt="" className="w-10 h-10 mt-4" />
 
-          <p className="text-gray-dark text-xl font-roboto text-center font-normal p-4 md:text-3xl lg:text-4xl ">
+          <p className="text-gray-dark text-xl font-roboto text-center font-normal p-4 md:text-2xl lg:text-4xl ">
             {description}
           </p>
         </div>
