@@ -1,16 +1,9 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-
-
-const ZoomImage = ({
-  images 
-
-}) => {
+const ZoomImage = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(null);
-
-
 
   const slideVariants = {
     hiddenRight: {
@@ -39,8 +32,8 @@ const ZoomImage = ({
   const slidersVariants = {
     hover: {
       scale: 1.1,
-      backgroundColor: "#454b51",
-      opacity: 0.8
+      backgroundColor: "#2e3135",
+      opacity: 0.8,
     },
   };
   const dotsVariants = {
@@ -61,7 +54,7 @@ const ZoomImage = ({
   const handleNext = () => {
     setDirection("right");
     setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
+      prevIndex + 1 === images.length ? 0 : prevIndex + 1,
     );
   };
 
@@ -69,7 +62,7 @@ const ZoomImage = ({
     setDirection("left");
 
     setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1,
     );
   };
 
@@ -77,7 +70,6 @@ const ZoomImage = ({
     setDirection(index > currentIndex ? "right" : "left");
     setCurrentIndex(index);
   };
-
 
   return (
     <div className="relative">
@@ -132,7 +124,7 @@ const ZoomImage = ({
           {images.map((_, index) => (
             <motion.div
               key={index}
-              className={`dot bg-[#333] w-[15px] h-[15px] rounded-lg ${currentIndex === index ? "bg-[#0e57b8]" : ""}`}
+              className={`dot w-[15px] h-[15px] rounded-lg ${currentIndex === index ? "bg-[#2e3135]" :"bg-transparent border-2 border-gray-dark"}`}
               onClick={() => handleDotClick(index)}
               initial="initial"
               animate={currentIndex === index ? "animate" : ""}
@@ -147,8 +139,6 @@ const ZoomImage = ({
 };
 
 export default ZoomImage;
-
-
 
 
 

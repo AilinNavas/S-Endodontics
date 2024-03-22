@@ -16,7 +16,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
-    "react-tooltip": "^5.26.3",
     "split-type": "^0.3.4",
     "typewriter-effect": "^2.21.0"
   },
