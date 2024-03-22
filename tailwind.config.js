@@ -19,8 +19,8 @@ export default {
   
         'lg': '1024px',
         // => @media (min-width: 1280px) { ... }
-        'lx': '1900px',
-        // => @media (min-width: 1280px) { ... }
+        'xl': '1600px',
+        // => @media (min-width: 1600px) { ... }
       },
       colors: {
         "primary": "#072a59",
@@ -35,7 +35,6 @@ export default {
         "roboto": "Roboto Slab", 
         "zen" : "Zen Maru Gothic",
         "jost" :"Jost"
-
       },
       
     },

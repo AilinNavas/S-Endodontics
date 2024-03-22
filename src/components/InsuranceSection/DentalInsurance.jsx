@@ -129,7 +129,7 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
     <section ref={container3} id="dentalInsurance">
       <div className="h-auto w-4/5 mx-auto flex flex-col justify-center items-start lg:h-[85vh]">
         <div className="h-auto overflow-hidden mt-6 xl:py-4">
-          <p className="our-text1 font-roboto text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
+          <p className="our-text1 text-gray-dark font-roboto font-normal text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
             {text1}
           </p>
         </div>
@@ -141,7 +141,7 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
         </div>
 
         <div id="text-2" className="h-auto overflow-hidden mt-6 xl:py-4">
-          <p className="our-text2 font-roboto text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
+          <p className="our-text2 text-gray-dark font-roboto text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
             {text2}
           </p>
         </div>

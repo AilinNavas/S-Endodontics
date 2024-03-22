@@ -126,7 +126,7 @@ export const AccordionContainer = () => {
 
         <section ref={wrapper} id="faqs" className='h-auto md:h-[100vh] bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'>
 
-            <h3 className='title text-[#0b4088] text-4xl mt-[5vh] font-semibold font-zen text-center md:text-6xl lg:text-7xl'>{title}</h3>
+            <h3 className='title text-[#0b4088] text-3xl mt-[5vh] font-semibold font-zen text-center md:text-4xl lg:text-5xl'>{title}</h3>
             <span id='scrollDown'>
             <Scroll />
             </span>
@@ -145,12 +145,12 @@ export const AccordionContainer = () => {
                                 className="accordion__header flex gap-8 items-center cursor-pointer px-8 py-4 hover:bg-[#9bc2f7] "
                                 onClick={() => handleAccordionClick(index)}
                             >
-                                <p className={`accordion__name flex-1 font-roboto text-xl md:text-2xl ${openAccordion === index ? "text-secondary font-medium" : "text-gray-dark font-normal"} `}>{faq.title}</p>
+                                <p className={`accordion__name flex-1 font-roboto font-normal text-xl md:text-2xl lg:text-3xl ${openAccordion === index ? "text-secondary font-medium" : "text-gray-dark font-normal"} `}>{faq.title}</p>
                                 <img src={` ${openAccordion === index ? arrowOpen : arrowClosed}`} className='w-5' />
                             </div>
 
                             <div className={`accordion__details px-8 overflow-hidden h-0 ${openAccordion === index ? "h-auto" : ""}`}>
-                                <p className='py-4 text-[#454b51] font-roboto font-normal text-xl md:text-2xl'>{faq.content}</p>
+                                <p className='py-4 text-gray-dark font-roboto font-normal text-xl md:text-2xl lg:text-3xl'>{faq.content}</p>
                             </div>
                         </div>
                     ))}

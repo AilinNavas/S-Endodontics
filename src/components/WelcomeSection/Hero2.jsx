@@ -65,7 +65,6 @@ export const Hero2 = () => {
             link={"https://www.southsideendodontics.com/contact"}
            /> 
         </div>
-       
       </div>
       <Scroll id={'dentalInsurance'} text= {'Scroll Down'}/>
     </div>

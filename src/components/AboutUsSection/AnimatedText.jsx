@@ -35,7 +35,7 @@ const AnimatedText = ({ title, description }) => {
       <div ref={txtdiv} className="space-y-5 lg:mx-6">
         <h3
           ref={text}
-          className="text-5xl text-[#0b4088] font-semibold font-zen py-4 md:text-6xl"
+          className="text-3xl text-[#0b4088] font-semibold font-zen py-4 md:text-4xl lg:text-5xl"
         >
           {title}
         </h3>
