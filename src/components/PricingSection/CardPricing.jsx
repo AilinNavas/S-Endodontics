@@ -17,8 +17,8 @@ export const CardPricing = ({ title, description, icon }) => {
     background: isHovered
       ? "conic-gradient(#78CE88 20deg, transparent 120deg)"
       : "conic-gradient(#78CE88 0deg, transparent 0deg)", // Ajustar los ángulos según sea necesario
-    width: "900px",
-    height: "900px",
+    width: "950px",
+    height: "950px",
     top: "-50%",
     left: "-50%",
     position: "absolute",

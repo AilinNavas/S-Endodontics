@@ -80,14 +80,33 @@ const contenedorRef = useRef();
           {textPricing}
         </p>
       </div>
+      <div className="w-[80vw] ml-[10vw] flex flex-col justify-center items-center lg:flex-row lg:items-start lg:justify-center md:h-[45vh] lg:h-[50vh]">
+
+<div
+  id="tarjetas"
+  className="flex flex-col items-center justify-center space-y-4 md:flex-row md:items-center md:space-x-4 lg:space-x-12 lg:items-end lg:space-y-0"
+  style={{ minHeight: 'inherit' }} // Asegura que el contenedor tenga altura mínima
+>
+  <CardPricing
+    title={"Dental Insurance"}
+    description={"Since this varies for each individual, usually 25 - 75% of the cost of the procedure is required at the time of service."}
+    icon={si}
+  />
+  <CardPricing
+    title={"No Dental Insurance"}
+    description={"50% of the total will be required when we begin treatment and the balance will be due upon completion of treatment."}
+    icon={no}
+  />
+</div>
+
+</div>
 
 
-
-      <div className="w-[80vw] ml-[10vw] flex flex-col lg:flex-row lg:items-start lg:justify-center md:h-[45vh] lg:h-[50vh]">
+      {/* <div className="w-[80vw] ml-[10vw] flex flex-col lg:flex-row lg:items-start lg:justify-center md:h-[45vh] lg:h-[50vh]">
 
         <div
           id="tarjetas"
-          className="flex flex-col content-start space-y-4 md:flex-row md:items-center md:space-x-4 lg:space-x-12 lg:items-end lg:space-y-0"
+          className="flex flex-col items-center content-start space-y-4 md:flex-row md:items-center md:space-x-4 lg:space-x-12 lg:items-end lg:space-y-0"
         >
           <CardPricing
 
@@ -108,7 +127,7 @@ const contenedorRef = useRef();
 
         </div>
 
-      </div>
+      </div> */}
 
       <div className={`w-[80vw] ml-[10vw] p-2 text-center h-auto`}>
         <p className='pricing2 hidden md:block text-gray-dark font-roboto font-normal text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl'>
