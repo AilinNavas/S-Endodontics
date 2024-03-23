@@ -5,3 +5,27 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+#bg_color {
+    /* background: radial-gradient(circle, rgba(233,233,233,1) 0%, rgb(163, 207, 250) 100%);  */
+    /* background: radial-gradient(circle, rgba(226,228,230,1) 0%, rgba(202,223,251,1) 100%); */
+    background: rgb(253,254,254);
+background: linear-gradient(90deg, rgba(253,254,254,1) 0%, rgba(171,177,183,1) 50%, rgba(116,126,136,0.8772759103641457) 100%);
+    opacity: 50%;
+    filter: blur(50%);
+    background-size: 400% 400%;
+     animation: bg 5s ease infinite; 
+    }
+    
+    
+    @keyframes bg {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }

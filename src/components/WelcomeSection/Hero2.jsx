@@ -6,6 +6,7 @@ import appointment from "/src/assets/icons/appointment.svg"
 import { Scroll } from "./Scroll";
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import '../../App.css'
 
 
 export const Hero2 = () => {
@@ -34,19 +35,19 @@ export const Hero2 = () => {
       <div className="max-w-[90vw] h-[60vh] my-20 text-center flex flex-col justify-center md:h-[70vh] lg:max-w-[800px] lg:my-10 lg:h-[75vh]">
         <p
           id="info"
-          className="text-transform: capitalize text-2xl font-roboto font-bold text-gray p-2 md:text-3xl "
+          className="text-transform: capitalize text-2xl font-roboto font-bold align-text-bottom text-gray p-2 lg:mt-[5vh]"
         >
           Neal Horn, DDS, MS
         </p>
 
         <h1
           id="title"
-          className="text-5xl font-black font-zen p-4 text-primary lg:text-8xl"
+          className="text-5xl font-black font-zen text-primary md:text-7xl lg:text-8xl"
         >
           ENDODONTICS FORT WORTH
         </h1>
 
-        <div className="max-w-[90vw] mt-[-8vh] lg:text-center lg:mt-[-18vh]">
+        <div className="max-w-[90vw] mt-[-8vh] lg:text-center md:mt-[-12vh] lg:mt-[-17vh]">
           <img src={torito} alt="" className="w-[100%]" />
         </div>
         <TypewriterText />

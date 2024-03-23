@@ -57,7 +57,7 @@ export const AboutUs = () => {
   ];
 
   return (
-    <section ref={contenedor} id="aboutUs" className="my-[10vh]">
+    <section ref={contenedor} id="aboutUs" className="my-[10vh] lg:pt-[10vh]">
       <div className="w-4/5 m-auto space-y-20 py-24">
         <div className="flex flex-col-reverse items-start justify-between md:space-y-0 lg:flex-row lg:items-start">
           <AnimatedText
@@ -82,7 +82,7 @@ export const AboutUs = () => {
           <AnimatedText
             title={"Office"}
             description={
-              "Leslie Horn earned a BA in English from Brigham Young University, with an emphasis on Editing for Publication. A former lifestyle blogger and educator, Leslie owns a freelance editing and proofreading service. She volunteers her time with her church and community, but her real passion is her family. She is the proud mother of Audrey, 22; Parker, 20; and Miles, 17. She loves serving patients at Southside Endodontics and looks forward to meeting you!"
+              "Leslie Horn is our office manage.She earned a BA in English from Brigham Young University, with an emphasis on Editing for Publication. A former lifestyle blogger and educator, Leslie owns a freelance editing and proofreading service. She volunteers her time with her church and community, but her real passion is her family.She loves serving patients at Southside Endodontics and looks forward to meeting you!"
             }
           />
           <ZoomImage images={imagesOffice} />

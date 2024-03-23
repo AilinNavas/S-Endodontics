@@ -22,7 +22,9 @@ import img14 from "/src/assets/insurances/14.jpeg";
 const text1 =
   "We welcome a wide range of dental insurance plans, whether in-network or out-of-network.";
 const text2 =
-  "Frequently, out-of-network treatments receive similar coverage percentages as in-network ones.Our commitment is to optimize your benefits, and we'll provide a detailed breakdown before proceeding with any treatment.";
+  "Frequently, out-of-network treatments receive similar coverage percentages as in-network ones.";
+  const text3 = "Our commitment is to optimize your benefits, and we'll provide a detailed breakdown before proceeding with any treatment."
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,6 +38,8 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
         const chars1 = ourText1.words;
         const ourText2 = new SplitType("p.our-text2", { types: "words" });
         const chars2 = ourText2.words;
+        const ourText3 = new SplitType("p.our-text3", { types: "words" });
+        const chars3 = ourText3.words;
 
         let timeline = gsap.timeline({
           scrollTrigger: {
@@ -83,6 +87,17 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
         });
         timeline.fromTo(
           chars2,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            duration: 0.1,
+            color: "#2e3135",
+            fontWeight: "medium",
+            stagger: 0.1,
+          },
+        );
+        timeline.fromTo(
+          chars3,
           { opacity: 0 },
           {
             opacity: 1,
@@ -143,6 +158,9 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
         <div id="text-2" className="h-auto overflow-hidden mt-6 xl:py-4">
           <p className="our-text2 text-gray-dark font-roboto text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
             {text2}
+          </p>
+          <p className="our-text3 text-gray-dark font-roboto text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
+            {text3}
           </p>
         </div>
       
