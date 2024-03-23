@@ -130,7 +130,7 @@ export const AccordionContainer = () => {
             <span id='scrollDown'>
             <Scroll />
             </span>
-            <p className='introduction mx-[4vh] mt-[4vh] text-xl text-center font-roboto font-normal text-tartiary md:text-2xl lg:mx-[15vh] lg:text-3xl lg:px-6'>{introduction}</p>
+            <p className='introduction mx-[4vh] mt-[4vh] text-gray-dark font-roboto text-center font-normal text-xl md:text-2xl lg:text-3xl lg:mx-[15vh]  lg:px-6'>{introduction}</p>
             <div className="App flex justify-center ">
 
                 <div className="accordion__container flex flex-col justify-items-center gap-1 my-[5vh] rounded-3xl">

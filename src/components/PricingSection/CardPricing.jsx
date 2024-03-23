@@ -35,9 +35,9 @@ export const CardPricing = ({ title, description, icon }) => {
         style={conicGradientStyle}></div>
       <div className="text-white w-[98%] h-[98%] bg-white absolute top-[1%] left-[1%] flex justify-center items-center font-medium">
         <div className="flex flex-col items-center content-center mx- md:p-4">
-          <h3 className="font-bold flex md:flex-col-reverse md:items-center text-2xl font-zen mt-2 lg:mt-4 text-[#0b4088] lg:text-4xl md:p-2 text-center">
-          <img src={icon} alt="" className="w-6 h-6 mt-2 lg:w-10 lg:h-10 lg:mt-4" />
+          <h3 className="font-bold flex md:flex-col md:items-center text-2xl font-zen mt-2 lg:mt-4 text-[#0b4088] lg:text-4xl md:p-2 text-center">
             {title}
+            <img src={icon} alt="" className="w-6 h-6 mt-2 ml-2 lg:w-10 lg:h-10 lg:mt-4 lg:ml-0" />
           </h3>
           
 
