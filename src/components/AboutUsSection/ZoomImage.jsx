@@ -79,7 +79,7 @@ const ZoomImage = ({ images }) => {
             <motion.img
               key={currentIndex}
               src={images[currentIndex].src}
-              className="rounded-lg border-[#c3baee8e] border-2 max-w-xs h-full md:max-w-[620px] lg:max-w-xl"
+              className="rounded-lg border-[#c3baee8e] border-2 h-full md:w-[80vw] lg:max-w-xl"
               initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
               animate="visible"
               exit="exit"
@@ -90,7 +90,7 @@ const ZoomImage = ({ images }) => {
             <motion.div
               variants={slidersVariants}
               whileHover="hover"
-              className="left flex justify-center items-center fill-[#fff] mx-[20px] p-2 rounded-xl absolute top-[0] bottom-[0] my-[auto] h-[25px] w-[25px] left-0"
+              className="left flex justify-center items-center fill-[#fff] mx-[5px] p-2 rounded-xl absolute top-[0] bottom-[0] my-[auto] h-[25px] w-[25px] left-0"
               onClick={handlePrevious}
             >
               <svg
@@ -105,7 +105,7 @@ const ZoomImage = ({ images }) => {
             <motion.div
               variants={slidersVariants}
               whileHover="hover"
-              className="right flex justify-center items-center fill-[#fff] mx-[20px] p-2 rounded-xl absolute top-[0] bottom-[0] my-[auto] h-[25px] w-[25px] right-0"
+              className="right flex justify-center items-center fill-[#fff] mx-[5px] p-2 rounded-xl absolute top-[0] bottom-[0] my-[auto] h-[25px] w-[25px] right-0"
               onClick={handleNext}
             >
               <svg

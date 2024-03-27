@@ -118,7 +118,7 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
         id="logos-insurances"
         src={src}
         alt={alt}
-        className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32"
+        className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36"
       />
     </div>
   );
@@ -141,25 +141,25 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
   ];
 
   return (
-    <section ref={container3} id="dentalInsurance">
-      <div className="h-auto w-4/5 mx-auto flex flex-col justify-center items-start lg:h-[85vh]">
-        <div className="h-auto overflow-hidden mt-6 xl:py-4">
-          <p className="our-text1 text-gray-dark font-roboto font-normal text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
+    <section ref={container3} id="dentalInsurance" className="border-2 border-blue-950 lg:pl-20">
+      <div className="h-auto w-[90vw] mx-auto flex flex-col items-start lg:w-[80vw] lg:h-[85vh] border-2 border-blue-800">
+        <div className="h-auto overflow-hidden mt-6 md:py-6 border-2 lg:my-0 border-red-700">
+          <p className="our-text1 text-gray-dark font-roboto font-normal text-left py-2 lg:py-0 lg:px-6 bg-transparent text-xl md:text-3xl lg:text-3xl">
             {text1}
           </p>
         </div>
 
-        <div className="my-0 mx-auto grid gap-3 grid-cols-3 md:grid-cols-4 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw]">
+        <div className="my-0 mx-auto grid gap-3 grid-cols-4 md:grid-cols-5 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw] border-2 border-blue-600">
           {insuranceItems.map((item, index) => (
             <InsuranceItem key={index} src={item.src} alt={item.alt} />
           ))}
         </div>
 
-        <div id="text-2" className="h-auto overflow-hidden mt-6 xl:py-4">
-          <p className="our-text2 text-gray-dark font-roboto text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
+        <div id="text-2" className="h-auto overflow-hidden border-2 border-blue-600 md:py-6">
+          <p className="our-text2 text-gray-dark font-roboto text-left pt-2 lg:px-6 bg-transparent text-xl md:text-3xl lg:text-3xl">
             {text2}
           </p>
-          <p className="our-text3 text-gray-dark font-roboto text-center pt-2 pb-4 lg:px-6 bg-transparent text-xl md:text-2xl lg:text-3xl">
+          <p className="our-text3 text-gray-dark font-roboto text-left pt-2 lg:px-6 bg-transparent text-xl md:text-3xl lg:text-3xl  border-2 border-blue-600">
             {text3}
           </p>
         </div>

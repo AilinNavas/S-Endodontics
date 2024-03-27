@@ -8,18 +8,18 @@ import { ActiveSlider } from './components/testimonialsSection/ActiveSlider';
 import { AboutUs } from './components/AboutUsSection/AboutUs';
 import { AccordionContainer } from './components/FaqsSection/AccordionContainer';
 import { Pricing } from './components/PricingSection/Pricing';
-import { Footer } from './components/FinalSection/Footer';
+import { WrapperFooter } from './components/FinalSection/WrapperFooter';
 
 
 
 
 
 function App() {
- 
+
 
   return (
     <>
-      <SidebarDesktop/>
+      <SidebarDesktop />
       <Sidebar />
       <WrapperContainer />
       <DentalInsurance />
@@ -27,7 +27,7 @@ function App() {
       <ActiveSlider />
       <AboutUs />
       <AccordionContainer />
-      <Footer />
+      <WrapperFooter />
 
     </>
 

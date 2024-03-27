@@ -7,7 +7,7 @@ import SplitType from 'split-type';
 import arrowClosed from '/src/assets/icons/arrow-faq-closed.svg';
 import arrowOpen from '/src/assets/icons/arrow-faq-open.svg';
 import faqsData from './faqsData';
-import scroll from '/src/assets/icons/scroll.svg'
+
 
 import { Scroll } from '../WelcomeSection/Scroll';
 
@@ -100,7 +100,7 @@ export const AccordionContainer = () => {
         );
         timeln.fromTo('#accordion',
             {
-                y: 100, opacity: 0, scale: 0.6, backgroundColor: "#abb1b7", z: 300
+                y: 100, opacity: 0, scale: 0.6, backgroundColor: "#abb1b7", z: 10
             },
             {
                 y: 0, opacity: 1.0, scale: 1.0, transformOrigin: "center center", stagger: 0.5,
@@ -124,32 +124,32 @@ export const AccordionContainer = () => {
 
     return (
 
-        <section ref={wrapper} id="faqs" className='h-auto md:h-[100vh] bg-[#f9fcff] flex flex-col justify-items-center mb-[10vh]'>
-
-            <h3 className='title text-[#0b4088] text-3xl mt-[5vh] font-semibold font-zen text-center md:text-4xl lg:text-5xl'>{title}</h3>
+        <section ref={wrapper} id="faqs" className='h-auto flex flex-col mb-[20vh] md:mb-[10vh] lg:mb-[30vh] lg:pl-20'>
+            <div className='w-[90vw] lg:w-[80vw] mx-auto h-auto border-2 border-green-800'>
+            <h3 className='title text-[#0b4088] text-[28px] mt-[5vh] font-semibold font-zen text-left md:text-4xl lg:px-6 lg:text-5xl border-2 border-pink-600'>{title}</h3>
             <span id='scrollDown'>
             <Scroll />
             </span>
-            <p className='introduction mx-[4vh] mt-[4vh] text-gray-dark font-roboto text-center font-normal text-xl md:text-2xl lg:text-3xl lg:mx-[15vh] lg:px-6'>{introduction}</p>
-            <div className="App flex justify-center ">
+            <p className='introduction text-gray-dark font-roboto text-left font-normal text-xl md:text-2xl lg:text-3xl lg:px-6 border-2 border-pink-600'>{introduction}</p>
+            <div className="App flex justify-center border-2 border-pink-500">
 
-                <div className="accordion__container flex flex-col justify-items-center gap-1 my-[5vh] rounded-3xl">
+                <div className="accordion__container flex flex-col justify-items-center lg:mx-6 gap-1 my-[5vh] rounded-3xl border-2 border-pink-200">
 
                     {faqsData.map((faq, index) => (
                         <div id='accordion'
                             key={faq.key}
-                            className={`accordion__item flex flex-col w-[80vw] shadow-md ${openAccordion === index ? "border-t-4 border-secondary" : "border-t-4 border-transparent"}`}
+                            className={`accordion__item flex flex-col w-full shadow-md ${openAccordion === index ? "border-t-4 border-secondary" : "border-t-4 border-transparent"}`}
                             ref={(el) => (accordionRefs.current[index] = el)}
                         >
                             <div
-                                className="accordion__header flex gap-8 items-center cursor-pointer px-8 py-4 hover:bg-[#9bc2f7] "
+                                className="accordion__header flex gap-8 items-center cursor-pointer px-4 py-4 hover:bg-[#9bc2f7] "
                                 onClick={() => handleAccordionClick(index)}
                             >
-                                <p className={`accordion__name flex-1 font-roboto font-normal text-xl md:text-2xl lg:text-3xl ${openAccordion === index ? "text-secondary font-medium" : "text-gray-dark font-normal"} `}>{faq.title}</p>
+                                <p className={`accordion__name flex-1 font-roboto text-left font-normal text-xl md:text-2xl lg:text-3xl ${openAccordion === index ? "text-secondary font-medium" : "text-gray-dark font-normal"} `}>{faq.title}</p>
                                 <img src={` ${openAccordion === index ? arrowOpen : arrowClosed}`} className='w-5' />
                             </div>
 
-                            <div className={`accordion__details px-8 overflow-hidden h-0 ${openAccordion === index ? "h-auto" : ""}`}>
+                            <div className={`accordion__details px-4 overflow-hidden h-0 ${openAccordion === index ? "h-auto" : ""}`}>
                                 <p className='py-4 text-gray-dark font-roboto font-normal text-xl md:text-2xl lg:text-3xl'>{faq.content}</p>
                             </div>
                         </div>
@@ -157,11 +157,8 @@ export const AccordionContainer = () => {
 
                 </div>
             </div>
-            {/* <a href="#"><div id='scrollButton' className='w-8 h-8 border-2 border-[#454b51] rounded-full mt-[25vh] absolute right-6 bottom-0 md:bottom-10'>
-                <img src={scroll} className='rotate-180 w-8' alt="" />
-            </div>
-            </a> */}
-
+         
+</div>
 
         </section>
     )

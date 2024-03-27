@@ -17,7 +17,7 @@
          .map((word) => `<span>${word}</span>`)
          .join(" ");
        let spans = text.current.querySelectorAll("span");
-       gsap.set(spans, { autoAlpha: 0.5 });
+       gsap.set(spans, { autoAlpha: 0.7 });
        let tl = gsap.timeline({
          scrollTrigger: {
            trigger: text.current,

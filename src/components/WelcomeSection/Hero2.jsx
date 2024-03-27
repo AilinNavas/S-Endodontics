@@ -28,7 +28,7 @@ export const Hero2 = () => {
 
   return (
     <div ref={heroContainer}
-      className="w-[100vw] h-[100vh] flex flex-col place-items-center"
+      className="w-[100vw] h-[100vh] flex flex-col place-items-center lg:ml-20"
     >
       <div id="bg_color" className="h-full w-full absolute -z-10"></div>
 

@@ -57,9 +57,9 @@ export const AboutUs = () => {
   ];
 
   return (
-    <section ref={contenedor} id="aboutUs" className="my-[10vh] lg:pt-[10vh]">
-      <div className="w-4/5 m-auto space-y-20 py-24">
-        <div className="flex flex-col-reverse items-start justify-between md:space-y-0 lg:flex-row lg:items-start">
+    <section ref={contenedor} id="aboutUs" className="lg:pl-20 border-2 border-red-700">
+      <div className="w-[90vw] lg:w-[80vw] mx-auto space-y-20 my-24 border-2 border-red-600">
+        <div className="flex flex-col-reverse items-center md:space-y-0 lg:flex-row lg:items-start border-2 border-red-500">
           <AnimatedText
             title={"Neal Horn, DDS, MS"}
             description={
@@ -69,7 +69,7 @@ export const AboutUs = () => {
           <ZoomImage images={imagesDr} />
 
         </div>
-        <div className="flex flex-col justify-between items-start space-y-5 md:space-y-0 lg:flex-row ">
+        <div className="flex flex-col items-center space-y-5 md:space-y-0 lg:flex-row border-2 border-red-500 ">
           <ZoomImage images={imagesTeam} />
           <AnimatedText
             title={"Team"}
@@ -78,7 +78,7 @@ export const AboutUs = () => {
             }
           />
         </div>
-        <div className="flex flex-col-reverse justify-between items-start space-y-5 md:space-y-0 lg:flex-row ">
+        <div className="flex flex-col-reverse items-center space-y-5 md:space-y-0 lg:flex-row border-2 border-red-500">
           <AnimatedText
             title={"Office"}
             description={

@@ -2,17 +2,22 @@ import React from 'react'
 import { BussinesInformation } from './BussinesInformation'
 import { AreasOfService } from './AreasOfService'
 import { CallUsToday } from './CallUsToday'
+import scroll from '/src/assets/icons/scroll.svg'
 
 export const Footer = () => {
     return (
-        <section className='w-[100vw] h-auto hidden lg:flex items-center py-10 bg-[#e2e4e6]'>
-            <div className='contenedor-padre flex flex-col w-[80vw] h-[40vh] ml-[10vw]'>
-                <div className='contenedor-info w-full h-3/4 grid grid-cols-3'>
+        <section className='lg:pl-20 lg:h-auto hidden lg:block lg:items-center lg:pt-10 lg:pb-16 bg-white border-2 border-lime-950'>
+            <div className='w-[80vw] mx-auto lg:h-[40vh] border-2 border-lime-700'>
+                <div className='w-full lg:h-3/4 lg:grid lg:grid-cols-3 lg:pb-20 border-2 border-lime-400'>
                     <BussinesInformation />
                     <AreasOfService />
                     <CallUsToday />
                 </div>
             </div>
+            <div id='scrollButton' className='w-8 h-8 border-2 border-[#454b51] rounded-full mb-10 relative bottom-0 left-[85vw]'>
+              <a href="#"><img src={scroll} className='rotate-180 w-8' alt="" />  </a> 
+            </div>
+          
         </section>
     )
 }

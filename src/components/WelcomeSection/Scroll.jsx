@@ -26,7 +26,7 @@ export const Scroll = ({ id , text}) => {
     <div ref={scrollDown} className='flex flex-col items-center justify-center mt-[20px]'>
       <a href={`#${id}`} className='flex flex-col items-center justify-center'>
         <p id='scroll-text' className='text-[#454b51] lg:text-md'>{text}</p>
-        <img id='arrow' src={scroll} alt="" className='-mt-[10px] lg:w-12' />
+        <img id='arrow' src={scroll} alt="" className='-mt-[20px] md:mt-0 lg:w-12' />
       </a>
     </div>
 
