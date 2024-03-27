@@ -4,7 +4,7 @@ import qr from '/src/assets/qr.png'
 export const CallUsToday = () => {
   return (
     <div className='hidden lg:block'>
-                        <h4 className='font-bold text-primary h-1/5 text-xl font-zen text-right mr-2 underline underline-offset-4'>Call us today</h4>
+                        <h4 className='font-bold text-primary h-1/5 text-xl font-roboto text-right mr-2 underline underline-offset-4'>Call us today</h4>
                         <div className='grid grid-cols-2 h-4/5 justify-items-end '>
                              <div className=' grid grid-cols-1 gap-3 h-[60%]'> 
                         

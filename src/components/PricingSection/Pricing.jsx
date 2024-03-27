@@ -74,19 +74,19 @@ export const Pricing = () => {
 
 
   return (
-    <section ref={contenedorRef} className="lg:pl-20 border-2 border-green-950" id="pricing">
+    <section ref={contenedorRef} className="lg:pl-20 " id="pricing">
       <div className='h-auto w-[90vw] mx-auto flex flex-col items-start lg:w-[80vw] lg:mx-auto lg:h-[85vh] md:h-[80vh]'>
-        <div className={`w-[90vw] mx-auto h-auto lg:w-[80vw] border-2 border-green-800`}>
+        <div className={`w-[90vw] mx-auto h-auto lg:w-[80vw] `}>
           <p className='pricing1 text-gray-dark font-roboto font-normal text-left py-2 md:py-6 lg:px-6 bg-transparent text-xl md:text-3xl lg:text-3xl'>
             {textPricing}
           </p>
         </div>
 
-      <div className="w-[90vw] mx-auto flex flex-col justify-center items-center lg:flex-row lg:w-[80vw] md:h-[45vh] lg:h-[50vh] border-2 border-green-800">
+      <div className="w-[90vw] mx-auto flex flex-col justify-center items-center lg:flex-row lg:w-[80vw] md:h-[45vh] lg:h-[50vh]">
 
           <div
             id="tarjetas"
-            className="flex flex-col mx-auto items-center justify-center space-y-4 md:flex-row md:items-center md:space-x-4 lg:space-x-12 lg:items-end lg:space-y-0 border-2 border-green-800"
+            className="flex flex-col mx-auto items-center justify-center space-y-4 md:flex-row md:items-center md:space-x-4 lg:space-x-12 lg:items-end lg:space-y-0"
             style={{ minHeight: 'inherit' }} // Asegura que el contenedor tenga altura mínima
           >
             <CardPricing
@@ -104,7 +104,7 @@ export const Pricing = () => {
         </div>
 
 
-        <div className={`w-[90vw] mx-auto lg:w-[80vw] text-center h-auto border-2 border-green-600`}>
+        <div className={`w-[90vw] mx-auto lg:w-[80vw] text-center h-auto `}>
           <p className='pricing2 text-xl hidden md:block text-gray-dark font-roboto font-normal text-left py-2 lg:px-6 bg-transparent md:text-3xl md:py-6 lg:text-3xl'>
             {textPricing2}
           </p>

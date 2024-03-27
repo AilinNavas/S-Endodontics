@@ -57,9 +57,9 @@ export const AboutUs = () => {
   ];
 
   return (
-    <section ref={contenedor} id="aboutUs" className="lg:pl-20 border-2 border-red-700">
-      <div className="w-[90vw] lg:w-[80vw] mx-auto space-y-20 my-24 border-2 border-red-600">
-        <div className="flex flex-col-reverse items-center md:space-y-0 lg:flex-row lg:items-start border-2 border-red-500">
+    <section ref={contenedor} id="aboutUs" className="lg:pl-20">
+      <div className="w-[90vw] lg:w-[80vw] mx-auto space-y-20 my-24 ">
+        <div className="flex flex-col-reverse items-center md:space-y-0 lg:flex-row lg:items-start">
           <AnimatedText
             title={"Neal Horn, DDS, MS"}
             description={
@@ -69,7 +69,7 @@ export const AboutUs = () => {
           <ZoomImage images={imagesDr} />
 
         </div>
-        <div className="flex flex-col items-center space-y-5 md:space-y-0 lg:flex-row border-2 border-red-500 ">
+        <div className="flex flex-col items-center space-y-5 md:space-y-0 lg:flex-row">
           <ZoomImage images={imagesTeam} />
           <AnimatedText
             title={"Team"}
@@ -78,7 +78,7 @@ export const AboutUs = () => {
             }
           />
         </div>
-        <div className="flex flex-col-reverse items-center space-y-5 md:space-y-0 lg:flex-row border-2 border-red-500">
+        <div className="flex flex-col-reverse items-center space-y-5 md:space-y-0 lg:flex-row">
           <AnimatedText
             title={"Office"}
             description={

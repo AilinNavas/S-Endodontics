@@ -141,25 +141,25 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
   ];
 
   return (
-    <section ref={container3} id="dentalInsurance" className="border-2 border-blue-950 lg:pl-20">
-      <div className="h-auto w-[90vw] mx-auto flex flex-col items-start lg:w-[80vw] lg:h-[85vh] border-2 border-blue-800">
-        <div className="h-auto overflow-hidden mt-6 md:py-6 border-2 lg:my-0 border-red-700">
+    <section ref={container3} id="dentalInsurance" className="lg:pl-20">
+      <div className="h-auto w-[90vw] mx-auto flex flex-col items-start lg:w-[80vw] lg:h-[85vh]">
+        <div className="h-auto overflow-hidden mt-6 md:py-6 lg:my-0">
           <p className="our-text1 text-gray-dark font-roboto font-normal text-left py-2 lg:py-0 lg:px-6 bg-transparent text-xl md:text-3xl lg:text-3xl">
             {text1}
           </p>
         </div>
 
-        <div className="my-0 mx-auto grid gap-3 grid-cols-4 md:grid-cols-5 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw] border-2 border-blue-600">
+        <div className="my-0 mx-auto grid gap-3 grid-cols-4 md:grid-cols-5 md:gap-4 lg:grid-cols-7 lg:gap-4 lg:px-[5vw]">
           {insuranceItems.map((item, index) => (
             <InsuranceItem key={index} src={item.src} alt={item.alt} />
           ))}
         </div>
 
-        <div id="text-2" className="h-auto overflow-hidden border-2 border-blue-600 md:py-6">
+        <div id="text-2" className="h-auto overflow-hidden md:py-6">
           <p className="our-text2 text-gray-dark font-roboto text-left pt-2 lg:px-6 bg-transparent text-xl md:text-3xl lg:text-3xl">
             {text2}
           </p>
-          <p className="our-text3 text-gray-dark font-roboto text-left pt-2 lg:px-6 bg-transparent text-xl md:text-3xl lg:text-3xl  border-2 border-blue-600">
+          <p className="our-text3 text-gray-dark font-roboto text-left pt-2 lg:px-6 bg-transparent text-xl md:text-3xl lg:text-3xl">
             {text3}
           </p>
         </div>

@@ -125,15 +125,15 @@ export const AccordionContainer = () => {
     return (
 
         <section ref={wrapper} id="faqs" className='h-auto flex flex-col mb-[20vh] md:mb-[10vh] lg:mb-[30vh] lg:pl-20'>
-            <div className='w-[90vw] lg:w-[80vw] mx-auto h-auto border-2 border-green-800'>
-            <h3 className='title text-[#0b4088] text-[28px] mt-[5vh] font-semibold font-zen text-left md:text-4xl lg:px-6 lg:text-5xl border-2 border-pink-600'>{title}</h3>
+            <div className='w-[90vw] lg:w-[80vw] mx-auto h-auto'>
+            <h3 className='title text-[#0b4088] text-[28px] mt-[5vh] font-semibold font-zen text-left md:text-4xl lg:px-6 lg:text-5xl '>{title}</h3>
             <span id='scrollDown'>
             <Scroll />
             </span>
-            <p className='introduction text-gray-dark font-roboto text-left font-normal text-xl md:text-2xl lg:text-3xl lg:px-6 border-2 border-pink-600'>{introduction}</p>
-            <div className="App flex justify-center border-2 border-pink-500">
+            <p className='introduction text-gray-dark font-roboto text-left font-normal text-xl md:text-2xl lg:text-3xl lg:px-6 '>{introduction}</p>
+            <div className="App flex justify-center">
 
-                <div className="accordion__container flex flex-col justify-items-center lg:mx-6 gap-1 my-[5vh] rounded-3xl border-2 border-pink-200">
+                <div className="accordion__container flex flex-col justify-items-center lg:mx-6 gap-1 my-[5vh] rounded-3xl ">
 
                     {faqsData.map((faq, index) => (
                         <div id='accordion'
