@@ -18,15 +18,15 @@ export const Scroll = ({ id , text}) => {
       yoyo: true, // Alternar entre el color actual y el nuevo color
       ease: "none" // Sin efecto de suavizado
     });
-    gsap.to("#arrow", { y: '+=10', opacity: 0.7, yoyo: true, color: () => colors[Math.floor(Math.random() * colors.length)], repeat: -1, duration: 1, ease: "power1.inOut" }); // <-- automatically reverted
+   gsap.to("#arrow", { y: '+=10', opacity: 0.7, yoyo: true, color: () => colors[Math.floor(Math.random() * colors.length)], repeat: -1, duration: 1, ease: "power1.inOut" }); // <-- automatically reverted
 
   }, { scope: scrollDown });
   return (
 
     <div ref={scrollDown} className='flex flex-col items-center justify-center mt-[20px]'>
       <a href={`#${id}`} className='flex flex-col items-center justify-center'>
-        <p id='scroll-text' className='text-[#454b51] lg:text-md'>{text}</p>
-        <img id='arrow' src={scroll} alt="" className='-mt-[20px] md:mt-0 lg:w-12' />
+        <p id='scroll-text' className='text-[#454b51] text-xs'>{text}</p>
+        <img id='arrow' src={scroll} alt="" className='md:mt-0 lg:w-10' />
       </a>
     </div>
 

@@ -115,7 +115,7 @@ export const Pricing = () => {
 
       </div>
 
-      <Scroll id={'testimonials'} />
+      <Scroll id={'testimonials'} text= {'Scroll Down'}/>
     </section>
 
 

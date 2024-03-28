@@ -30,7 +30,7 @@ export const Hero2 = () => {
     <div ref={heroContainer}
       className="w-[100vw] h-[100vh] flex flex-col place-items-center lg:ml-20"
     >
-      <div id="bg_color" className="h-full w-full absolute -z-10"></div>
+      {/* <div id="bg_color" className="h-full w-full absolute -z-10"></div> */}
 
       <div className="max-w-[90vw] h-[60vh] my-20 text-center flex flex-col justify-center md:h-[70vh] lg:max-w-[800px] lg:my-10 lg:h-[75vh]">
         <p

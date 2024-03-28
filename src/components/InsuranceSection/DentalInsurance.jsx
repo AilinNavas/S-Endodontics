@@ -165,7 +165,7 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
         </div>
       
       </div>
-      <Scroll id='pricing' />
+      <Scroll id='pricing' text={'Scroll Down'} />
     </section>
   );
 };

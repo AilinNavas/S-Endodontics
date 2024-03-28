@@ -155,7 +155,7 @@ export const ActiveSlider = () => {
                     img={polo} />
             </div>
             <div className='absolute bottom-4 right-1/2 lg:-bottom-10'>
-            <Scroll />
+            <Scroll id={'aboutUs'} text= {'Scroll Down'}/>
             </div>
         </div>
 
