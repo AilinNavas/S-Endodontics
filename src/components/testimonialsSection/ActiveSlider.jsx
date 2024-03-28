@@ -112,14 +112,14 @@ export const ActiveSlider = () => {
         <section className='lg:pl-20'>
 
             <div ref={contenedor} className='h-[90vh] w-[90vw] mx-auto relative lg:w-[80vw] lg:h-[90vh] ' id="testimonials">
-                <div id='card-1' className='absolute left-2 top-[30px] -rotate-2 z-1 md:top-[5vh] lg:left-[0vw] lg:top-[10vh] '>
+                <div id='card-1' className='absolute left-4 top-[30px] -rotate-2 z-1 md:top-[5vh] lg:left-[0vw] lg:top-[10vh] '>
                     <TestimonialCard name={'Megan C'}
                         testimonial={"I honestly can’t say enough about my experience. The office and staff are so efficient and organized. My treatment was explained to me clearly and expectations set. But probably the best thing about this office is how kind and understanding they are and the best playlists of music while you’re there!"}
                         initials={'M'}
                         bgColor={'bg-[#2697ed]'}
                         img={megan} />
                 </div>
-                <div id='card-2' className='absolute left-4 top-[100px] rotate-1 z-5 md:top-[15vh] md:left-[10vw] lg:left-[10vw] lg:top-[10vh] '>
+                <div id='card-2' className='absolute left-[10vw] top-[100px] rotate-1 z-5 md:top-[15vh] md:left-[10vw] lg:left-[10vw] lg:top-[10vh] '>
                     <TestimonialCard name={'Maria Duran'}
                         testimonial={'It was a very pleasant experience at Southside Endodontics. From the lady that I spoke on the phone initially, interacting with her in person, their staff, and Dr. Neal Horn were all very warm. I felt comfortable right away. I highly recommend Southside Endodontics. Go see him if you’re looking for a great endodontic specialist. Thank you so much.'}
                         initials={'B'}
@@ -133,14 +133,14 @@ export const ActiveSlider = () => {
                         bgColor={'bg-[#2a6b44]'}
                         img={keyla} />
                 </div>
-                <div id='card-4' className='absolute left-2 top-[230px] rotate-2 z-20 md:top-[35vh] md:left-[35vw] lg:left-[30vw] lg:top-[10vh] '>
+                <div id='card-4' className='absolute left-10 top-[230px] rotate-2 z-20 md:top-[35vh] md:left-[35vw] lg:left-[30vw] lg:top-[10vh] '>
                     <TestimonialCard name={'Tammy Wylie'}
                         testimonial={'Dr Horn and staff were so great today.  I called this morning with a referral and was in a lot of pain, they got me in at 11am and had a diagnosis today!!! They were all so nice to work with. Will definitely use them in the future!'}
                         initials={'A'}
                         bgColor={'bg-[#0f45a8]'}
                         img={tammy} />
                 </div>
-                <div id='card-5' className='absolute left-4 top-[300px] rotate-3 z-20 md:top-[45vh] md:left-[48vw] lg:left-[40vw] lg:top-[10vh] '>
+                <div id='card-5' className='absolute left-6 top-[300px] rotate-3 z-20 md:top-[45vh] md:left-[48vw] lg:left-[40vw] lg:top-[10vh] '>
                     <TestimonialCard name={'Brad Taylor'}
                         testimonial={'Dr Horn and team are tremendous professionals.  I visited them with a persistent infection in an eye tooth, and over the course of the treatment it was completely cured.'}
                         initials={'R'}
