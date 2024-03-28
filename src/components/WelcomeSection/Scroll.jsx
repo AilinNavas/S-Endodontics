@@ -23,10 +23,10 @@ export const Scroll = ({ id , text}) => {
   }, { scope: scrollDown });
   return (
 
-    <div ref={scrollDown} className='flex flex-col items-center justify-center mt-[20px]'>
-      <a href={`#${id}`} className='flex flex-col items-center justify-center'>
+    <div ref={scrollDown} className={`w-[90vw] mx-auto flex flex-col items-center justify-center mt-[20px] lg:w-[80vw]`}>
+      <a href={`#${id}`} id='arrow' className='flex flex-col items-center justify-center'>
         <p id='scroll-text' className='text-[#454b51] text-xs'>{text}</p>
-        <img id='arrow' src={scroll} alt="" className='md:mt-0 lg:w-10' />
+        <img src={scroll} alt="" className='-mt-2 w-8 md:mt-0 lg:w-10' />
       </a>
     </div>
 
