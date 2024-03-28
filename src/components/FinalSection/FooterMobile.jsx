@@ -18,7 +18,7 @@ export const FooterMobile = () => {
 
       </div>
       <div className='h-auto lg:pl-20'>
-        <div className='border-t border-gray py-4 w-[90vw] mx-auto lg:w-[80vw]'>
+        <div className='border-t border-gray pt-10 pb-4 w-[90vw] mx-auto lg:w-[80vw]'>
         <a href="#"><img src={logo} alt="" className='h-full w-48 md:w-80 mx-auto hover:scale-105 transition-all duration-300' /></a> 
         </div>
         <div className='flex items-center justify-center space-x-2 pb-4'>

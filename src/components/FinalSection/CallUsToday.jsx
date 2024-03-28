@@ -10,18 +10,18 @@ export const CallUsToday = () => {
                         
                                 <button
                                     class="bg-secondary text-lg text-white text-zen px-3 mx-4 rounded-full transition duration-200 ease-in-out hover:bg-[#3c89f0] hover:scale-105 focus:outline-none"
-                                >
-                                    Refer Now
+                                ><a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
+                                    Refer Now</a>
                                 </button>
                                 <button
                                     class="bg-primary text-lg text-white text-zen px-3 mx-4 rounded-full transition duration-200 ease-in-out hover:bg-[#0b4088] hover:scale-105 focus:outline-none"
-                                >
-                                    Refering Doctor
+                                ><a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
+                                    Refering Doctor</a>
                                 </button>
                                 <button
                                     class="bg-primary text-lg text-white text-zen px-3 mx-4 rounded-full transition duration-200 ease-in-out hover:bg-[#0b4088] hover:scale-105 focus:outline-none"
-                                >
-                                    Patient Login
+                                ><a href="https://securesite1246.tdo4endo.com/PatientsLogin.aspx" target='_blank'>
+                                    Patient Login</a>
                                 </button>
 
                             </div>
