@@ -45,7 +45,8 @@ export const Sidebar = () => {
       />
 
       <div className={`grid grid-cols-3 w-full  ${open && 'flex-col w-28'}`}>
-        <div className={logoContainerClasses}>
+      <div className={logoContainerClasses}>
+  
           <img
             src={logoSrc}
             className={`border-2 border-[#e2e4e6] rounded-lg ${controlClasses}`}
@@ -53,6 +54,7 @@ export const Sidebar = () => {
           />
           <h2 className={`text-white font-semibold font-zen text-xl duration-300 ${headerClasses}`}>SOUTHSIDE <br /> ENDODONTICS</h2>
         </div>
+
         <div className='my-auto mx-auto'>
           <a href="https:securesite1246.tdo4endo.com/RefDocsLogin.aspx" target='_blank'>
             <button className={`bg-[#3c89f0] text-white font-roboto font-semibold py-2 px-4 rounded-xl  ${buttonClasses}`}>

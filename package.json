@@ -11,12 +11,15 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
+    "@react-three/drei": "^9.102.6",
+    "@react-three/fiber": "^8.16.0",
     "framer-motion": "^10.18.0",
     "gsap": "^3.12.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
     "split-type": "^0.3.4",
+    "three": "^0.162.0",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
