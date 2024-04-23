@@ -26,7 +26,7 @@ export default {
         "primary": "#072a59",
         "secondary" : "#126de7",
         "tartiary" : "#16181a",
-        "gray" : " #90989f",
+        "gray" : "#90989f",
         "gray-dark" : "#2e3135",
         "celeste" : "#3c89f0",
         "gradiente" : "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(150,196,255,1) 46%, rgba(255,255,255,1) 99%);"

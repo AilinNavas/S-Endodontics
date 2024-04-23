@@ -6,14 +6,14 @@ export const Carrousel = ({ images }) => {
   const [direction, setDirection] = useState(null);
 
   const slideVariants = {
-    hiddenRight: {
-      x: "100%",
-      opacity: 0,
-    },
-    hiddenLeft: {
-      x: "-100%",
-      opacity: 0,
-    },
+    // hiddenRight: {
+    //   x: "100%",
+    //   opacity: 0,
+    // },
+    // hiddenLeft: {
+    //   x: "-100%",
+    //   opacity: 0,
+    // },
     visible: {
       x: "0",
       opacity: 1,

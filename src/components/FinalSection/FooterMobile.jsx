@@ -23,14 +23,14 @@ export const FooterMobile = () => {
         </div>
         <div className='flex items-center justify-center space-x-2 pb-4'>
         <a href="https://www.linkedin.com/in/neal-horn-a235713/"><img src={facebook} alt="" className='h-8 bg-[#4460A0] p-1.5 rounded-lg lg:hover:scale-110 hover:shadow-lg transition-all duration-300' /></a>
-        <a href=""><img src={linkdin} alt="" className='h-8 bg-[#0A66C2] p-2 rounded-lg lg:hover:scale-110 hover:shadow-lg transition-all duration-300' /></a>
+        <a href="https://m.facebook.com/southsideendodontics"><img src={linkdin} alt="" className='h-8 bg-[#0A66C2] p-2 rounded-lg lg:hover:scale-110 hover:shadow-lg transition-all duration-300' /></a>
         </div>
         <div id='scrollButton' className='w-8 h-8 border-2 border-[#454b51] rounded-full relative bottom-4 left-[85vw] active:bg-[#cadffb] lg:hover:bg-[#cadffb] transition-all duration-300'>
               <a href="#"><img src={scroll} className='rotate-180 w-8' alt="" /></a> 
             </div>
           
         <div className='h-18 mb-16 bg-[#abb1b7] w-full text-center text-xs text-zen text-[#e2e4e6] lg:mb-0 lg:text-xl'>
-          <p>©Copyright 2024 - Website Disign By Joe&Ai</p>
+          <p>©Copyright 2024 - Website Disign By JoeAi</p>
         </div>
       </div>
     </div>

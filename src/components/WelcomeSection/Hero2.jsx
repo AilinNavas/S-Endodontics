@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import { TypewriterText } from "./TypewriterText";
 import { AnimatedButton } from "./AnimatedButton";
-import torito from "/src/assets/torito2.svg";
+// import torito from "/src/assets/torito2.svg";
 import appointment from "/src/assets/icons/appointment.svg"
 import { Scroll } from "./Scroll";
 import gsap from 'gsap'
@@ -11,7 +11,7 @@ import '../../App.css'
 
 export const Hero2 = () => {
   const heroContainer = useRef();
-  const colors = ['#072A59', '#0B3F84', '#031226'];
+  const colors = ['#072A59', '#0B3F84'];
 
   useGSAP(() => {
     // gsap code here...
@@ -35,21 +35,21 @@ export const Hero2 = () => {
       <div className="max-w-[90vw] h-[60vh] my-20 text-center flex flex-col justify-center md:h-[70vh] lg:max-w-[800px] lg:my-10 lg:h-[75vh]">
         <p
           id="info"
-          className="text-transform: capitalize text-2xl font-roboto font-bold align-text-bottom text-gray p-2 lg:mt-[5vh]"
+          className=" my-4 text-transform: capitalize text-2xl font-roboto font-bold align-text-bottom text-[#747e88] p-2 lg:mt-[5vh] lg:text-4xl"
         >
           Neal Horn, DDS, MS
         </p>
 
         <h1
           id="title"
-          className="text-5xl font-black font-zen text-primary md:text-7xl lg:text-8xl"
+          className="text-5xl font-black font-zen text-primary md:text-7xl lg:text-8xl lg:mb-20"
         >
           ENDODONTICS FORT WORTH
         </h1>
 
-        <div className="max-w-[90vw] mt-[-5vh] lg:text-center md:mt-[-10vh] lg:mt-[-15vh]">
+        {/* <div className="max-w-[90vw] mt-[-5vh] lg:text-center md:mt-[-10vh] lg:mt-[-15vh]">
           <img src={torito} alt="" className="w-[100%]" />
-        </div>
+        </div> */}
         <TypewriterText />
 
         <div className="hidden lg:flex lg:max-w-[80vw] lg:items-center lg:space-x-4 lg:justify-center">
