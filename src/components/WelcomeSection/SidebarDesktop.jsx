@@ -114,7 +114,7 @@ export const SidebarDesktop = () => {
                 </a>
                 <p
                     id="direction"
-                    className="text-white font-roboto font-normal text-xs text-left pt-2 ml-4  hover:text-[#aab4c4] hover:scale-110"
+                    className="text-white font-roboto font-normal text-xs text-left pt-2 ml-4  hover:text-[#c6cbcf] hover:scale-110"
                 >
                     <a target="_blank" href="https:maps.app.goo.gl/5FqaJem7M39qahwv8" onClick={handleCloseSidebar}>
                         1307 8th Avenue, Suite 303 <br />

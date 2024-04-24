@@ -54,7 +54,7 @@ export const Pricing = () => {
     // Animación de las tarjetas con filtro blur
     timeline.fromTo(
       '#tarjetas',
-      { opacity: 0.5, scale: 0.5 },
+      { opacity: 0, scale: 0.3 },
       { opacity: 1, scale: 1, stagger: 0.5, duration: 2, ease: "power3.out" }
     );
 

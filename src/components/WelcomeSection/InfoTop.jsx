@@ -34,11 +34,11 @@ export const InfoTop = () => {
             }, { scope: container2 });
 
 return (
-    <div ref={container2} className="fixed z-40 bg-transparent top-0 left-0 w-[100vw] h-10 py-2 lg:h-12">
+    <div ref={container2} className="fixed z-40 bg-transparent lg:bottom-0 left-0 w-[100vw] h-10 py-2 lg:h-12">
         <div id='contenedor' className="text-center text-lg relative w-[100vw] h-[100%] lg:ml-20">
             <p ref={paragraph1Ref} className="top-0 absolute inset-x-0 text-[#0000ff] text-[18px] lg:text-[27px] flex items-center justify-center text-center">
                 <img src={google} alt="google" className='w-4 h-4 lg:w-6 lg:h-6' />
-                <span className='mx-1.5 text-[18px] lg:text-[27px] text-gray-dark'>5.0</span>
+                <span className='mx-1.5 text-[18px] lg:text-[27px] text-gray-dark lg:text-gray'>5.0</span>
                 <img id='star' src={star} alt="star" className='w-4 h-4 lg:w-6 lg:h-6' />
                 <img id='star' src={star} alt="star" className='w-4 h-4 lg:w-6 lg:h-6' />
                 <img id='star' src={star} alt="star" className='w-4 h-4 lg:w-6 lg:h-6' />

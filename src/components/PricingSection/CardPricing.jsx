@@ -41,7 +41,7 @@ export const CardPricing = ({ title, description, icon }) => {
           </h3>
           
 
-          <p className="text-gray-dark font-roboto text-center font-normal p-2 lg:p-4 text-lg md:text-2xl lg:text-3xl">
+          <p className="text-gray-dark font-roboto text-center font-normal p-2 lg:p-4 text-lg md:text-2xl lg:text-2xl">
             {description}
           </p>
         </div>

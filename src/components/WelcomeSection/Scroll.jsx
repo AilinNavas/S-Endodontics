@@ -7,7 +7,7 @@ import { useGSAP } from '@gsap/react'
 export const Scroll = ({ id , text}) => {
 
   const scrollDown = useRef();
-  const colors = ['#abb1b7', '#747e88', '#454b51'];
+  const colors = ['#abb1b7', '#747e88', '#454b51', '#fdfefe'];
 
   useGSAP(() => {
     // gsap code here...
@@ -23,7 +23,7 @@ export const Scroll = ({ id , text}) => {
   }, { scope: scrollDown });
   return (
 
-    <div ref={scrollDown} className={`w-[90vw] mx-auto flex flex-col items-center justify-center mt-[20px] lg:w-[80vw]`}>
+    <div ref={scrollDown} className={`w-[90vw] mx-auto flex flex-col items-center justify-center mt-[20px] lg:w-[80vw] lg:items-end`}>
       <a href={`#${id}`} id='arrow' className='flex flex-col items-center justify-center'>
         <p id='scroll-text' className='text-[#454b51] text-xs'>{text}</p>
         <img src={scroll} alt="" className='-mt-2 w-8 md:mt-0 lg:w-10' />

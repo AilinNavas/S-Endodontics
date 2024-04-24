@@ -13,11 +13,11 @@ export const Bg = () => {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 200.00,
+      minHeight: 50.00,
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      color: 0x9b9ba2,
+      color: 0x7a8dd2,
       shininess: 8.00,
       waveHeight: 6.00,
       zoom: 0.84
@@ -30,7 +30,7 @@ export const Bg = () => {
   }, []);
 
   return (
-    <div className='h-[100vh] w-[100vw] absolute -z-10' ref={myRef}>
+    <div className='md:h-[1900%] lg:h-[2100%] w-[100vw] absolute -z-10' ref={myRef}>
       {/* Contenido de tu componente Hero */}
     </div>
   );

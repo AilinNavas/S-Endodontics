@@ -47,8 +47,8 @@ export const AboutUs = () => {
     { src: drHorn2, alt: "Dr. Horn y Leslie Horn" },
   ];
   const imagesTeam = [
-    { src: team, alt: "Southside endodontics team" },
     { src: team2, alt: "Dental assistants" },
+    { src: team, alt: "Southside endodontics team" }
   ];
   const imagesOffice = [
     { src: office, alt: "Leslie Horn, office manager" },
@@ -57,7 +57,7 @@ export const AboutUs = () => {
   ];
 
   return (
-    <section ref={contenedor} id="aboutUs" className="lg:pl-20">
+    <section ref={contenedor} id="aboutUs" className="lg:pl-20 bg-transparent">
       <div className="w-[90vw] lg:w-[80vw] mx-auto space-y-20 my-24 ">
         <div className="flex flex-col-reverse items-center md:space-y-0 lg:flex-row lg:items-start">
           <AnimatedText

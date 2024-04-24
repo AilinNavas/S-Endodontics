@@ -1,7 +1,7 @@
 import React from 'react'
 import { BussinesInformation } from './BussinesInformation'
 import { AreasOfService } from './AreasOfService'
-import logo from '/src/assets/logo-trasnparente.jpg'
+import logo from '/src/assets/transparente.jpg'
 import facebook from '/src/assets/icons/facebook.svg'
 import linkdin from '/src/assets/icons/ln.svg'
 import scroll from '/src/assets/icons/scroll.svg'
@@ -29,8 +29,8 @@ export const FooterMobile = () => {
               <a href="#"><img src={scroll} className='rotate-180 w-8' alt="" /></a> 
             </div>
           
-        <div className='h-18 mb-16 bg-[#abb1b7] w-full text-center text-xs text-zen text-[#e2e4e6] lg:mb-0 lg:text-xl'>
-          <p>©Copyright 2024 - Website Disign By JoeAi</p>
+        <div className='h-18 mb-16 w-full text-center text-xs text-zen text-gray-dark lg:mb-12'>
+          <p>©Copyright 2024 - Website Disign by JoeAi</p>
         </div>
       </div>
     </div>
