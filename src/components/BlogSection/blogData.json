@@ -1,43 +1,107 @@
 [
     {
-      "id": 1,
-      "title": "Mi primer artículo",
-      "content": "Este es el contenido de mi primer artículo.",
-      "date": "2024-04-24",
-      "author": "Autor 1"
+        "id": 1,
+        "title": "Root Canal Treatment: What to Expect",
+        "content": "Root canal treatment is a common procedure used to save a tooth with infected or damaged pulp. During the treatment, the endodontist removes the infected tissue, cleans the root canal, and seals it to prevent further infection. The procedure is usually no more painful than a typical dental filling.",
+        "author": "Dr. Neal Horn",
+        "date": "2024-04-01"
     },
     {
-      "id": 2,
-      "title": "Otro artículo",
-      "content": "Aquí va el contenido del segundo artículo.",
-      "date": "2024-04-25",
-      "author": "Autor 2"
+        "id": 2,
+        "title": "Signs You Might Need a Root Canal",
+        "content": "Persistent toothache, sensitivity to hot and cold, or swelling could indicate that you need a root canal. If you experience these symptoms, it's important to see your dentist for evaluation. Early treatment can help save your tooth and prevent more serious issues.",
+        "author": "Leslie Horn",
+        "date": "2024-04-05"
     },
     {
         "id": 3,
-        "title": "MI tercer artículo",
-        "content": "Este es el contenido de mi primer artículo.",
-        "date": "2024-04-24",
-        "author": "Autor 1"
-      },
-      {
+        "title": "Aftercare Tips Following a Root Canal",
+        "content": "After a root canal, follow your dentist's instructions for proper care. Avoid hard or chewy foods, take prescribed medication, and maintain good oral hygiene. This will help prevent complications and ensure a smooth recovery. Most patients can return to normal activities in a couple of days.",
+        "author": "Dr. Neal Horn",
+        "date": "2024-04-08"
+    },
+    {
         "id": 4,
-        "title": "Mi cuarto artículo",
-        "content": "Aquí va el contenido del segundo artículo.",
-        "date": "2024-04-25",
-        "author": "Autor 2"
-      }, {
+        "title": "Understanding Endodontic Retreatment",
+        "content": "Endodontic retreatment may be necessary if a previous root canal doesn't fully seal the root canal system. During retreatment, the endodontist reopens the tooth, removes any remaining infection, and reseals the canal to prevent further issues.",
+        "author": "Leslie Horn",
+        "date": "2024-04-10"
+    },
+    {
         "id": 5,
-        "title": "Mi quinto artículo",
-        "content": "Este es el contenido de mi primer artículo.",
-        "date": "2024-04-24",
-        "author": "Autor 1"
-      },
-      {
+        "title": "Dental Crowns: The Perfect Companion to Root Canals",
+        "content": "After a root canal, many teeth require a dental crown to protect them from further damage. Crowns are custom-made to fit over the treated tooth, providing strength and durability. They also restore the tooth's appearance, allowing you to chew and smile with confidence.",
+        "author": "Dr. Neal Horn",
+        "date": "2024-04-12"
+    },
+    {
         "id": 6,
-        "title": "Mi sexto artículo",
-        "content": "Aquí va el contenido del segundo artículo.",
-        "date": "2024-04-25",
-        "author": "Autor 2"
-      }
-  ]
+        "title": "Common Myths About Root Canals",
+        "content": "Root canals have a reputation for being painful, but modern techniques and anesthesia make the procedure relatively comfortable. Another myth is that a root canal kills the tooth; in reality, it preserves the tooth by removing only the infected tissue.",
+        "author": "Leslie Horn",
+        "date": "2024-04-15"
+    },
+    {
+        "id": 7,
+        "title": "Endodontic Microsurgery: What Is It?",
+        "content": "Endodontic microsurgery, or apicoectomy, is a procedure where the endodontist removes the tip of the tooth's root to eliminate infection. This is usually done when a standard root canal isn't enough to clear the infection. The procedure involves small incisions and stitches but is generally successful in preserving the tooth.",
+        "author": "Dr. Neal Horn",
+        "date": "2024-04-18"
+    },
+    {
+        "id": 8,
+        "title": "Why Regular Dental Checkups Are Important",
+        "content": "Regular dental checkups help catch dental problems early, including signs of endodontic issues. Your dentist can identify and treat problems before they require extensive procedures like root canals. Early detection is key to maintaining a healthy mouth and avoiding more serious complications.",
+        "author": "Leslie Horn",
+        "date": "2024-04-20"
+    },
+    {
+        "id": 9,
+        "title": "The Role of Endodontists in Dental Care",
+        "content": "Endodontists are dental specialists trained to treat problems inside the tooth, such as infections or damage to the dental pulp. They play a critical role in saving teeth that might otherwise need to be extracted. If your general dentist refers you to an endodontist, it's because you need specialized care.",
+        "author": "Dr. Neal Horn",
+        "date": "2024-04-22"
+    },
+    {
+        "id": 10,
+        "title": "Top 5 Benefits of Root Canal Treatment",
+        "content": "Root canal treatment has several benefits, including pain relief, infection control, and tooth preservation. It can prevent the need for tooth extraction and the subsequent need for dental implants or bridges. The treatment helps maintain your natural smile and overall oral health.",
+        "author": "Leslie Horn",
+        "date": "2024-04-25"
+    },
+    {
+        "id": 11,
+        "title": "How to Prevent the Need for a Root Canal",
+        "content": "Preventing a root canal starts with good oral hygiene. Brushing and flossing daily, along with regular dental checkups, can reduce the risk of tooth decay and gum disease. Avoiding sugary foods and drinks also helps maintain a healthy mouth and prevent infection that could lead to a root canal.",
+        "author": "Dr. Neal Horn",
+        "date": "2024-04-28"
+    },
+    {
+        "id": 12,
+        "title": "Dealing with Tooth Sensitivity",
+        "content": "Tooth sensitivity can be a sign of underlying dental issues, such as tooth decay or receding gums. If you're experiencing sensitivity, it's important to see your dentist for a thorough examination. Treating the underlying cause can prevent further complications and the need for more invasive treatments like root canals.",
+        "author": "Leslie Horn",
+        "date": "2024-04-30"
+    },
+    {
+        "id": 13,
+        "title": "Root Canal Alternatives: When to Consider Extraction",
+        "content": "While root canals are designed to save teeth, there are cases when extraction may be the best option. This could be due to severe infection, extensive damage, or other complications. Your endodontist will discuss all treatment options with you, including the pros and cons of root canal versus extraction.",
+        "author": "Dr. Neal Horn",
+        "date": "2024-05-02"
+    },
+    {
+        "id": 14,
+        "title": "Tips for Quick Recovery After a Root Canal",
+        "content": "Recovery after a root canal is usually quick, but some tips can help speed up the process. Avoid chewing on the treated tooth until it's fully restored with a crown, take pain medication as prescribed, and follow your dentist's instructions. Most patients can return to normal activities within a day or two.",
+        "author": "Leslie Horn",
+        "date": "2024-05-05"
+    },
+    {
+        "id": 15,
+        "title": "Understanding the Endodontic Process",
+        "content": "The endodontic process involves diagnosing and treating problems inside the tooth. It often begins with an examination and possibly dental x-rays to determine the extent of the issue. The endodontist then cleans and shapes the root canal before sealing it to prevent further infection.",
+        "author": "Dr. Neal Horn",
+        "date": "2024-05-07"
+    }
+]

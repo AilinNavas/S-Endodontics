@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { Link } from 'react-router-dom';
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -109,14 +110,12 @@ export const AccordionContainer = () => {
                 ease: 'power4.out',
 
             });
+        timeln.fromTo('#readBlog',
+            { opacity: 0, scale: 0 },
+            { opacity: 1, scale: 1.1, duration: 2, ease: 'elastic.in' })
         timeln.to('#scrollDown', {
             opacity: 0
         });
-
-        // timeln.fromTo('#scrollButton',
-        //     { opacity: 0, scale: 0.5 },
-        //     { opacity: 1, scale: 1 })
-
 
 
     }, { scope: wrapper }) //final de animaciónes
@@ -126,40 +125,44 @@ export const AccordionContainer = () => {
 
         <section ref={wrapper} id="faqs" className='h-auto flex flex-col mb-[20vh] md:mb-[10vh] lg:mb-[30vh] lg:pl-20'>
             <div className='w-[90vw] lg:w-[80vw] mx-auto h-auto'>
-            <h3 className='title text-[#0b4088] text-[28px] mt-[5vh] font-semibold font-zen text-left md:text-4xl lg:px-6 lg:text-5xl '>{title}</h3>
-            <span id='scrollDown'>
-            <Scroll />
-            </span>
-            <p className='introduction text-gray-dark font-roboto text-left font-normal text-xl md:text-2xl lg:text-3xl lg:px-6 '>{introduction}</p>
-            <div className="App flex justify-center">
+                <h3 className='title text-[#0b4088] text-[28px] mt-[5vh] font-semibold font-zen text-left md:text-4xl lg:px-6 lg:text-5xl '>{title}</h3>
+                <span id='scrollDown'>
+                    <Scroll />
+                </span>
+                <p className='introduction text-gray-dark font-roboto text-left font-normal text-xl md:text-2xl lg:text-3xl lg:px-6 '>{introduction}</p>
+                <div className="App flex justify-center">
 
-                <div className="accordion__container flex flex-col justify-items-center lg:mx-6 gap-1 my-[5vh] rounded-3xl ">
+                    <div className="accordion__container flex flex-col justify-items-center lg:mx-6 gap-1 my-[5vh] rounded-3xl ">
 
-                    {faqsData.map((faq, index) => (
-                        <div id='accordion'
-                            key={faq.key}
-                            className={`accordion__item flex flex-col w-full shadow-md ${openAccordion === index ? "border-t-4 border-secondary" : "border-t-4 border-transparent"}`}
-                            ref={(el) => (accordionRefs.current[index] = el)}
-                        >
-                            <div
-                                className="accordion__header flex gap-8 items-center cursor-pointer px-4 py-4 hover:bg-[#9bc2f7] "
-                                onClick={() => handleAccordionClick(index)}
+                        {faqsData.map((faq, index) => (
+                            <div id='accordion'
+                                key={faq.key}
+                                className={`accordion__item flex flex-col w-full shadow-md ${openAccordion === index ? "border-t-4 border-secondary" : "border-t-4 border-transparent"}`}
+                                ref={(el) => (accordionRefs.current[index] = el)}
                             >
-                                <p className={`accordion__name flex-1 font-roboto text-left font-normal text-xl md:text-2xl lg:text-3xl ${openAccordion === index ? "text-secondary font-medium" : "text-gray-dark font-normal"} `}>{faq.title}</p>
-                                <img src={` ${openAccordion === index ? arrowOpen : arrowClosed}`} className='w-5' />
-                            </div>
+                                <div
+                                    className="accordion__header flex gap-8 items-center cursor-pointer px-4 py-4 hover:bg-[#9bc2f7] "
+                                    onClick={() => handleAccordionClick(index)}
+                                >
+                                    <p className={`accordion__name flex-1 font-roboto text-left font-normal text-xl md:text-2xl lg:text-3xl ${openAccordion === index ? "text-secondary font-medium" : "text-gray-dark font-normal"} `}>{faq.title}</p>
+                                    <img src={` ${openAccordion === index ? arrowOpen : arrowClosed}`} className='w-5' />
+                                </div>
 
-                            <div className={`accordion__details px-4 overflow-hidden h-0 ${openAccordion === index ? "h-auto" : ""}`}>
-                                <p className='py-4 text-gray-dark font-roboto font-normal text-xl md:text-2xl lg:text-3xl'>{faq.content}</p>
+                                <div className={`accordion__details px-4 overflow-hidden h-0 ${openAccordion === index ? "h-auto" : ""}`}>
+                                    <p className='py-4 text-gray-dark font-roboto font-normal text-xl md:text-2xl lg:text-3xl'>{faq.content}</p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+
+                    </div>
 
                 </div>
             </div>
-         
-</div>
-
+            <div id='readBlog' className='w-[90vw] lg:w-[80vw] flex justify-center'>
+                <Link to='/blog' className=" text-secondary text-xl md:text-2xl lg:text-3xl font-roboto hover:text-primary">
+                    Read Blog →
+                </Link>
+            </div>
         </section>
     )
 }
