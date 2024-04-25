@@ -29,7 +29,7 @@ export const FooterMobile = () => {
               <a href="#"><img src={scroll} className='rotate-180 w-8' alt="" /></a> 
             </div>
           
-        <div className='h-18 mb-16 w-full text-center text-xs text-zen text-gray-dark lg:mb-12'>
+        <div className='h-18 mb-20 w-full text-center text-xs text-zen text-gray-dark lg:mb-12'>
           <p>©Copyright 2024 - Website Disign by JoeAi</p>
         </div>
       </div>

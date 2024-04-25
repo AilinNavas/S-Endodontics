@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "title": "Mi primer artículo",
+      "content": "Este es el contenido de mi primer artículo.",
+      "date": "2024-04-24",
+      "author": "Autor 1"
+    },
+    {
+      "id": 2,
+      "title": "Otro artículo",
+      "content": "Aquí va el contenido del segundo artículo.",
+      "date": "2024-04-25",
+      "author": "Autor 2"
+    },
+    {
+        "id": 3,
+        "title": "MI tercer artículo",
+        "content": "Este es el contenido de mi primer artículo.",
+        "date": "2024-04-24",
+        "author": "Autor 1"
+      },
+      {
+        "id": 4,
+        "title": "Mi cuarto artículo",
+        "content": "Aquí va el contenido del segundo artículo.",
+        "date": "2024-04-25",
+        "author": "Autor 2"
+      }, {
+        "id": 5,
+        "title": "Mi quinto artículo",
+        "content": "Este es el contenido de mi primer artículo.",
+        "date": "2024-04-24",
+        "author": "Autor 1"
+      },
+      {
+        "id": 6,
+        "title": "Mi sexto artículo",
+        "content": "Aquí va el contenido del segundo artículo.",
+        "date": "2024-04-25",
+        "author": "Autor 2"
+      }
+  ]

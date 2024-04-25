@@ -6,7 +6,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import logo from "/src/assets/transparente.jpg"
 import team from "/src/assets/1.png"
-
+import { InfoTop } from "./InfoTop";
 
 export const Hero2 = () => {
   const heroContainer = useRef();
@@ -30,17 +30,14 @@ export const Hero2 = () => {
   return (
 
     <section ref={heroContainer} className="">
-{/* 
-      <div id='imgLogo' className="w-[100vw] h-[100vh] bg-white absolute flex items-center justify-center">
-        <img  src={logo} className="p-20" />
-      </div> */}
 
       <div
         className="w-[100vw] h-[100vh] flex flex-col place-items-center "
       >
-        <img src={team} className="lg:absolute -z-10 lg:h-max-[100vh] lg:ml-20" alt="" /> 
-        
-        <div className="max-w-[90vw] h-[60vh] text-center flex flex-col justify-center md:h-[70vh] lg:max-w-[800px] lg:my-20 lg:pt-48 lg:h-[75vh] lg:ml-28">
+        <img src={team} className="lg:absolute mt-10 lg:mt-0 -z-10 lg:h-max-[100vh] lg:ml-20" alt="" />
+        <div className="bg-white lg:hidden h-40 md:h-[25vh] w-[100vw] -mt-20 md:-mt-40"></div>
+
+        <div className="max-w-[90vw] -mt-36  lg:bg-transparent h-[50vh] text-center flex flex-col justify-center md:h-[40vh] lg:max-w-[800px] lg:my-20 lg:pt-48 lg:h-[70vh] lg:ml-28">
           <p
             id="info"
             className=" my-4 text-transform: capitalize text-2xl font-roboto font-bold align-text-bottom text-[#747e88] p-2 lg:mt-[5vh] lg:text-4xl lg:hidden"
@@ -56,9 +53,9 @@ export const Hero2 = () => {
           </h1>
 
           <TypewriterText />
-
+          
           <div className="hidden lg:flex lg:max-w-[40vw] lg:items-center lg:mx-auto lg:space-x-4 lg:justify-center">
-          <AnimatedButton
+            <AnimatedButton
               text="Schedule Appointment"
               backgroundColor="[#0e57b8]"
               link={"https://www.southsideendodontics.com/contact"}
@@ -68,9 +65,9 @@ export const Hero2 = () => {
               backgroundColor="primary"
               link={'https://securesite1246.tdo4endo.com/RefDocsLogin.aspx'}
             />
-         
+
           </div>
-      
+
         </div>
         <Scroll id={'dentalInsurance'} text={'Scroll Down'} />
       </div>
