@@ -20,7 +20,7 @@ export const ArticleDetail = () => {
     return (
 
         <section>
-            <img src={blog} alt="" />
+            <a href="/"><img src={blog} alt="" /></a>
             <div className='h-auto w-[90vw] mx-auto lg:w-[80vw]'>
                 <div className="p-4  my-16">
               <h3 className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">Blog Post</h3>

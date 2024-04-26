@@ -29,15 +29,15 @@ export const Blog = () => {
 
   return (
     <section>
-    <img src={blog} alt="" />
+      <a href="/"><img src={blog} alt="" /></a>
       <div className="h-auto w-[90vw] mx-auto lg:w-[80vw] mb-28">
         <div className="p-4 my-6">
-
-          <Link to="/blog">
-            <h3 className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
-              Blog
-            </h3>
-          </Link>
+            <Link to="/blog">
+              <h3 className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
+                Blog
+              </h3>
+            </Link>
+           
           <p className="font-roboto text-gray-dark px-2 my-6 font-normal text-xl md:text-2xl lg:text-3xl">
             Explore our blog to learn about endodontic treatments, tips for
             dental care, and the latest in root canal technology.{" "}

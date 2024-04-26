@@ -43,14 +43,14 @@ export const BlogCarrousel = () => {
 
     return (
         <section className="lg:pl-20">
-            <div className="w-[90vw] mx-auto lg:w-[80vw] mb-28 ">
-                <h3 className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
+            <div className="w-[90vw] mx-auto lg:w-[75vw] mb-28 ">
+                <h3 className="text-3xl font-semibold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
                     Latest Blog Posts
                 </h3>
                 <Slider {...settings}>
                     {recentArticles.map((article) => (
                         <Link to={`/article/${article.id}`} key={article.id}>
-                            <div className="border-t-8 h-[370px] md:h-[470px] lg:h-[480px] border-[#0b4088] scale-95 hover:scale-90 transition-all mx-2 duration-300 rounded-xl shadow-sm shadow-secondary p-4">
+                            <div className="border-t-8 h-[370px] md:h-[470px] lg:h-[480px] border-[#0b4088] scale-95 hover:scale-90 transition-all duration-300 rounded-xl shadow-sm shadow-secondary p-4">
                                 <h4 className="text-2xl h-[100px] md:h-[150px] md:text-3xl font-roboto text-[#0b4088] p-2">
                                     {article.title}
                                 </h4>

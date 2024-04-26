@@ -34,10 +34,10 @@ export const Hero2 = () => {
       <div
         className="w-[100vw] h-[100vh] flex flex-col place-items-center "
       >
-        <img src={team} className="lg:absolute mt-10 lg:mt-0 -z-10 lg:h-max-[100vh] lg:ml-20" alt="" />
+        <img src={team} className="lg:absolute lg:mt-0 -z-10 lg:h-max-[100vh] lg:ml-20" alt="" />
         <div className="bg-white lg:hidden h-40 md:h-[25vh] w-[100vw] -mt-20 md:-mt-40"></div>
 
-        <div className="max-w-[90vw] -mt-36  lg:bg-transparent h-[50vh] text-center flex flex-col justify-center md:h-[40vh] lg:max-w-[800px] lg:my-20 lg:pt-48 lg:h-[70vh] lg:ml-28">
+        <div className="max-w-[90vw] -mt-36 md:-mt-[20vh] lg:bg-transparent h-[50vh] text-center flex flex-col md:h-[35vh] lg:max-w-[800px] lg:my-20 lg:pt-48 lg:h-[70vh] lg:ml-28">
           <p
             id="info"
             className=" my-4 text-transform: capitalize text-2xl font-roboto font-bold align-text-bottom text-[#747e88] p-2 lg:mt-[5vh] lg:text-4xl lg:hidden"

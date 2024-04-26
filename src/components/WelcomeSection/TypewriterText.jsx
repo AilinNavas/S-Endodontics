@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 export const TypewriterText = () => {
   return (
     <div className="lg:-mt-2">
-      <div className="text-2xl mt-[5vh] font-roboto text-transform:capitalize font-bold text-secondary mb-[3vh] md:text-3xl lg:mt-0 lg:mb-10 lg:text-[#c6cbcf]">
+      <div className="text-2xl mt-[5vh] font-roboto text-transform:capitalize font-bold text-secondary md:text-3xl lg:mt-0 lg:mb-10 lg:text-[#c6cbcf]">
         <Typewriter
           options={{
             loop: true,
