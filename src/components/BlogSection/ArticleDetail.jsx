@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom';
 import blogData from './blogData.json';
+import blog from '/src/assets/Blog.png'
 
 export const ArticleDetail = () => {
     const { id } = useParams(); // Obtener el ID del parámetro de la URL
@@ -19,11 +20,11 @@ export const ArticleDetail = () => {
     return (
 
         <section>
+            <img src={blog} alt="" />
             <div className='h-auto w-[90vw] mx-auto lg:w-[80vw]'>
-
-                <div className="p-4 border-2 border-yellow-400 my-12">
-                <Link to='/blog'><h3 className="text-3xl font-extrabold mb-4 border-2 border-gray text-[#0b4088] font-zen md:text-4xl lg:text-5xl">Blog</h3></Link>
-                    <div className="border-b-2 rounded-xl shadow-lg p-4 md:p-8 border-[#e2e4e6]">
+                <div className="p-4  my-16">
+              <h3 className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">Blog Post</h3>
+                    <div className="border-b-2 rounded-xl shadow-lg p-4 md:p-8 border-b-[#e2e4e6]">
                         <h4 className="text-2xl md:text-3xl lg:text-4xl font-roboto text-[#0b4088] py-2 text-wrap">{article.title}</h4>
                         <p className="text-lg text-gray font-roboto px-2">
                             By {article.author} | {article.date}

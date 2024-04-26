@@ -13,6 +13,7 @@ import { WrapperFooter } from './components/FinalSection/WrapperFooter';
 import { WelcomeNeal } from './components/WelcomeSection/WelcomeNeal';
 import { Blog } from './components/BlogSection/Blog'
 import { ArticleDetail } from './components/BlogSection/ArticleDetail'
+import { BlogCarrousel } from './components/BlogSection/BlogCarrousel';
 
 
 
@@ -36,6 +37,7 @@ function App() {
                 <ActiveSlider />
                 <AboutUs />
                 <AccordionContainer />
+                <BlogCarrousel />
               </>
             }
           />

@@ -110,9 +110,6 @@ export const AccordionContainer = () => {
                 ease: 'power4.out',
 
             });
-        timeln.fromTo('#readBlog',
-            { opacity: 0, scale: 0 },
-            { opacity: 1, scale: 1.1, duration: 2, ease: 'elastic.in' })
         timeln.to('#scrollDown', {
             opacity: 0
         });
@@ -158,11 +155,7 @@ export const AccordionContainer = () => {
 
                 </div>
             </div>
-            <div id='readBlog' className='w-[90vw] lg:w-[80vw] flex justify-center'>
-                <Link to='/blog' className=" text-secondary text-xl md:text-2xl lg:text-3xl font-roboto hover:text-primary">
-                    Read Blog →
-                </Link>
-            </div>
+
         </section>
     )
 }

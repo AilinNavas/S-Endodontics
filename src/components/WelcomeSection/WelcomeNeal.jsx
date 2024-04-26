@@ -1,14 +1,15 @@
 import React from "react";
 import nealHorn from "/src/assets/Neal.jpeg";
-import line from "/src/assets/icons/line.svg"
+import line from "/src/assets/icons/line.svg";
+import '../../App.css'
 
 export const WelcomeNeal = () => {
   return (
     <section className="lg:pl-20 md:mt-10 lg:mt-40">
   
-    <div className="h-[90vh] lg:h-[70vh] w-[90vw] lg:w-[80vw] rounded-2xl bg-[#abb1b7] mx-auto flex items-center justify-center flex-col lg:flex-row lg:pl-10 shadow-lg">
+    <div className="glowing-bg h-[90vh] lg:h-[65vh] w-[90vw] lg:w-[80vw] rounded-2xl bg-[#abb1b7] mx-auto flex items-center justify-center flex-col lg:flex-row lg:pl-10 shadow-lg">
    
-      <div className="m-2 md:m-0 md:h-[50vh] lg:h-[50vh]">
+      <div className="m-2 md:m-0 md:h-[50vh] lg:h-[45vh]">
         <img
           src={nealHorn}
           alt=""
