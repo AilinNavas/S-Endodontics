@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
 import { Link } from "react-router-dom"; // Para el enlace "Leer más"
 import blogData from "./blogData.json";
 import blog from '/src/assets/bannerBlog.jpeg'
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
 
 export const Blog = () => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0); // Asegurarte de que se desplaza al principio
+  }, []);
   const ARTICLES_PER_PAGE = 6;
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -27,18 +34,44 @@ export const Blog = () => {
     }
   };
 
+  const blogContainer = useRef();
+
+
+  useGSAP(() => {
+    gsap.fromTo('#imgBlog',
+      { opacity: 0.3, duration: 2 },
+      { opacity: 1,  }),
+      gsap.fromTo('#info',
+      { opacity: 0, duration: 2 },
+      { opacity: 1 , stagger: {
+        each: 0.5,
+      }, } ,'<1'),
+     gsap.fromTo('#articleBlog',
+       {  opacity: 0,},
+       {
+         opacity: 1, delay:1, duration:2,  ease:  "power2",
+         stagger: {
+           each: 0.5,
+           from: 'start'
+      
+         },
+       })
+     
+
+  }, { scope: blogContainer });
+
   return (
-    <section>
-      <a href="/"><img src={blog} alt="" /></a>
+    <section ref={blogContainer}>
+      <a href="/"><img id='imgBlog' src={blog} alt="" /></a>
       <div className="h-auto w-[90vw] mx-auto lg:w-[80vw] mb-28">
         <div className="p-4 my-6">
-            <Link to="/blog">
-              <h3 className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
-                Blog
-              </h3>
-            </Link>
-           
-          <p className="font-roboto text-gray-dark px-2 my-6 font-normal text-xl md:text-2xl lg:text-3xl">
+          <Link to="/blog">
+            <h3 id="info" className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
+              Blog
+            </h3>
+          </Link>
+
+          <p id='info' className="font-roboto text-gray-dark px-2 my-6 font-normal text-xl md:text-2xl lg:text-3xl">
             Explore our blog to learn about endodontic treatments, tips for
             dental care, and the latest in root canal technology.{" "}
           </p>
@@ -47,7 +80,8 @@ export const Blog = () => {
               <Link to={`/article/${article.id}`}>
                 <div
                   key={article.id}
-                  className="relative h-[350px] md:h-[450px] border-t-8 flex flex-col border-[#0b4088] hover:scale-105 transition-all duration-300 rounded-xl shadow-lg p-4 mb-4 lg:hover:bg-[#f9fcff] "
+                  id='articleBlog'
+                  className="relative h-[350px] md:h-[450px] border-t-8 flex flex-col border-[#0b4088] hover:scale-95 transition-all duration-300 rounded-xl shadow-lg p-4 mb-4 lg:hover:bg-[#f9fcff] "
                 >
                   <h4 className="text-2xl h-[100px] md:h-[150px] md:text-3xl font-roboto text-[#0b4088] p-2">
                     {article.title}

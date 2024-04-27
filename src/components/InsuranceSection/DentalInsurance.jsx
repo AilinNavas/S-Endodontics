@@ -141,7 +141,7 @@ export const DentalInsurance = ({ scrollAnimationsEnabled }) => {
   ];
 
   return (
-    <section ref={container3} id="dentalInsurance" className="lg:pl-20">
+    <section ref={container3} id="dentalInsurance" className="lg:pl-20 my-[15vh]">
       <div className="h-auto w-[90vw] mx-auto flex flex-col items-start lg:w-[80vw] lg:h-[85vh]">
         <div className="h-auto overflow-hidden mt-6 md:py-6 lg:my-0">
           <p className="our-text1 text-gray-dark font-roboto font-normal text-left py-2 lg:py-0 lg:px-6 bg-transparent text-xl md:text-3xl lg:text-3xl">

@@ -109,7 +109,7 @@ export const ActiveSlider = () => {
 
 
     return (
-        <section className='lg:pl-20'>
+        <section className='lg:pl-20 my-[15vh]'>
 
             <div ref={contenedor} className='h-[90vh] w-[90vw] mx-auto relative lg:w-[80vw] lg:h-[90vh] ' id="testimonials">
                 <div id='card-1' className='absolute left-4 top-[30px] -rotate-2 z-1 md:top-[5vh] lg:left-[0vw] lg:top-[10vh] '>

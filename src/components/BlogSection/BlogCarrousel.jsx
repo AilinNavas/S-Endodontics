@@ -17,11 +17,11 @@ export const BlogCarrousel = () => {
     const settings = {
         dots: false, // Mostrar puntos de navegación
         infinite: true, // Desplazamiento infinito
-        speed: 500, // Velocidad de animación
+        speed: 1000, // Velocidad de animación
         slidesToShow: 3, // Cuántas tarjetas se muestran por vista
         slidesToScroll: 1, // Cuántas tarjetas se desplazan por movimiento
         autoplay: true, // Desplazamiento automático
-        autoplaySpeed: 3000, // Tiempo entre movimientos automáticos
+        autoplaySpeed: 2000, // Tiempo entre movimientos automáticos
         responsive: [
             {
                 breakpoint: 1024, // Ajuste para pantallas medianas
@@ -42,8 +42,8 @@ export const BlogCarrousel = () => {
     };
 
     return (
-        <section className="lg:pl-20">
-            <div className="w-[90vw] mx-auto lg:w-[75vw] mb-28 ">
+        <section className="lg:pl-20 my-[15vh] border-2">
+            <div className="w-[90vw] mx-auto lg:w-[75vw] my-28 ">
                 <h3 className="text-3xl font-semibold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
                     Latest Blog Posts
                 </h3>
@@ -68,7 +68,7 @@ export const BlogCarrousel = () => {
                     ))}
                 </Slider>
                 <div id='readBlog' className='w-[90vw] lg:w-[80vw] flex justify-end my-6'>
-                    <Link to='/blog' className=" text-secondary text-xl md:text-2xl lg:text-3xl font-roboto hover:text-primary">
+                    <Link to='/blog' className=" text-secondary text-xl md:text-2xl lg:text-3xl font-zen font-extrabold hover:text-primary">
                         Go to blog →
                     </Link>
                 </div>

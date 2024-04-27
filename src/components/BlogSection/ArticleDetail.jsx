@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useLayoutEffect} from 'react'
 import { Link, useParams } from 'react-router-dom';
 import blogData from './blogData.json';
-import blog from '/src/assets/bannerBlog.jpeg'
+import blog from '/src/assets/blog.png'
 
 export const ArticleDetail = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0); // Asegurarte de que se desplaza al principio
+      }, []);
+
     const { id } = useParams(); // Obtener el ID del parámetro de la URL
     const articleId = parseInt(id); // Convertir el ID a número
     const article = blogData.find((a) => a.id === articleId); // Buscar el artículo por ID
