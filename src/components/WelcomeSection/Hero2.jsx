@@ -5,7 +5,7 @@ import { Scroll } from "./Scroll";
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import logo from "/src/assets/transparente.jpg"
-import team from "/src/assets/1.png"
+import team from "/src/assets/bannerPrincipal.jpeg"
 import { InfoTop } from "./InfoTop";
 
 export const Hero2 = () => {

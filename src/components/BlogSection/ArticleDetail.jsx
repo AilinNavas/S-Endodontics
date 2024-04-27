@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom';
 import blogData from './blogData.json';
-import blog from '/src/assets/Blog.png'
+import blog from '/src/assets/bannerBlog.jpeg'
 
 export const ArticleDetail = () => {
     const { id } = useParams(); // Obtener el ID del parámetro de la URL

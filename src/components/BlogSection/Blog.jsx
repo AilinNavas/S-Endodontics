@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Para el enlace "Leer más"
 import blogData from "./blogData.json";
-import blog from '/src/assets/Blog.png'
+import blog from '/src/assets/bannerBlog.jpeg'
 
 export const Blog = () => {
   const ARTICLES_PER_PAGE = 6;
