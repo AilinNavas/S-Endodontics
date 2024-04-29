@@ -11,7 +11,6 @@ export const BussinesInformation = () => {
                 </div>
                 <div className='flex mb-2'>
                     <p className='font-bold text-lg font-roboto mr-1 text-[#0b4088]'>Hours:</p>
-                    {/* <div className='grid grid-cols-2'> */}
                     <div className='flex space-x-10 lg:space-x-20 text-gray-dark'>
                         <ul className='font-roboto ml-2 text-lg'>
                             <li>Monday</li>

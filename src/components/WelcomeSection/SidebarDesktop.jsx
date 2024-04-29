@@ -9,6 +9,7 @@
  import testimonials from "/src/assets/icons/sidebarDestopk/testimonials.svg";
  import faqs from "/src/assets/icons/sidebarDestopk/faqs.svg";
  import maps from "/src/assets/maps.png"
+ import blog from '/src/assets/icons/sidebarDestopk/Blog2.svg'
 
  export const SidebarDesktop = () => {
 
@@ -23,6 +24,7 @@
          { title: "Testimonials", icon: testimonials, id: 'testimonials' },
          { title: "About Us", icon: us, id: 'aboutUs' },
          { title: "Frequently asked questions", icon: faqs, id: 'faqs' },
+         { title: "Blog", icon: blog, id: 'carrouselBlog' },
      ];
 
      const handleLogoClick = () => {

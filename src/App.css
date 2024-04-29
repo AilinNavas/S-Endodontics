@@ -2,22 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .glowing-bg {
-    height: 100vh;
-    box-shadow: 0 0 15px 5px rgba(182, 214, 231, 0.5); /* Resplandor inicial */
-    animation: glow-effect 6s ease-in-out infinite;
+  height: 100vh;
+  box-shadow: 0 0 15px 5px rgba(182, 214, 231, 0.5);
+  /* Resplandor inicial */
+  animation: glow-effect 6s ease-in-out infinite;
+}
+
+@keyframes glow-effect {
+
+  0%,
+  100% {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+    /* Resplandor suave */
   }
-  
-  @keyframes glow-effect {
-    0%, 100% {
-      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5); /* Resplandor suave */
-    }
-    50% {
-      box-shadow: 0 0 30px 10px rgba(104, 179, 233, 0.5); /* Resplandor más intenso */
-    }
+
+  50% {
+    box-shadow: 0 0 30px 10px rgba(104, 179, 233, 0.5);
+    /* Resplandor más intenso */
   }
-  
+}

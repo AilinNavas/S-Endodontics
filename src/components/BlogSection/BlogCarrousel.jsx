@@ -42,7 +42,7 @@ export const BlogCarrousel = () => {
     };
 
     return (
-        <section className="lg:pl-20 my-[15vh] border-2">
+        <section id='carrouselBlog' className="lg:pl-20 my-[15vh]">
             <div className="w-[90vw] mx-auto lg:w-[75vw] my-28 ">
                 <h3 className="text-3xl font-semibold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
                     Latest Blog Posts

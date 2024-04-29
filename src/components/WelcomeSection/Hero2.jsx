@@ -13,19 +13,13 @@ export const Hero2 = () => {
 
   useGSAP(() => {
     let time = gsap.timeline(); 
-    time.fromTo('#imgPrincipal',
-      { opacity: 0.3, duration: 1 },
-      { opacity: 1, scale: 1 }),
-     time.fromTo('#title',
-        { opacity: 0, scale: 0 },
-        { opacity: 1, scale: 1, duration: 1 }, '<1'),
      time.fromTo('#info',
         { opacity: 0, scale: 0 },
         { opacity: 1, scale: 1, duration: 1 }, '<1'),
      time.fromTo('#button',
         { opacity: 0, scale: 0 },
         { opacity: 1, scale: 1, duration: 1 }, '>1')
-   gsap.to("#title", {
+   time.to("#title", {
       duration: 2, // Duración de la animación en segundos
       color: () => colors[Math.floor(Math.random() * colors.length)], //Selección de un color aleatorio de la lista
       repeat: -1, //Repetir infinitamente
@@ -59,7 +53,7 @@ export const Hero2 = () => {
 
           <h1
             id="title"
-            className=" text-5xl font-black font-zen text-primary md:text-7xl lg:max-w-[35vw] lg:my-4"
+            className="h1-text transition-all text-5xl font-black font-zen text-primary md:text-7xl lg:max-w-[35vw] lg:my-4"
           >
             ENDODONTICS FORT WORTH
           </h1>
@@ -79,7 +73,7 @@ export const Hero2 = () => {
             />
 
           </div>
-          <p id='descrition' className="font-roboto bg-[#cadffb] opacity-70 rounded-sm p-2 mb-4 lg:opacity-60 lg:bg-primary lg:p-4 lg:text-white lg:mt-8">"<strong>Southside Endodontics </strong>was founded on the idea that quality endodontic care can and should be accessible to anyone who needs their oral health restored.We work hand in hand with dentists in Fort Worth and surrounding areas to maintain your natural teeth. We strive to provide the highest quality care in a friendly and comfortable environment."</p>
+          <p id='descrition' className="mx-auto font-roboto bg-[#cadffb] opacity-70 rounded-sm p-2 mb-4 lg:opacity-60 lg:bg-primary lg:p-4 lg:text-white lg:mt-8">"<strong>Southside Endodontics </strong>was founded on the idea that quality endodontic care can and should be accessible to anyone who needs their oral health restored.We work hand in hand with dentists in Fort Worth and surrounding areas to maintain your natural teeth. We strive to provide the highest quality care in a friendly and comfortable environment."</p>
         </div>
         <Scroll id={'dentalInsurance'} text={'Scroll Down'} />
       </div>

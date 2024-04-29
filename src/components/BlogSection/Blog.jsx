@@ -4,6 +4,7 @@ import blogData from "./blogData.json";
 import blog from '/src/assets/bannerBlog.jpeg'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import home from '/src/assets/icons/home.svg'
 
 
 export const Blog = () => {
@@ -40,36 +41,47 @@ export const Blog = () => {
   useGSAP(() => {
     gsap.fromTo('#imgBlog',
       { opacity: 0.3, duration: 2 },
-      { opacity: 1,  }),
+      { opacity: 1, }),
       gsap.fromTo('#info',
-      { opacity: 0, duration: 2 },
-      { opacity: 1 , stagger: {
-        each: 0.5,
-      }, } ,'<1'),
-     gsap.fromTo('#articleBlog',
-       {  opacity: 0,},
-       {
-         opacity: 1, delay:1, duration:2,  ease:  "power2",
-         stagger: {
-           each: 0.5,
-           from: 'start'
-      
-         },
-       })
-     
+        { opacity: 0, duration: 2 },
+        {
+          opacity: 1, stagger: {
+            each: 0.5,
+          },
+        }, '<1'),
+      gsap.fromTo('#articleBlog',
+        { opacity: 0, },
+        {
+          opacity: 1, delay: 1, duration: 2, ease: "power2",
+          stagger: {
+            each: 0.5,
+            from: 'start'
+
+          },
+        })
+
 
   }, { scope: blogContainer });
 
   return (
     <section ref={blogContainer}>
-      <a href="/"><img id='imgBlog' src={blog} alt="" /></a>
+
+
+      <a href="/"><img id='imgBlog' src={blog} alt="" />
+        <div className="w-[90vw] lg:w-[80vw] mx-auto flex items-end justify-end">
+
+        </div></a>
+
       <div className="h-auto w-[90vw] mx-auto lg:w-[80vw] mb-28">
         <div className="p-4 my-6">
-          <Link to="/blog">
-            <h3 id="info" className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
-              Blog
-            </h3>
-          </Link>
+          <div className="flex justify-between items-end">
+            <Link to="/blog">
+              <h3 id="info" className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
+                Blog
+              </h3>
+            </Link>
+            <a href="/"><p className="opacity-80 text-roboto hidden text-lg p-1 lg:flex items-end text-primary lg:text-2xl font-semibold bg-[#abb1b7] lg:p-2 rounded-xl"><img src={home} alt="" className="w-8" />Homepage</p></a>
+          </div>
 
           <p id='info' className="font-roboto text-gray-dark px-2 my-6 font-normal text-xl md:text-2xl lg:text-3xl">
             Explore our blog to learn about endodontic treatments, tips for
