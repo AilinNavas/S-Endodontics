@@ -40,7 +40,7 @@ export const Hero2 = () => {
       <div
         className="w-[100vw] h-[100vh] flex flex-col place-items-center"
       >
-        <img id='imgPrincipal' src={team} className="lg:absolute lg:mt-0 -z-10 lg:h-max-[100vh] lg:ml-20" alt="" />
+        <img id='imgPrincipal' src={team} className="lg:absolute lg:mt-0 w-full -z-10 lg:h-max-[100vh] lg:ml-20" alt="" />
         <div className="bg-white  lg:hidden h-40 md:h-[25vh] w-[100vw] -mt-20 md:-mt-40"></div>
 
         <div className="max-w-[90vw] mb-4  -mt-36 md:-mt-[20vh] lg:bg-transparent h-[50vh] text-center flex flex-col items-center md:h-[35vh] lg:max-w-[800px] lg:my-20 lg:pt-48 lg:h-[70vh] lg:ml-28">
