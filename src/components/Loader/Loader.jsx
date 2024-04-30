@@ -19,8 +19,8 @@ export const Loader = () => {
     }, { scope: loaderContainer });
 
     return (
-        <div ref={loaderContainer} className='w-[100vw] h-[100vh] bg-white flex items-center justify-center'>
-            <div className='w-[60vw] lg:w-[30vw]'>
+        <div ref={loaderContainer} className='w-[100vw] h-[100vh] my-auto bg-white flex items-center justify-center'>
+            <div className='w-[80vw] md:w-[60vw] lg:w-[40vw]'>
                 <img id='img-loader' src={logo} alt="" className='w-full' />
             </div>
         </div>

@@ -22,7 +22,7 @@
 
    const [isLoading, setIsLoading] = useState(true);
 
-   // Let create async method to fetch fake data
+   //Let create async method to fetch fake data
    useEffect(() => {
      const fakeDataFetch = () => {
        setTimeout(() => {
