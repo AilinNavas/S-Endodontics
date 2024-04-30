@@ -7,7 +7,7 @@ export const BussinesInformation = () => {
             <div className='flex flex-col h-4/5'>
                 <div className='flex mb-2'>
                     <p className='font-bold font-roboto text-lg mr-1 text-[#0b4088]'>Address: </p>
-                    <p className='font-roboto text-lg text-gray-dark'> 1307 8th Ave #303,<br/> Fort Worth, TX</p>
+                    <a target='_blank' href="https:maps.app.goo.gl/5FqaJem7M39qahwv8"><p className='font-roboto text-lg text-gray-dark'> 1307 8th Ave #303,<br/> Fort Worth, TX</p></a>
                 </div>
                 <div className='flex mb-2'>
                     <p className='font-bold text-lg font-roboto mr-1 text-[#0b4088]'>Hours:</p>
@@ -35,7 +35,7 @@ export const BussinesInformation = () => {
                 </div>
                 <div className='flex'>
                     <p className='font-bold text-lg font-roboto mr-1 text-[#0b4088]'>Phone:</p>
-                    <p className='text-lg font-roboto text-gray-dark'> +1 817-386-9007</p>
+                    <a target='_blank' href="tel:+18173869007"><p className='text-lg font-roboto text-gray-dark'> +1 817-386-9007</p></a>
                 </div>
             </div>
         </div>

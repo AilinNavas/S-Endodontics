@@ -11,6 +11,7 @@ const MenuSiderItems = [
   { title: 'About Us', id: 'aboutUs' },
   { title: 'Testimonials', id: 'testimonials' },
   { title: 'FAQs', id: 'faqs' },
+  { title: "Blog", id: 'carrouselBlog' }
 ];
 
 export const Sidebar = () => {
@@ -28,7 +29,7 @@ export const Sidebar = () => {
   };
 
   const logoContainerClasses = open
-    ? 'flex gap-x-2 left-6 absolute top-10 '
+    ? 'flex gap-x-2 left-6 absolute top-8 '
     : 'mx-auto my-auto';
 
   const headerClasses = open ? '' : 'hidden';
@@ -74,7 +75,7 @@ export const Sidebar = () => {
      
       </div>
 
-      <ul className='pt-12 absolute left-4 top-16 flex flex-col text-left items-start ml-0 mr-2'>
+      <ul className='pt-10 absolute left-4 top-16 flex flex-col text-left items-start ml-0 mr-2'>
         {MenuSiderItems.map((menu, index) => (
           <a href={`#${menu.id}`} onClick={handleMenuItemClick}> {/* Agregar manejador de evento */}
             <li key={index} className={`text-white font-roboto font-normal text-lg flex gap-y-2 cursor-pointer p-2 rounded-md`}>

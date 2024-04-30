@@ -1,13 +1,14 @@
-import React, {useLayoutEffect} from 'react'
+import React, { useLayoutEffect } from 'react'
 import { Link, useParams } from 'react-router-dom';
 import blogData from './blogData.json';
-import blog from '/src/assets/blog.png'
+import blog from '/src/assets/bannerBlog.jpeg'
+import home from '/src/assets/icons/home.svg'
 
 export const ArticleDetail = () => {
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0); // Asegurarte de que se desplaza al principio
-      }, []);
+    }, []);
 
     const { id } = useParams(); // Obtener el ID del parámetro de la URL
     const articleId = parseInt(id); // Convertir el ID a número
@@ -25,11 +26,17 @@ export const ArticleDetail = () => {
     return (
 
         <section>
-            <a href="/"><img src={blog} alt="" /></a>
+            <a href="/"><img id='imgBlog' src={blog} alt="" />
+                <div className="w-[90vw] lg:w-[80vw] mx-auto flex items-end justify-end mt-4">
+                    <p className="opacity-80 text-roboto hidden text-lg p-1 lg:flex justify-end text-primary lg:text-2xl font-semibold bg-[#f9fcff] hover:shadow-lg lg:p-2 rounded-xl">
+                        <img src={home} alt="" className="w-6" />
+                        Homepage</p>
+                </div></a>
+
             <div className='h-auto w-[90vw] mx-auto lg:w-[80vw]'>
-                <div className="p-4  my-16">
-              <h3 className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">Blog Post</h3>
-                    <div className="border-b-2 rounded-xl shadow-lg p-4 md:p-8 border-b-[#e2e4e6]">
+                <div className="mb-16">
+                    <h3 className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">Blog Post</h3>
+                    <div className="border-b-2 rounded-xl shadow-lg md:p-8 border-b-[#e2e4e6]">
                         <h4 className="text-2xl md:text-3xl lg:text-4xl font-roboto text-[#0b4088] py-2 text-wrap">{article.title}</h4>
                         <p className="text-lg text-gray font-roboto px-2">
                             By {article.author} | {article.date}

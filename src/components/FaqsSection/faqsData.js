@@ -4,7 +4,7 @@ const faqsData = [
         avatarSrc: "src/assets/faqs/item1.jpg",
         title: "How long does a root canal last?",
         iconSrc: "src/assets/resu-neal.png",
-        content: "A well-performed root canal treatment, combined with proper oral care, can last many years. After the damaged pulp tissue and bacteria are removed, the treated tooth becomes free of infection, allowing the tooth to remain functional. However, it's essential to maintain good oral hygiene, including regular brushing, flossing, and professional dental cleanings, to ensure the long-term success of the root canal treatment."
+        content: "A well-done root canal can last for many years with proper care. After the infected pulp is removed, the tooth can function normally. To ensure longevity, practice good oral hygiene—brush, floss, and get regular dental checkups."
     },
     {
         key: "2",

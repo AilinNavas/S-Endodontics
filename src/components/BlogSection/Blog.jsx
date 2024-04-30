@@ -9,11 +9,17 @@ import home from '/src/assets/icons/home.svg'
 
 export const Blog = () => {
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0); // Asegurarte de que se desplaza al principio
-  }, []);
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0); // Asegurarte de que se desplaza al principio
+  // }, []);
+
   const ARTICLES_PER_PAGE = 6;
   const [currentPage, setCurrentPage] = useState(1);
+
+  // Asegúrate de que al cambiar de página, el desplazamiento se restablezca al inicio
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
 
   const totalArticles = blogData.length;
   const totalPages = Math.ceil(totalArticles / ARTICLES_PER_PAGE);
@@ -68,22 +74,23 @@ export const Blog = () => {
 
 
       <a href="/"><img id='imgBlog' src={blog} alt="" />
-        <div className="w-[90vw] lg:w-[80vw] mx-auto flex items-end justify-end">
-
+        <div className="w-[90vw] lg:w-[80vw] mx-auto flex items-end justify-end mt-4">
+          <p className="opacity-80 text-roboto hidden text-lg p-1 lg:flex justify-end text-primary lg:text-2xl font-semibold bg-[#f9fcff] hover:shadow-lg lg:p-2 rounded-xl">
+            <img src={home} alt="" className="w-6" />
+            Homepage</p>
         </div></a>
 
       <div className="h-auto w-[90vw] mx-auto lg:w-[80vw] mb-28">
-        <div className="p-4 my-6">
-          <div className="flex justify-between items-end">
+        <div className="p-4">
+          <div className="flex justify-between items-center">
             <Link to="/blog">
-              <h3 id="info" className="text-3xl font-extrabold mb-4 text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
+              <h3 id="info" className="text-3xl font-extrabold text-[#0b4088] font-zen md:text-4xl lg:text-5xl">
                 Blog
               </h3>
             </Link>
-            <a href="/"><p className="opacity-80 text-roboto hidden text-lg p-1 lg:flex items-end text-primary lg:text-2xl font-semibold bg-[#abb1b7] lg:p-2 rounded-xl"><img src={home} alt="" className="w-8" />Homepage</p></a>
           </div>
 
-          <p id='info' className="font-roboto text-gray-dark px-2 my-6 font-normal text-xl md:text-2xl lg:text-3xl">
+          <p id='info' className="font-roboto text-gray-dark my-6 font-normal text-xl md:text-2xl lg:text-3xl">
             Explore our blog to learn about endodontic treatments, tips for
             dental care, and the latest in root canal technology.{" "}
           </p>

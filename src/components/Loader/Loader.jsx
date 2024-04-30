@@ -20,7 +20,7 @@ export const Loader = () => {
 
     return (
         <div ref={loaderContainer} className='w-[100vw] h-[100vh] bg-white flex items-center justify-center'>
-            <div className='w-[40vw] lg:w-[30vw]'>
+            <div className='w-[60vw] lg:w-[30vw]'>
                 <img id='img-loader' src={logo} alt="" className='w-full' />
             </div>
         </div>

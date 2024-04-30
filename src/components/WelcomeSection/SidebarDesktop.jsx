@@ -9,7 +9,7 @@
  import testimonials from "/src/assets/icons/sidebarDestopk/testimonials.svg";
  import faqs from "/src/assets/icons/sidebarDestopk/faqs.svg";
  import maps from "/src/assets/maps.png"
- import blog from '/src/assets/icons/sidebarDestopk/Blog2.svg'
+ import blog from '/src/assets/icons/sidebarDestopk/7.svg'
 
  export const SidebarDesktop = () => {
 
