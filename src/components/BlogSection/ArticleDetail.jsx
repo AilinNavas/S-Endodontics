@@ -26,7 +26,7 @@ export const ArticleDetail = () => {
     return (
 
         <section>
-            <a href="/"><img id='imgBlog' className='className="w-[100vw]' src={blog} alt="" />
+            <a href="/"><img id='imgBlog' className='w-[100vw]' src={blog} alt="" />
                 <div className="w-[90vw] lg:w-[80vw] mx-auto flex items-end justify-end mt-4">
                     <p className="opacity-80 text-roboto text-lg p-1 flex justify-end text-primary lg:text-2xl font-semibold bg-[#f9fcff] hover:shadow-lg lg:p-2 rounded-xl">
                         <img src={home} alt="" className="w-6" />
